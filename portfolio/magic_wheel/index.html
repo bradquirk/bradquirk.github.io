@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    /* set the CSS */
+
+    body {
+        font-size: 12px;
+        font-weight: 400;
+        background-color: #2E353D;
+        margin-top: 10px;
+    }
+
+
+    /*
+.arcs {
+    cursor: pointer;
+}
+*/
+
+    #header {
+        padding: 10px 0 0 10px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+
+    #legend {
+        padding: 10px 0 0 10px;
+    }
+
+    #sequence {
+        padding: 10px 10px 10px 10px;
+    }
+
+    #sequence text,
+    #legend {
+        font-family: "Arial";
+        font-size: 0.75em;
+        font-weight: 600;
+        fill: #fff;
+    }
+
+    #chart {
+        padding: 10px 10px 10px 10px;
+        font-family: "Arial";
+    }
+
+    #chart path {
+        stroke: #fff;
+    }
+
+    #chart img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #chart p {
+        padding: 10px 10px 10px 10px;
+        background-color: red;
+        color: white;
+        text-align: center;
+    }
+
+    #percentage {
+        font-size: 2.5em;
+    }
+
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Brad Quirk | Magic Wheel</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/mdb.min.css" rel="stylesheet">
+    <link href="/css/style_magic_wheel.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <!-- Hotjar Tracking Code for https://quirkules.github.io/ -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1230223,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50453785-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-50453785-4');
+
+    </script>
+
+</head>
+
+<body>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="/text/javascript" src="/js/mdb.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/d3-color.js"></script>
+    <script src="/js/d3-scale-chromatic.js"></script>
+    <script src="/js/d3-interpolate.js"></script>
+    <script src="/js/jquery.js"></script>
+
+    <!-- Navbar-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark dark-color">
+        <a class="navbar-brand amber-text" href="/">
+    <img src="/img/sitelogo_yellow.png" height="30" alt="logo"> 
+  </a>
+        <a class="navbar-brand amber-text" href="/">
+    Brad Quirk
+  </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="amber-text"><i
+        class="fas fa-bars fa-1x"></i></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item px-2">
+                    <a class="nav-link amber-text" href="/">Home</a>
+                </li>
+                <li class="nav-item px-2 active">
+                    <a class="nav-link amber-text" href="/portfolio/">Portfolio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link amber-text" href="/about/">About</a>
+                </li>
+                <li class="nav-item px-2"><a class="amber-text" href="/contact/">
+                    <button class="btn btn-sm btn-outline-warning" type="button">Contact</button></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- Navbar-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col amber-text" id="header">
+                <h1>Scaled Progress Wheel</h1>
+                <h6>Version 1.1</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="chart"></div>
+        </div>
+        <div class="row">
+            <div class="col" id="sequence"></div>
+        </div>
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne1">
+                    <a data-toggle="collapse" data-parent="#accordionValue" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                        <h4 class="my-4 amber-text">
+                            The Value <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionValue">
+                    <div class="white-text">
+                        <p>Quite often in the world of agile, the simplest questions are often the most difficult to answer:</p>
+                        <ul><i>
+                    <li>"How close are we to releasing?"</li>
+                    <li>"Is the team investing their time in accordance with the priorities we originally laid out?"</li>
+                    <li>"How large is this feature, relative to work the teams have completed previously?"</li>
+                    </i></ul>
+                        <p>We often try to unearth these insights using extracts of data from digital work tracking tools such as Jira, Trello, or AgileCraft to name a few. However, it can be difficult to aggregate this information using conventional means. There can also be inconsistencies in the way the tool is used which can skew the results. What if there is poor hygeine or data quality in the system, isn't that something we would also want to see?</p>
+                        <p>How can we quickly move past these limitations, and start having informed conversations around the state of our portfolio?</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionHypothesis" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionHypothesis" href="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                        <h4 class="my-4 amber-text">
+                            Hypothesis <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne2" class="collapse" role="tabpanel" aria-labelledby="headingOne2" data-parent="#accordionHypothesis">
+                    <div class="white-text">
+                        <p><i>I believe<br>
+                    that visualising a hierarchy of work that traces a story all the way up to it's product/feature<br>
+                    and aggregating the progression of work from the bottom-up<br>
+                    will enable managers and leaders to understand the true state of progress in their programme of work<br>
+                    I'll know I'm right when said leaders can use this hierarchial view to see where progress is made<br>
+                    and effort has been invested.
+                    </i></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionMethod" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne3">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionMethod" href="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+                        <h4 class="my-4 amber-text">
+                            Method <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne3" class="collapse" role="tabpanel" aria-labelledby="headingOne3" data-parent="#accordionMethod">
+                    <div class="white-text">
+                        <ol>
+                            <li>Identify scope of analysis using JQL query in Jira, or through collating a list of boards/projects on other platforms</li>
+                            <li>Extract a data set using the platform's API</li>
+                            <li>Cleanse the data using a <a href="//www.knime.com/knime-software/knime-analytics-platform" target="_blank" class="amber-text">KNIME</a> script</li>
+                            <li>Reorganise data to identify a fully traceable heirarchy for each user story, and use that to determine the true size* and progress of each layer through bottom-up aggregation</li>
+                            <li>Visualise the results using the <a href="//https://d3js.org/" target="_blank" class="amber-text">d3.js</a> javascript library</li>
+                        </ol>
+                        <p><small>* Note: the sizing of each user story can be calculated using lean principles (uniform sizing) or through relative estimation (non-uniform sizing)</small></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionInsights" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne4">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionInsights" href="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
+                        <h4 class="my-4 amber-text">
+                            Insights <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne4" class="collapse" role="tabpanel" aria-labelledby="headingOne4" data-parent="#accordionInsights">
+                    <div class="white-text">
+                        <p>After trialling the Magic Wheel in several environments and backgrounds, from large-scale SAFe PIs to individual flow-focussed Kanban teams, there have been several key themes identified once placed in front of the team:</p>
+                        <ul>
+                            <li>More often than not, there is a large portion of low-level user stories that have not been tagged correctly with Epics/Features/etc. This means senior management are undervaluing the amount of work delivered by their teams, and their forecasts were built using incorrect assumptions.</li>
+                            <li>On occasion senior leaders identified portions of their backlog that had little correlation to the set of priorities they had decreed at their last large-scale planning event. In one case, the team had 60% of their backlog allocated to the feature with the lowest importance from a priority perspective.</li>
+                            <li>When end-users had a chance to interact with the Magic Wheel they were able to overlay their context and anecdotes to identify some interesting delivery patterns that would otherwise have remained hidden.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionConclusion" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne5">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionConclusion" href="#collapseOne5" aria-expanded="false" aria-controls="collapseOne5">
+                        <h4 class="my-4 amber-text">
+                            Conclusion <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne5" class="collapse" role="tabpanel" aria-labelledby="headingOne5" data-parent="#accordionConclusion">
+                    <div class="white-text">
+                        <p>By taking the time to decompose and rebuild a data source from the ground up, where most of the activity sits, it is possible to aggregate that information into a meaningful 'on-a-page' visualisation that resonates with teams and senior leaders alike. Even if there is a belief that data quality is poor from the onset this can still lead to some interesting conversations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <div class="row">
+            <div class="col white-text">
+                <p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact me!</a></p>
+            </div>
+        </div>
+    </div>
+        <script>
+        $(function() {
+            $(this).bind("contextmenu", function(e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+    <script>
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform) ? ($("#chart").append('<img src="/img/portfolio/magic_wheel.png"/>'), $("#chart").append("<p>For the interactive version, please visit this site on desktop!</p>")) : d3.csv("data.csv", function(t, e) {
+            if (t) throw t;
+            var n, i;
+            e.forEach(function(t, n) {
+                e[n] = [t["Summary Sequence"], +t.Count, t["Status Sequence"], t["Key Sequence"], t["To Do Sequence"], t["In Progress Sequence"], t["Done Sequence"]], delete t.data
+            }), n = $("#chart").innerWidth(), i = .6 * $(window).innerHeight();
+            var r = Math.min(n, i) / 2;
+            d3.scaleLinear().range([0, 2 * Math.PI]).clamp(!0), d3.scaleSqrt().range([.1 * r, r]);
+            const a = t => {
+                const e = t.x1 - t.x0,
+                    n = Math.max(0, (Math.sqrt(t.y0) + Math.sqrt(t.y1)) / 2) * e;
+                return "root" == t.data.name ? 6 * t.data.name.length < n : 6 * t.data.desc.length < n
+            };
+            var s = {
+                    w: $("#sequence").width() / 5,
+                    h: 50,
+                    s: 3,
+                    t: 10
+                },
+                l = {
+                    "To Do": "#4FC0E8",
+                    "In Progress": "#FECD57",
+                    Done: "#9ED36A"
+                },
+                d = {
+                    "To Do": "darkblue",
+                    "In Progress": "brown",
+                    Done: "darkgreen"
+                },
+                c = 0,
+                o = d3.select("#chart").append("svg").attr("width", n).attr("height", i).attr("x", n / 2).append("g").attr("id", "container").attr("transform", "translate(" + n / 2 + "," + i / 2 + ")"),
+                h = d3.partition().size([2 * Math.PI, r * r]),
+                y = d3.arc().startAngle(function(t) {
+                    return t.x0
+                }).endAngle(function(t) {
+                    return t.x1
+                }).innerRadius(function(t) {
+                    return Math.sqrt(t.y0)
+                }).outerRadius(function(t) {
+                    return Math.sqrt(t.y1)
+                });
+
+            function p(t) {
+                if (t.ancestors) {
+                    var e = t.ancestors().reverse(),
+                        n = (100 * t.value / c).toPrecision(3),
+                        i = n + "%";
+                    n < .1 && (i = "< 0.1%"), d3.select("#percentage").text(i), d3.select("#explanation").style("visibility", ""), e.shift(),
+                        function(t, e) {
+                            var n = d3.select("#trail").selectAll("g").data(t, function(t) {
+                                return t.data.name + t.depth
+                            });
+                            n.exit().remove();
+                            var i = n.enter().append("g");
+                            i.append("polygon").attr("points", x).style("fill", function(t) {
+                                return "THEME-??" == t.data.name || "FEATURE-??" == t.data.name || "EPIC-??" == t.data.name ? "grey" : l[t.data.status]
+                            }), i.append("text").attr("x", (s.w + s.t) / 2).attr("y", s.h / 2).attr("dy", "1.15em").attr("text-anchor", "middle").style("fill", "#2E353D").text(function(t) {
+                                return t.data.desc.length < 25 ? t.data.desc : t.data.desc.substring(0, 25) + "..."
+                            }), i.append("text").attr("x", (s.w + s.t) / 2).attr("y", s.h / 2).attr("dy", "-0.5em").attr("text-anchor", "middle").style("fill", "#2E353D").text(function(t) {
+                                return t.data.name
+                            }), i.merge(n).attr("transform", function(t, e) {
+                                return "translate(" + e * (s.w + s.s) + ", 0)"
+                            }), d3.select("#trail").select("#endsize").attr("x", (t.length + .1) * (s.w + s.s)).attr("y", s.h / 2).attr("dy", "-0.5em").attr("text-anchor", "left").style("fill", "white").text("% of Backlog"), d3.select("#trail").select("#endlabel").attr("x", (t.length + .1) * (s.w + s.s)).attr("y", s.h / 2).attr("dy", "1.15em").attr("text-anchor", "left").style("fill", "white").text(e), d3.select("#trail").style("visibility", "")
+                        }(e, i), d3.selectAll("path").style("opacity", .3), o.selectAll("path").filter(function(t) {
+                            return e.indexOf(t) >= 0
+                        }).style("opacity", 1), d3.select("#centreKey").text(t.data.name).style("visibility", "");
+                    d3.select("#centreDesc").text(function() {
+                        return t.data.desc.length > 25 ? t.data.desc.substring(0, 25) + "..." : t.data.desc
+                    }).style("visibility", ""), d3.select("#centretoDoText").style("visibility", ""), d3.select("#centretoDo").text(t.data.toDo).style("visibility", ""), d3.select("#centretoDoPercentage").text(d3.format(",.0%")(t.data.toDo / (t.data.toDo + t.data.inProgress + t.data.done))).style("visibility", ""), d3.select("#centreInProgressText").style("visibility", ""), d3.select("#centreInProgress").text(t.data.inProgress).style("visibility", ""), d3.select("#centreInProgressPercentage").text(d3.format(",.0%")(t.data.inProgress / (t.data.toDo + t.data.inProgress + t.data.done))).style("visibility", ""), d3.select("#centreDoneText").style("visibility", ""), d3.select("#centreDone").text(t.data.done).style("visibility", ""), d3.select("#centreDonePercentage").text(d3.format(",.0%")(t.data.done / (t.data.toDo + t.data.inProgress + t.data.done))).style("visibility", "")
+                }
+            }
+
+            function u(t) {
+                d3.select("#trail").style("visibility", "hidden"), d3.selectAll("path").on("mouseover", null), d3.selectAll("path").transition().style("opacity", 1).on("end", function() {
+                    d3.select(this).on("mouseover", p)
+                }), d3.select("#explanation").style("visibility", "hidden"), d3.select("#centreKey").style("visibility", "hidden"), d3.select("#centreDesc").style("visibility", "hidden"), d3.select("#centretoDoText").style("visibility", "hidden"), d3.select("#centretoDo").style("visibility", "hidden"), d3.select("#centretoDoPercentage").style("visibility", "hidden"), d3.select("#centreInProgressText").style("visibility", "hidden"), d3.select("#centreInProgress").style("visibility", "hidden"), d3.select("#centreInProgressPercentage").style("visibility", "hidden"), d3.select("#centreDoneText").style("visibility", "hidden"), d3.select("#centreDone").style("visibility", "hidden"), d3.select("#centreDonePercentage").style("visibility", "hidden")
+            }
+
+            function x(t, e) {
+                var n = [];
+                return n.push("0,0"), n.push(s.w + ",0"), n.push(s.w + s.t + "," + s.h / 2), n.push(s.w + "," + s.h), n.push("0," + s.h), e > 0 && n.push(s.t + "," + s.h / 2), n.join(" ")
+            }
+
+            function f() {
+                var t = d3.select("#legend");
+                "hidden" == t.style("visibility") ? t.style("visibility", "") : t.style("visibility", "hidden")
+            }! function(t) {
+                x = d3.select("#sequence").append("svg").attr("width", n).attr("height", 50).attr("id", "trail"), x.append("text").attr("id", "endsize").style("fill", "#000"), x.append("text").attr("id", "endlabel").style("fill", "#000"), e = {
+                    w: 75,
+                    h: 30,
+                    s: 3,
+                    r: 3
+                }, s = d3.select("#chart").append("svg").attr("width", e.w).attr("height", d3.keys(l).length * (e.h + e.s)).attr("transform", "translate(" + (d3.select("#chart").node().getBoundingClientRect().width - 1.5 * e.w) + "," + -i + ")").selectAll("g").data(d3.entries(l)).enter().append("g").attr("transform", function(t, n) {
+                    return "translate(0," + n * (e.h + e.s) + ")"
+                }), s.append("rect").attr("rx", e.r).attr("ry", e.r).attr("width", e.w).attr("height", e.h).style("fill", function(t) {
+                    return t.value
+                }), s.append("text").attr("id", "legend").attr("x", e.w / 2).attr("y", e.h / 2).attr("dy", "0.35em").attr("text-anchor", "middle").style("fill", "#2E353D").text(function(t) {
+                    return t.key
+                }), d3.select("#togglelegend").on("click", f), o.append("circle").attr("r", r).style("opacity", 0);
+                var e, s;
+                var x;
+                var g = d3.hierarchy(t).sum(function(t) {
+                        return t.size
+                    }),
+                    v = h(g).descendants().filter(function(t) {
+                        return t.x1 - t.x0 > 0
+                    }),
+                    m = o.data([t]).selectAll("path").data(v).enter().append("path").attr("id", function(t, e) {
+                        return "arc_" + e
+                    }).attr("class", "arcs").attr("display", function(t) {
+                        return t.depth ? null : "none"
+                    }).attr("d", y).attr("fill-rule", "evenodd").style("fill", function(t) {
+                        return "THEME-??" == t.data.name || "FEATURE-??" == t.data.name || "EPIC-??" == t.data.name ? "grey" : l[t.data.status]
+                    }).style("opacity", 1).on("mouseover", p);
+                m.each((t, e) => {
+                    var n = /(^.+?)L/.exec(d3.select("#arc_" + e).attr("d"));
+                    if (n) {
+                        if (n = n[1].replace(/,/g, " "), t.x0 > 90 * Math.PI / 180 && t.x1 < 270 * Math.PI / 180) {
+                            var i = /0 0 1 (.*?)$/;
+                            if (null != i.exec(n)) {
+                                var r = i.exec(n)[1],
+                                    a = /M(.*?)A/.exec(n)[1],
+                                    s = /A(.*?)0 0 1/.exec(n)[1];
+                                n = "M" + r + "A" + s + "0 0 0 " + a, t.flipped = !0
+                            }
+                        } else t.flipped = !1;
+                        o.append("path").attr("class", "hiddenDonutArcs").attr("id", "donutArc" + e).attr("d", n).style("fill", "none")
+                    }
+                }), o.selectAll(".arcText").data(v).enter().append("text").attr("class", "arcText").attr("dy", function(t) {
+                    return 1 == t.depth ? t.x0 > 90 * Math.PI / 180 && t.x1 < 270 * Math.PI / 180 ? -25 : 35 : 2 == t.depth ? t.x0 > 90 * Math.PI / 180 && t.x1 < 270 * Math.PI / 180 ? -20 : 25 : 3 == t.depth ? t.x0 > 90 * Math.PI / 180 && t.x1 < 270 * Math.PI / 180 ? -15 : 20 : 4 == t.depth ? t.x0 > 90 * Math.PI / 180 && t.x1 < 270 * Math.PI / 180 ? -10 : 15 : void 0
+                }).append("textPath").attr("startOffset", "50%").attr("text-anchor", "middle").attr("xlink:href", function(t, e) {
+                    return "#donutArc" + e
+                }).attr("display", t => a(t) ? null : "none").style("font-size", "0.75em").style("fill", function(t) {
+                    if ("THEME-??" != t.data.name && "FEATURE-??" != t.data.name && "EPIC-??" != t.data.name) return d[t.data.status]
+                }).text(t => t.data.desc).attr("pointer-events", "none"), d3.select("#container").on("mouseleave", u), c = m.datum().value, d3.select("#container").append("text").attr("id", "centreKey").attr("text-anchor", "middle").attr("y", "-50px").style("fill", "white").style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#container").append("text").attr("id", "centreDesc").attr("text-anchor", "middle").style("fill", "white").style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#container").append("g").attr("id", "centre").attr("transform", "translate(0,75)"), d3.select("#centre").append("text").attr("id", "centretoDoText").attr("text-anchor", "middle").attr("x", "-50px").attr("y", "-25px").attr("dy", "-1em").text("To Do").style("fill", l["To Do"]).style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#centre").append("text").attr("id", "centretoDo").attr("text-anchor", "middle").attr("x", "-50px").attr("y", "-25px").style("fill", "white").style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#centre").append("text").attr("id", "centretoDoPercentage").attr("text-anchor", "middle").attr("x", "-50px").attr("y", "-25px").attr("dy", "1em").style("fill", "white").style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#centre").append("text").attr("id", "centreInProgressText").attr("text-anchor", "middle").attr("y", "-25px").attr("dy", "-1em").text("In Progress").style("fill", l["In Progress"]).style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#centre").append("text").attr("id", "centreInProgress").attr("text-anchor", "middle").attr("y", "-25px").style("fill", "white").style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#centre").append("text").attr("id", "centreInProgressPercentage").attr("text-anchor", "middle").attr("y", "-25px").attr("dy", "1em").style("fill", "white").style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#centre").append("text").attr("id", "centreDoneText").attr("text-anchor", "middle").attr("x", "50px").attr("y", "-25px").attr("dy", "-1em").text("Done").style("fill", l.Done).style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#centre").append("text").attr("id", "centreDone").attr("text-anchor", "middle").attr("x", "50px").attr("y", "-25px").style("fill", "white").style("font-size", "0.75em").style("visibility", "hidden"), d3.select("#centre").append("text").attr("id", "centreDonePercentage").attr("text-anchor", "middle").attr("x", "50px").attr("y", "-25px").attr("dy", "1em").style("fill", "white").style("font-size", "0.75em").style("visibility", "hidden")
+            }(function(t) {
+                for (var e = {
+                        name: "root",
+                        children: []
+                    }, n = 0; n < t.length; n++) {
+                    var i = t[n][0],
+                        r = +t[n][1],
+                        a = t[n][2],
+                        s = t[n][3],
+                        l = t[n][4],
+                        d = t[n][5],
+                        c = t[n][6];
+                    if (!isNaN(r))
+                        for (var o = i.split("\\\\\\"), h = a.split("\\\\\\"), y = s.split("\\\\\\"), p = l.split("\\\\\\"), u = d.split("\\\\\\"), x = c.split("\\\\\\"), f = e, g = 0; g < o.length; g++) {
+                            var v, m = f.children,
+                                P = y[g],
+                                b = h[g],
+                                D = o[g],
+                                w = p[g],
+                                I = u[g],
+                                T = x[g];
+                            if (g + 1 < o.length) {
+                                for (var z = !1, A = 0; A < m.length; A++)
+                                    if (m[A].name == P) {
+                                        (v = m[A]).children.sort(function(t, e) {
+                                            var n = {
+                                                    "To Do": 1,
+                                                    "In Progress": 2,
+                                                    Done: 3
+                                                },
+                                                i = +n[t.status],
+                                                r = +n[e.status];
+                                            return d3.descending(i, r)
+                                        }), z = !0;
+                                        break
+                                    }
+                                z || (v = {
+                                    name: P,
+                                    status: b,
+                                    desc: D,
+                                    toDo: +w,
+                                    inProgress: +I,
+                                    done: +T,
+                                    children: []
+                                }, m.push(v)), f = v
+                            } else v = {
+                                name: P,
+                                status: b,
+                                desc: D,
+                                toDo: +w,
+                                inProgress: +I,
+                                done: +T,
+                                size: r
+                            }, m.push(v)
+                        }
+                }
+                for (var M, E, q = {
+                        "To Do": 1,
+                        "In Progress": 2,
+                        Done: 3
+                    }, k = e.children.length - 1; k >= 0; k--) {
+                    for (var S = e.children[k].children.length - 1; S >= 0; S--) {
+                        for (var C = e.children[k].children[S].children.length - 1; C >= 0; C--) e.children[k].children[S].children[C].children.sort(function(t, e) {
+                            return M = +q[t.status], E = +q[e.status], M != E ? d3.ascending(M, E) : d3.ascending(t.size, e.size)
+                        });
+                        e.children[k].children[S].children.sort(function(t, e) {
+                            return M = +q[t.status], E = +q[e.status], M != E ? d3.ascending(M, E) : d3.ascending(t.size, e.size)
+                        })
+                    }
+                    e.children[k].children.sort(function(t, e) {
+                        return M = +q[t.status], E = +q[e.status], M != E ? d3.ascending(M, E) : d3.ascending(t.size, e.size)
+                    })
+                }
+                return e
+            }(e))
+        });
+
+    </script>
+</body>

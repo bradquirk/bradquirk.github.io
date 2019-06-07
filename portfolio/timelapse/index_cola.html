@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    /* set the CSS */
+
+    body {
+        font-family: 'Arial', sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: #2E353D;
+        /*        margin-top: 10px;*/
+    }
+
+
+    /*
+.arcs {
+    cursor: pointer;
+}
+*/
+
+    hr {
+        width: 100%;
+        height: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #FFF;
+        border: 0 none;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #header {
+        /*        padding: 10px 0 0 10px;*/
+        font-family: "Poppins";
+        color: white;
+    }
+
+    .node rect {
+        cursor: move;
+        fill-opacity: .9;
+        shape-rendering: crispEdges;
+    }
+
+    .node text {
+        pointer-events: none;
+    }
+
+    .link {
+        fill: none;
+        stroke: #FFF;
+        stroke-opacity: .15;
+    }
+
+    .link:hover {
+        stroke-opacity: .25;
+    }
+
+    #tooltip {
+        background-color: rgba(0, 0, 0, .8);
+        border: none;
+        border-radius: 5px;
+        padding: 15px;
+        max-width: 400px;
+        text-align: left;
+        color: white;
+    }
+
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Brad Quirk | Value Stream Map</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/mdb.min.css" rel="stylesheet">
+    <link href="/css/style_lean_dashboard.css" rel="stylesheet">
+    <!-- Hotjar Tracking Code for https://quirkules.github.io/ -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1230223,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50453785-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-50453785-4');
+
+    </script>
+
+</head>
+
+<body>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="/text/javascript" src="/js/mdb.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/d3-color.js"></script>
+    <script src="/js/d3-scale-chromatic.js"></script>
+    <script src="/js/d3-interpolate.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="http://marvl.infotech.monash.edu/webcola/cola.min.js"></script>
+    <!-- Navbar-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark dark-color" id="navbar">
+        <a class="navbar-brand amber-text" href="/">
+    <img src="/img/sitelogo_yellow.png" height="30" alt="logo"> 
+  </a>
+        <a class="navbar-brand amber-text" href="/">
+    Brad Quirk
+  </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="amber-text"><i
+        class="fas fa-bars fa-1x"></i></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item px-2">
+                    <a class="nav-link amber-text" href="/">Home</a>
+                </li>
+                <li class="nav-item px-2 active">
+                    <a class="nav-link amber-text" href="/portfolio/">Portfolio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link amber-text" href="/about/">About</a>
+                </li>
+                <li class="nav-item px-2"><a class="amber-text" href="/contact/">
+                    <button class="btn btn-sm btn-outline-warning" type="button">Contact</button></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- Navbar-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col amber-text" id="header">
+                <h1>Value Stream Map</h1>
+                <h6>version 1.0</h6>
+            </div>
+        </div>
+        <div></div>
+        <div class="row m-2">
+            <div class="col-10" id="chart"></div>
+            <div class="col-2" id="info"></div>
+        </div>
+        <h6 class="mb-4 white-text"><small>Note: Each checkpoint can be repositioned, and each transition contains more information when hovered over</small></h6>
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne1">
+                    <a data-toggle="collapse" data-parent="#accordionValue" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                        <h4 class="my-4 amber-text">
+                            The Value <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionValue">
+                    <div class="white-text">
+                        <p>
+                            When undertaking large-scale change programs, we want to understand our existing end-to-end processes in order to indentify more efficient avenues to add customer value, or in other words eliminate waste. The Value Stream Map (VSM) is a decades-old lean-manufacturing technique that has been used by thousands of companies to fulfil this exact purpose. Especially in agile transformation programs, it doesn't take too long until the topic of VSMs start creeping to the surface.</p>
+                        <p>
+                            But if we're all talking about VSMs, why aren't the outputs of the exercise sitting in a framed poster inside every boardroom or meeting hub? I believe the answer is simple; <b>traditional Value Stream Maps are really difficult to interpret.</b></p> Without a detailed workshop or instruction manual they don't hold much conveyance to the end user.
+
+                        <p>
+                            So what if we took these confusing outputs and repurposed them to make them much easier to interpret? By using the metaphor of 'flow', which is a key principle of lean manufacturing to begin with, and extending it to represent a pipeline of customer value, it should be much easier to highlight the current state of an organisation's processes and where the opportunities for improvement lie.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionHypothesis" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionHypothesis" href="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                        <h4 class="my-4 amber-text">
+                            Hypothesis <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne2" class="collapse" role="tabpanel" aria-labelledby="headingOne2" data-parent="#accordionHypothesis">
+                    <div class="white-text">
+                        <p><i>I believe<br>
+                    that by taking the existing outputs of a traditional Value Stream Map (i.e. Lead Time, Throughput, WIP, Defect & Discard Rates)<br>
+                    will enable managers and leaders to easily understand and articulate the overall efficiency of their customer-driven processes<br>
+                    and lead to structured conversations about optimising said processes where traditional VSMs could not before.<br>
+                    I'll know I'm right when any member of an organisation can identify their place within 'the ecosystem'<br>
+                    and understand how their efficincy can impact those further downstream.
+                    </i></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionMethod" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne3">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionMethod" href="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+                        <h4 class="my-4 amber-text">
+                            Method <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne3" class="collapse" role="tabpanel" aria-labelledby="headingOne3" data-parent="#accordionMethod">
+                    <div class="white-text">
+                        <ol>
+                            <li>For the sake of producing rapid value, try to start with the most understood parts of the process</li>
+                            <li>Involve those who best understand the process, which is usually those performing the work itself</li>
+                            <li>Focus on the work itself, not the individuals contributing to the work</li>
+                            <li>Each workshop should be long enough to involve in-depth discussion, but short enough to avoid fatigue. Typically this means each workshop is 2-4 hours in length.</li>
+                            <li>Operational waste can come in different forms e.g. idling, quality control issues and discarded work.</li>
+                            <li>The Value Stream Map itself will evolve significantly over time, so whiteboards and post-it notes are highly recommended.</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionInsights" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne4">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionInsights" href="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
+                        <h4 class="my-4 amber-text">
+                            Insights <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne4" class="collapse" role="tabpanel" aria-labelledby="headingOne4" data-parent="#accordionInsights">
+                    <div class="white-text">
+                        <p>After recovering some existing Value Stream Maps created by other parties and repurposing them using the above method. I sat down with some process SMEs and A/B tested the two different outputs, with the following observations:</p>
+                        <ul>
+                            <li>Without instructing the user on how to interpret the 'new' visualisation method, most were able to quickly identify where the largest process bottlenecks were.</li>
+                            <li>Conversely, when presented with the 'old' visualisation method that contained the same information, it took significantly longer to identify the same level of insights.</li>
+                            <li>The SMEs held much more engagement with the new method, spending significantly more time evaluating the detail of each process step compared to the old method.</li>
+                            <li>The majority of participants wanted to showcase the new VSM to their stakeholders as they also believed it would be a much more engaging conversation piece.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionConclusion" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne5">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionConclusion" href="#collapseOne5" aria-expanded="false" aria-controls="collapseOne5">
+                        <h4 class="my-4 amber-text">
+                            Conclusion <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne5" class="collapse" role="tabpanel" aria-labelledby="headingOne5" data-parent="#accordionConclusion">
+                    <div class="white-text">
+                        <p>By taking the key lean principle of 'flow' and extending it to be a metaphor for how work is transformed into customer value in an interactive way, it has become easier to understand and identify opportunities to either remove waste, or otherwise optimise customer-driven processes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <div class="row">
+            <div class="col white-text">
+                <p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact me!</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //        $(function() {
+        //            $(this).bind("contextmenu", function(n) {
+        //                n.preventDefault()
+        //            })
+        //        });
+
+    </script>
+    <script>
+        //****** CREATE DIVS ******//
+
+        // set the dimensions and margins of the graph
+        const formatNumber = d3.format(',.0f');
+        const format = d => `${formatNumber(d)} Days`;
+        //const color = d3.scaleSequential().interpolator(d3.interpolateCool).domain([0, dataset.nodes.length - 1]);
+        //const color = d3.scaleSequential().interpolator(piecewise(d3.interpolateHsl, ["#43B7B8", "#DE791E", "#63FD88"])).domain([0, dataset.nodes.length - 1]);
+        var widthFactor, heightFactor,
+            linkTable = [],
+            nodeTable = [],
+            links = [],
+            nodes = [],
+            parseDate = d3.utcParse("%Y-%m-%dT%H:%M:%S"),
+            formatDate = d3.timeFormat("%Y/%m/%d"),
+            parseTime = d3.timeParse("%d/%m/%Y"),
+            cleanDate = d3.timeFormat("%e %b '%y"),
+            emptyDate = formatDate(parseDate(0));
+
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
+            (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
+            widthFactor = 5,
+                heightFactor = 1.2;
+        } else {
+            widthFactor = 1,
+                heightFactor = 0.8;
+        }
+        const margin = {
+                top: 100,
+                right: 30,
+                bottom: 20,
+                left: 30
+            },
+            width = ($('#chart').innerWidth() * widthFactor) - margin.left - margin.right - parseFloat($('.container').css('padding-left')) - parseFloat($('.container').css('padding-right')),
+            height = ($(window).innerHeight() * heightFactor) - margin.top - margin.bottom;
+
+        var color = d3.scaleOrdinal(d3.schemeCategory20);
+        var d3cola = cola.d3adaptor(d3)
+            .avoidOverlaps(true)
+            .size([width, height]);
+        var svg = d3.select("body").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+        d3.json("data.json", function(error, graph) {
+            var nodeRadius = 5;
+            graph.nodes.forEach(function(v) {
+                v.height = v.width = 2 * nodeRadius;
+            });
+            d3cola
+                .nodes(graph.nodes)
+                .links(graph.links)
+                .flowLayout("y", 30)
+                .symmetricDiffLinkLengths(6)
+                .start(10, 20, 20);
+            // define arrow markers for graph links
+            svg.append('svg:defs').append('svg:marker')
+                .attr('id', 'end-arrow')
+                .attr('viewBox', '0 -5 10 10')
+                .attr('refX', 6)
+                .attr('markerWidth', 3)
+                .attr('markerHeight', 3)
+                .attr('orient', 'auto')
+                .append('svg:path')
+                .attr('d', 'M0,-5L10,0L0,5')
+                .attr('fill', '#000');
+            var path = svg.selectAll(".link")
+                .data(graph.links)
+                .enter().append('svg:path')
+                .attr('class', 'link');
+            var node = svg.selectAll(".node")
+                .data(graph.nodes)
+                .enter().append("circle")
+                .attr("class", "node")
+                .attr("r", nodeRadius)
+                .style("fill", function(d) {
+                    return color(d.group);
+                })
+                .call(d3cola.drag);
+            node.append("title")
+                .text(function(d) {
+                    return d.name;
+                });
+            d3cola.on("tick", function() {
+                path.each(function(d) {
+                    if (isIE()) this.parentNode.insertBefore(this, this);
+                });
+                // draw directed edges with proper padding from node centers
+                path.attr('d', function(d) {
+                    var deltaX = d.target.x - d.source.x,
+                        deltaY = d.target.y - d.source.y,
+                        dist = Math.sqrt(deltaX * deltaX + deltaY * deltaY),
+                        normX = deltaX / dist,
+                        normY = deltaY / dist,
+                        sourcePadding = nodeRadius,
+                        targetPadding = nodeRadius + 2,
+                        sourceX = d.source.x + (sourcePadding * normX),
+                        sourceY = d.source.y + (sourcePadding * normY),
+                        targetX = d.target.x - (targetPadding * normX),
+                        targetY = d.target.y - (targetPadding * normY);
+                    return 'M' + sourceX + ',' + sourceY + 'L' + targetX + ',' + targetY;
+                });
+                node.attr("cx", function(d) {
+                        return d.x;
+                    })
+                    .attr("cy", function(d) {
+                        return d.y;
+                    });
+            });
+            // turn on overlap avoidance after first convergence
+            //cola.on("end", function () {
+            //    if (!cola.avoidOverlaps()) {
+            //        graph.nodes.forEach(function (v) {
+            //            v.width = v.height = 10;
+            //        });
+            //        cola.avoidOverlaps(true);
+            //        cola.start();
+            //    }
+            //});
+        });
+
+        function isIE() {
+            return ((navigator.appName == 'Microsoft Internet Explorer') || ((navigator.appName == 'Netscape') && (new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})").exec(navigator.userAgent) != null)));
+        }
+
+    </script>
+</body>
