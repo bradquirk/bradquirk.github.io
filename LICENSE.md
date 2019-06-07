@@ -1,2 +1,2 @@
 
-Copyright (C) 2019 Brad Quirk
+Copyright (C) 2018 Brad Quirk
