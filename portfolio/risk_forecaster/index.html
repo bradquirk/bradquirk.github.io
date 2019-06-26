@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Brad Quirk | Monte Carlo Risk Simulator</title>
+    <title>Brad Quirk | Risk & Delivery Forecaster</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
     <link href="../../css/mdb.min.css" rel="stylesheet">
@@ -177,163 +177,192 @@
     <div class="container">
         <div class="row">
             <div class="col amber-text" id="header">
-                <h1>Monte Carlo Risk Simulation</h1>
+                <h1>Risk & Delivery Forecaster</h1>
                 <h6 class="mb-4">version 1.0</h6>
             </div>
         </div>
-        <div class="row m-1 h-100">
-            <!--config inputs-->
-            <div class="col-4 col-md-3 border border-warning dropdown white-text" id="configCadenceType"><label class="my-2">Select your cadence</label>
-                <!-- Cadence dropdown -->
-                <button class="btn btn-warning dropdown-toggle btn-block text-nowrap text-truncate" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="configCadenceTypeButton">Sprints
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item cadence" value="Sprints" textContent="Sprints">Sprints</a></li>
-                    <li><a class="dropdown-item cadence" value="Days" textContent="Sprints">Days</a></li>
-                    <li><a class="dropdown-item cadence" value="Weeks" textContent="Sprints">Weeks</a></li>
-                    <li><a class="dropdown-item cadence" value="Months" textContent="Sprints">Months</a></li>
-                </ul>
-                <!-- Cadence dropdown -->
-            </div>
-            <div class="col-4 col-md-3 border border-warning dropdown white-text" id="configConstraintType"><label class="my-2">Select your constraint</label>
-                <!-- Constraint dropdown -->
-                <button class="btn btn-warning dropdown-toggle btn-block text-nowrap text-truncate" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="configConstraintTypeButton">Scope</button>
-                <div class="dropdown-menu">
-                    <li><a class="dropdown-item constraint" value="Scope">Scope</a></li>
-                    <li><a class="dropdown-item constraint" value="Time">Time</a></li>
-                </div>
-                <!-- Constraint dropdown -->
-            </div>
-            <div class="col-4 col-md-3 border border-warning dropdown white-text" id="configWorkItemType"><label class="my-2">Select your work item type</label>
-                <!-- Work Item dropdown -->
-                <button class="btn btn-warning dropdown-toggle btn-block text-nowrap text-truncate" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="configWorkItemTypeButton">User Stories</button>
-                <div class="dropdown-menu workitem">
-                    <li><a class="dropdown-item" value="Scope">User Stories</a></li>
-                    <li><a class="dropdown-item" value="Time">Releases</a></li>
-                    <li><a class="dropdown-item" value="Time">Epics</a></li>
-                    <li><a class="dropdown-item" value="Time">Features</a></li>
-                    <li><a class="dropdown-item" value="Time">Initiatives</a></li>
-                </div>
-                <!-- Work Item dropdown -->
-            </div>
-            <div class="col-12 col-md-3 white-text border border-warning" id="configSimulationData">
-                <div class="row">
-                    <div class="col">
-                        <div class="row h-50"><label id="labelConfigWorkItems">No. of User Stories</label></div>
-                        <div class="row h-50"><input class="form-control" id="configWorkItems" type="number" value=200 oninput="updateChart()"></div>
-                    </div>
-                    <div class="col">
-                        <div class="row h-50"><label id="labelConfigGoalFocus">Goal Focus Percentage</label></div>
-                        <div class="row h-50"><input class="form-control" id="configGoalFocus" type="number" value=100 oninput="updateChart()"></div>
-                    </div>
-                    <div class="col">
-                        <div class="row h-50"><label id="labelConfigCadenceLength">Sprint Length (Work Days)</label></div>
-                        <div class="row h-50"><input class="form-control" id="configCadenceLength" type="number" value=10 oninput="updateChart()"></div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
         <div class="row m-1" id="container">
-            <div class="col-12 col-md-4 order-1 order-md-0 amber-text border border-warning" id="dataInput">
+            <div class="col-12 col-md-4 order-1 order-md-0 border white-text border-warning" id="something">
+                <h6 class="m-1 amber-text">Instructions</h6>
+                <label><ol>
+                    <li>Select your systemic inputs using the dropdowns</li>
+                    <li>Input your simulation data</li>
+                    <li>Input your historical throughput (between 5 to 10 sprint/months etc. recommended)</li>
+                </ol></label>
+                <h6 class="m-1 amber-text">Key Questions to Consider</h6>
+                <label><ul>
+                    <li>Based on your history, what is the likelihood (or confidence) that you'll deliver by your target date?</li>
+                    <li>If risk is considered the opposite of confidence (i.e. Risk = 1 - Confidence) have you introduced an acceptable level of risk in your system?</li>
+                    <li>What variables can you change to reduce the risk / uncertainty to an acceptable level?</li>
+                </ul></label>
+            </div>
+            <div class="col-12 col-md-4 order-1 order-md-0 border white-text border-warning" id="something">
+                <h6 class="m-1 amber-text">System Inputs</h6>
+                <!-- Cadence dropdown -->
+                <div class="row white-text">
+                    <div class="col"><label id="labelCadenceType">What is your cadence of delivery?</label></div>
+                    <div class="col-6 col-md-6 pr-3 dropdown white-text" id="configCadenceType">
+                        <button class="btn btn-warning dropdown-toggle btn-block text-nowrap text-truncate" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="configCadenceTypeButton">Sprints
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item cadence" value="Sprints" textContent="Sprints">Sprints</a></li>
+                            <li><a class="dropdown-item cadence" value="Days" textContent="Sprints">Days</a></li>
+                            <li><a class="dropdown-item cadence" value="Weeks" textContent="Sprints">Weeks</a></li>
+                            <li><a class="dropdown-item cadence" value="Months" textContent="Sprints">Months</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Cadence dropdown -->
+                <!-- Constraint dropdown -->
+                <div class="row white-text">
+                    <div class="col"><label id="labelCadenceType">What constraint is your target based on?</label></div>
+                    <div class="col-6 col-md-6 pr-3 my-1 dropdown white-text" id="configConstraintType">
+                        <button class="btn btn-warning dropdown-toggle btn-block text-nowrap text-truncate" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="configConstraintTypeButton">Scope</button>
+                        <div class="dropdown-menu">
+                            <li><a class="dropdown-item constraint" value="Scope">Scope</a></li>
+                            <li><a class="dropdown-item constraint" value="Time">Time</a></li>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Constraint dropdown -->
+                <!-- Work Item dropdown -->
+                <div class="row white-text">
+                    <div class="col"><label id="labelCadenceType">What type of work items are we simulating?</label></div>
+                    <div class="col-6 col-md-6 pr-3 dropdown white-text" id="configWorkItemType">
+                        <button class="btn btn-warning dropdown-toggle btn-block text-nowrap text-truncate" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="configWorkItemTypeButton">User Stories</button>
+                        <div class="dropdown-menu workitem">
+                            <li><a class="dropdown-item" value="Scope">User Stories</a></li>
+                            <li><a class="dropdown-item" value="Time">Releases</a></li>
+                            <li><a class="dropdown-item" value="Time">Epics</a></li>
+                            <li><a class="dropdown-item" value="Time">Features</a></li>
+                            <li><a class="dropdown-item" value="Time">Initiatives</a></li>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Work Item dropdown -->
+                <h6 class="m-1 amber-text">Simulation Inputs</h6>
+                <!-- User Stories Input -->
+                <div class="row white-text">
+                    <div class="col"><label id="labelCadenceType">No. of User Stories</label></div>
+                    <div class="col-6 col-md-6 pr-3 dropdown white-text" id="configCadenceType">
+                        <div><input class="form-control" id="configWorkItems" type="number" value=200 oninput="updateChart()"></div>
+                    </div>
+                </div>
+                <!-- User Stories Input -->
+                <!-- Goal Focus Input -->
+                <div class="row white-text">
+                    <div class="col"><label id="labelCadenceType">Goal Focus Percentage</label></div>
+                    <div class="col-6 col-md-6 pr-3 my-2  dropdown white-text" id="configCadenceType">
+                        <div><input class="form-control" id="configGoalFocus" type="number" value=100 oninput="updateChart()"></div>
+                    </div>
+                </div>
+                <!-- Goal Focus Input -->
+                <!-- Sprint Length Input -->
+                <div class="row white-text">
+                    <div class="col"><label id="labelCadenceType">Sprint Length (Work Days)</label></div>
+                    <div class="col-6 col-md-6 pr-3 dropdown white-text" id="configCadenceType">
+                        <div><input class="form-control" id="configCadenceLength" type="number" value=10 oninput="updateChart()"></div>
+                    </div>
+                </div>
+                <!-- Sprint Length Input -->
+            </div>
+            <div class="col-12 col-md-4 order-0 order-md-1 amber-text border border-warning" id="dataInput">
+                <h6 class="m-1 amber-text">History Inputs</h6>
                 <div class="row white-text">
                     <div class="col"><label id="labelCadenceType">History</label></div>
                     <div class="col"><label id="labelInputThroughput">Throughput</label></div>
-                    <div class="col"><label id="labelInputLength">Length</label></div>
+                    <div class="col"><label id="labelInputLength">Sprint Length (Work Days)</label></div>
                 </div>
                 <div class="row" id="row1">
-                    <div class="col white-text" id="cadenceType1">
-                    </div>
+                    <label class="col white-text" id="cadenceType1">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput1" type="number" value=5 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength1" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
                 <div class="row alt" id="row2">
-                    <div class="col white-text" id="cadenceType2">
-                    </div>
+                    <label class="col white-text" id="cadenceType2">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput2" type="number" value=3 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength2" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
                 <div class="row" id="row3">
-                    <div class="col white-text" id="cadenceType3">
-                    </div>
+                    <label class="col white-text" id="cadenceType3">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput3" type="number" value=10 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength3" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
                 <div class="row alt" id="row4">
-                    <div class="col white-text" id="cadenceType4">
-                    </div>
+                    <label class="col white-text" id="cadenceType4">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput4" type="number" value=8 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength4" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
                 <div class="row" id="row5">
-                    <div class="col white-text" id="cadenceType5">
-                    </div>
+                    <label class="col white-text" id="cadenceType5">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput5" type="number" value=3 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength5" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
                 <div class="row alt" id="row6">
-                    <div class="col white-text" id="cadenceType6">
-                    </div>
+                    <label class="col white-text" id="cadenceType6">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput6" type="number" value=0 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength6" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
                 <div class="row" id="row7">
-                    <div class="col white-text" id="cadenceType7">
-                    </div>
+                    <label class="col white-text" id="cadenceType7">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput7" type="number" value=15 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength7" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
                 <div class="row alt" id="row8">
-                    <div class="col white-text" id="cadenceType8">
-                    </div>
+                    <label class="col white-text" id="cadenceType8">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput8" type="number" value=5 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength8" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
                 <div class="row" id="row9">
-                    <div class="col white-text" id="cadenceType9">
-                    </div>
+                    <label class="col white-text" id="cadenceType9">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput9" type="number" value=5 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength9" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
                 <div class="row alt" id="row10">
-                    <div class="col white-text" id="cadenceType10">
-                    </div>
+                    <label class="col white-text" id="cadenceType10">
+                    </label>
                     <div class="col white-text"><input class="form-control" id="inputThroughput10" type="number" value=5 oninput="updateChart()">
                     </div>
                     <div class="col white-text"><input class="form-control" id="inputLength10" type="number" value=10 oninput="updateChart()">
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-8 order-0 order-md-1 border white-text border-warning" id="chart">
-                <label id="labelCadenceType">Interactive Risk Profile</label>
-                <div class="row-1" id="chartStories"></div>
-                <div class="row-10" id="chartGradient"></div>
-                <div class="row-1" id="chartPercentage"></div>
-            </div>
         </div>
-        <h6 class="m-1 amber-text">Summary</h6>
-        <div class="border border-warning">
-            <div class="row white-text m-1 pt-3" id="outputSummary50th"></div>
-            <div class="row white-text m-1" id="outputSummary85th"></div>
-            <div class="row white-text m-1" id="outputSummary95th"></div>
+        <h6 class="m-1 amber-text">Interactive Risk Profile</h6>
+        <div class="border border-warning" id="chart">
+            <div class="row-1" id="chartPercentage"></div>
+            <div class="row-10" id="chartGradient"></div>
+            <div class="row-1" id="chartStories"></div>
         </div>
         <!-- Accordion card -->
         <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
@@ -508,9 +537,9 @@
         // set the dimensions and margins of the graph
         var margin = {
                 top: 20,
-                right: 80,
-                bottom: 40,
-                left: 50
+                right: 20,
+                bottom: 20,
+                left: 20
             },
             width = d3.select('#chart').node().getBoundingClientRect().width - margin.left - margin.right,
             height = d3.select('#dataInput').node().getBoundingClientRect().height - (margin.top * 3) - margin.bottom;
@@ -520,18 +549,19 @@
         // moves the 'group' element to the top left margin
         var storiesSVG = d3.select("#chartStories")
             .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", (height + margin.top + margin.bottom) * 0.4);
+            .attr("width", width)
+            .attr("transform", "translate(" + margin.left + ",0)");
 
         var gradientSVG = d3.select("#chartGradient")
             .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", (height + margin.top + margin.bottom) * 0.2);
+            .attr("width", width)
+            .attr("height", (height + margin.top + margin.bottom) * 0.2)
+            .attr("transform", "translate(" + margin.left + ",0)");
 
         var percentageSVG = d3.select("#chartPercentage")
             .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", (height + margin.top + margin.bottom) * 0.4);
+            .attr("width", width)
+            .attr("transform", "translate(" + margin.left + ",0)");
 
         //create x axis range
         var xAxisColour = d3.scaleSequential().interpolator(piecewise(d3.interpolateRgb, ["#D85D6C", "#E8BF61", "#2EB86B"])).domain([0, 1]);
@@ -568,53 +598,121 @@
         linearGradientStories.append("stop").attr('id', 'gradStoriesRight').attr("offset", 1).attr("stop-color", xAxisColour(0));
 
         percentage50th = percentageSVG.append('text')
-            .attr('dominant-baseline', 'hanging')
+            .attr('dominant-baseline', 'baseline')
             .attr('x', 0)
-            .attr('dy', '0.35em')
             .style('fill', 'white')
             .text('50%');
 
         percentage85th = percentageSVG.append('text')
-            .attr('dominant-baseline', 'hanging')
+            .attr('dominant-baseline', 'baseline')
             .attr('x', 0)
-            .attr('dy', '0.35em')
             .style('fill', 'white')
             .text('85%');
 
         percentage95th = percentageSVG.append('text')
-            .attr('dominant-baseline', 'hanging')
+            .attr('dominant-baseline', 'baseline')
             .attr('x', 0)
-            .attr('dy', '0.35em')
             .style('fill', 'white')
             .text('95%');
 
-        textHeight = percentage50th.node().getBBox().height;
-
         stories50th = storiesSVG
             .append('text')
-            .attr('dominant-baseline', 'baseline')
+            .attr('dominant-baseline', 'hanging')
             .attr('x', 0)
-            .attr('y', (height + margin.top + margin.bottom) * 0.4)
-            .style('fill', 'white')
-            .style('text-anchor', 'start')
-            //.attr('transform', 'rotate(-45)')
-        ;
+            .attr('dy', '0.35em')
+            .style('fill', 'white');
 
         stories85th = storiesSVG.append('text')
-            .attr('dominant-baseline', 'baseline')
+            .attr('dominant-baseline', 'hanging')
             .attr('x', 0)
-            .attr('y', (height + margin.top + margin.bottom) * 0.4)
+            .attr('dy', '0.35em')
             .style('fill', 'white');
 
         stories95th = storiesSVG.append('text')
-            .attr('dominant-baseline', 'baseline')
+            .attr('dominant-baseline', 'hanging')
             .attr('x', 0)
-            .attr('y', (height + margin.top + margin.bottom) * 0.4)
+            .attr('dy', '0.35em')
             .style('fill', 'white');
 
+        textHeight = percentage50th.node().getBBox().height;
+        textWidth = percentage50th.node().getBBox().width;
+
+        storiesSVG.attr('height', textHeight * 3);
+        percentageSVG.attr('height', textHeight * 3);
+
+        percentage50th.attr('y', textHeight * 3 - 5);
+        percentage85th.attr('y', textHeight * 3 - 5);
+        percentage95th.attr('y', textHeight * 3 - 5);
+
+        percentageLeftVal = percentageSVG.append('text')
+            .attr('dominant-baseline', 'baseline')
+            .attr('x', 0)
+            .attr('y', textHeight * 3)
+            .attr('dy', '-0.35em')
+            .style('fill', xAxisColour(0));
+
+        percentageLeftText = percentageSVG.append('text')
+            .attr('dominant-baseline', 'baseline')
+            .attr('x', 0)
+            .attr('y', textHeight * 2)
+            .attr('dy', '-0.35em')
+            .style('fill', xAxisColour(0));
+
+        percentageRightVal = percentageSVG.append('text')
+            .attr('dominant-baseline', 'baseline')
+            .attr('text-anchor', 'end')
+            .attr('x', $('#chart').width() - margin.left - margin.right)
+            .attr('y', textHeight * 3)
+            .attr('dy', '-0.35em')
+            .style('fill', xAxisColour(1));
+
+        percentageRightText = percentageSVG.append('text')
+            .attr('dominant-baseline', 'baseline')
+            .attr('text-anchor', 'end')
+            .attr('x', $('#chart').width() - margin.left - margin.right)
+            .attr('y', textHeight * 2)
+            .attr('dy', '-0.35em')
+            .style('fill', xAxisColour(1));
+
+        storiesLeftValue = storiesSVG
+            .append('text')
+            .attr('dominant-baseline', 'hanging')
+            .attr('x', 0)
+            .attr('dy', '0.35em')
+            .style('fill', xAxisColour(0))
+            .style('text-anchor', 'start');
+
+        storiesLeftText = storiesSVG
+            .append('text')
+            .attr('dominant-baseline', 'hanging')
+            .attr('x', 0)
+            .attr('y', textHeight)
+            .attr('dy', '0.35em')
+            .style('fill', xAxisColour(0))
+            .style('text-anchor', 'start')
+            .text('Sprints');
+
+        storiesRightValue = storiesSVG
+            .append('text')
+            .attr('dominant-baseline', 'hanging')
+            .attr('x', $('#chart').width() - margin.left - margin.right)
+            .attr('dy', '0.35em')
+            .style('fill', xAxisColour(1))
+            .style('text-anchor', 'end');
+
+        storiesRightText = storiesSVG
+            .append('text')
+            .attr('dominant-baseline', 'hanging')
+            .attr('x', $('#chart').width() - margin.left - margin.right)
+            .attr('y', textHeight)
+            .attr('dy', '0.35em')
+            .style('fill', xAxisColour(1))
+            .style('text-anchor', 'end')
+            .text('Sprints');
+
         gradient = gradientSVG.append('rect')
-            .attr('width', $('#chart').width())
-            .attr('height', $('#chart').height())
+            .attr('width', $('#chart').width() - margin.left - margin.right)
+            .attr('height', (height + margin.top + margin.bottom) * 0.2)
             .attr('fill', 'url(#gradientSprints)');
 
         line50th = gradientSVG.append('line')
@@ -1130,6 +1228,9 @@
 
                 stories50th.transition().duration(1000)
                     .attr('x', xAxis(outputData.sprints50th))
+                    //                    .style('opacity', {
+                    //                    //return 0.5
+                    //                })
                     .text(outputData.sprints50th);
 
                 stories85th.transition().duration(1000)
@@ -1163,6 +1264,38 @@
                 percentage95th.transition().duration(1000)
                     .attr('x', xAxis(outputData.sprints95th))
                     .text('95%');
+
+                storiesLeftValue
+                    .style('fill', xAxisColour(0))
+                    .text(xAxis.domain()[0]);
+
+                storiesRightValue
+                    .style('fill', xAxisColour(1))
+                    .text(xAxis.domain()[1]);
+
+                storiesLeftText
+                    .style('fill', xAxisColour(0))
+                    .text('Sprints');
+
+                storiesRightText
+                    .style('fill', xAxisColour(1))
+                    .text('Sprints');
+
+                percentageLeftText
+                    .style('fill', xAxisColour(0))
+                    .text('Low Confidence');
+
+                percentageRightText
+                    .style('fill', xAxisColour(1))
+                    .text('High Confidence');
+
+                percentageLeftVal
+                    .style('fill', xAxisColour(0))
+                    .text('0%');
+
+                percentageRightVal
+                    .style('fill', xAxisColour(1))
+                    .text('100%');
 
             } else if (configConstraint == "Time") {
 
@@ -1219,6 +1352,38 @@
                 percentage95th.transition().duration(1000)
                     .attr('x', xAxis(outputData.stories95th))
                     .text('95%');
+
+                storiesLeftValue
+                    .style('fill', xAxisColour(1))
+                    .text(xAxis.domain()[1]);
+
+                storiesRightValue
+                    .style('fill', xAxisColour(0))
+                    .text(xAxis.domain()[0]);
+
+                storiesLeftText
+                    .style('fill', xAxisColour(1))
+                    .text('Stories');
+
+                storiesRightText
+                    .style('fill', xAxisColour(0))
+                    .text('Stories');
+
+                percentageLeftText
+                    .style('fill', xAxisColour(1))
+                    .text('High Confidence');
+
+                percentageRightText
+                    .style('fill', xAxisColour(0))
+                    .text('Low Confidence');
+
+                percentageLeftVal
+                    .style('fill', xAxisColour(1))
+                    .text('100%');
+
+                percentageRightVal
+                    .style('fill', xAxisColour(0))
+                    .text('0%');
             }
 
 
