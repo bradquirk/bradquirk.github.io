@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Brad Quirk | Finding Relationships in Data</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/mdb.min.css" rel="stylesheet">
+    <link href="/css/style_lean_dashboard.css" rel="stylesheet">
+    <style>
+        /* set the CSS */
+
+        body {
+            background-color: #2E353D;
+        }
+
+        label {
+            font-size: 0.75em;
+        }
+
+        .alt {
+            background: #444;
+        }
+
+        .bar {
+            opacity: 0.1;
+        }
+
+        .line {
+            fill: none;
+            stroke: #FDBB32;
+            stroke-width: 5px;
+        }
+
+        .row-eq-height {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        button {
+            color: #2E353D;
+        }
+
+        g path {
+            stroke: white;
+        }
+
+        g line {
+            stroke: white;
+        }
+
+        g text {
+            fill: white;
+        }
+
+        #tooltip {
+            background-color: #222;
+            border: none;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            padding: 5px;
+            text-align: left;
+            color: white;
+            pointer-events: none
+        }
+
+    </style>
+    <!-- Hotjar Tracking Code for https://quirkules.github.io/ -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1230223,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50453785-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-50453785-4');
+
+    </script>
+
+</head>
+
+<body>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="/text/javascript" src="/js/mdb.js"></script>
+    <script src="/js/d3.min.js"></script>
+    <script src="/js/d3-color.js"></script>
+    <script src="/js/d3-scale-chromatic.js"></script>
+    <script src="/js/d3-interpolate.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/tf.js"></script>
+
+    <!-- Navbar-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark dark-color">
+        <a class="navbar-brand amber-text" href="/">
+            <img src="/img/sitelogo_yellow.png" height="30" alt="logo">
+        </a>
+        <a class="navbar-brand amber-text" href="/">
+            Brad Quirk
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="amber-text"><i class="fas fa-bars fa-1x"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item px-2">
+                    <a class="nav-link amber-text" href="/">Home</a>
+                </li>
+                <li class="nav-item px-2 active">
+                    <a class="nav-link amber-text" href="/portfolio/">Portfolio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link amber-text" href="/about/">About</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link amber-text" href="/contact/">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- Navbar-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col amber-text" id="header">
+                <h1>Finding Relationships in Data</h1>
+                <h6 class="mb-4">version 1.0</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="chart"></div>
+        </div>
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne1">
+                    <a data-toggle="collapse" data-parent="#accordionValue" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                        <h4 class="my-4 amber-text">
+                            The Value <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionValue">
+                    <div class="white-text">
+                        <p>The practicality of Agile is embedded within the world of complexity (from a Cynefin standpoint). As such, we have to assume that everything is subject to change; what worked for us today might not be the case tomorrow. As such it's incredibly important to understand the relationship between cause and effect with everything we do so that we can understand what continuous improvement looks like within our complex environments. Some examples include:</p>
+                        <ul>
+                            <li>"If we reduce the number of user stories in our epics, does that also reduce the cycle time of said epic?"</li>
+                            <li>"What is the biggest influencer of customer lead time? Is it the time spent in the backlog?"</li>
+                            <li>"What are the biggest bottlenecks in our delivery? Is there a particular stage (e.g. releasing) that causes the most delay?</li>
+                        </ul>
+                        <p>When we understand the tradeoffs of our delivery and product approach we can start to tailor our frameworks, mindsets and even culture around something that doesn't fit an off-the-shelf implementation strategy (e.g. SAFe), but rather build something that is fit for our own purpose and works for us.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionHypothesis" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne2">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionHypothesis" href="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
+                        <h4 class="my-4 amber-text">
+                            Hypothesis <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne2" class="collapse" role="tabpanel" aria-labelledby="headingOne2" data-parent="#accordionHypothesis">
+                    <div class="white-text">
+                        <p><i>I believe<br>
+                                that building a matrix of relationships between different quantifiable data points (e.g. Epic Size, Cycle Time etc.)<br>
+                                will enable managers and leaders to understand where the greatest opportunities for optimisation are<br>
+                                and lead to an informed continuous improvement strategy that produces more value.<br>
+                                I'll know I'm right when attempts to optimise one thing (e.g. Epic Size) can help improve something else in the system (e.g. Epic Cycle Time)<br>
+                                that might otherwise be difficult to improve in isolation.
+                            </i></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionMethod" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne3">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionMethod" href="#collapseOne3" aria-expanded="false" aria-controls="collapseOne3">
+                        <h4 class="my-4 amber-text">
+                            Method <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne3" class="collapse" role="tabpanel" aria-labelledby="headingOne3" data-parent="#accordionMethod">
+                    <div class="white-text">
+                        <ol>
+                            <li>For each user story in a Jira instance, collect every quantifiable data point that we can identify</li>
+                            <li>Once the data has been collected and 'n' amount of data points have been identified, create an 'n' x 'n' matrix plotting each point against each other.</li>
+                            <li>Using basic machine learning, calculate the line of best fit using linear regression (least squares method).</li>
+                            <li>Calculate how 'good' the line is (or the 'strength') and represent that as a percentage (with 100% being perfect).</li>
+                            <li>For each cell in the matrix, use a colour-code based on the strength to be able to easily identify the strongest relationships.</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+
+        <div class="accordion md-accordion" id="accordionInsights" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne4">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionInsights" href="#collapseOne4" aria-expanded="false" aria-controls="collapseOne4">
+                        <h4 class="my-4 amber-text">
+                            Insights <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne4" class="collapse" role="tabpanel" aria-labelledby="headingOne4" data-parent="#accordionInsights">
+                    <div class="white-text">
+                        TBD.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <!-- Accordion card -->
+        <div class="accordion md-accordion" id="accordionConclusion" role="tablist" aria-multiselectable="true">
+            <div>
+                <!-- Card header -->
+                <div class="header" role="tab" id="headingOne5">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionConclusion" href="#collapseOne5" aria-expanded="false" aria-controls="collapseOne5">
+                        <h4 class="my-4 amber-text">
+                            Conclusion <i class="fas fa-angle-down rotate-icon"></i>
+                        </h4>
+                    </a>
+                </div>
+                <!-- Card body -->
+                <div id="collapseOne5" class="collapse" role="tabpanel" aria-labelledby="headingOne5" data-parent="#accordionConclusion">
+                    <div class="white-text">
+                        TBD.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Accordion card -->
+        <div class="row">
+            <div class="col white-text">
+                <p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact me!</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var margin={top:10,right:200,bottom:150,left:150},tooltipMargin={top:20,right:20,bottom:60,left:60},width=$("#chart").width()-margin.left-margin.right,height=.6*$(window).innerHeight()-margin.top-margin.bottom,tooltipWidth=.4*$(window).innerHeight()-tooltipMargin.left-tooltipMargin.right,tooltipHeight=.4*$(window).innerHeight()-tooltipMargin.top-tooltipMargin.bottom,tooltip=d3.select("#chart").append("div").attr("id","tooltip").style("max-width",1.2*tooltipWidth).style("position","absolute").style("visibility","hidden");tooltipSVG=tooltip.append("p").attr("id","tooltipText").attr("font-size","0.5em"),tooltipSVG=tooltip.append("svg").attr("width",tooltipWidth+tooltipMargin.left+tooltipMargin.right).attr("height",tooltipHeight+tooltipMargin.top+tooltipMargin.bottom).style("background-color","#333").append("g").attr("transform","translate("+tooltipMargin.left+","+tooltipMargin.top+")");var tooltipX=d3.scaleLinear().domain([0,1]).range([0,tooltipWidth]);tooltipSVG.append("g").attr("class","x axis").attr("transform","translate(0,"+tooltipHeight+")").call(d3.axisBottom(tooltipX)),tooltipSVG.append("text").attr("id","tooltipXText").attr("transform","translate("+tooltipWidth/2+" ,"+(tooltipHeight+tooltipMargin.top+20)+")").style("text-anchor","middle");var tooltipY=d3.scaleLinear().domain([0,1]).range([tooltipHeight,0]);tooltipSVG.append("g").attr("class","y axis").call(d3.axisLeft(tooltipY)),tooltipSVG.append("text").attr("id","tooltipYText").attr("transform","rotate(-90)").attr("x",0-tooltipHeight/2).attr("dy","1em").style("text-anchor","middle"),d3.select("#tooltipYText").attr("y",0-tooltipMargin.left),tooltipSVG.append("g").attr("id","scatterGroup");var PearsonPath=d3.line().x(t=>tooltipX(t.xValues)).y(t=>tooltipY(t.yValues));tooltipSVG.append("path").attr("id","tooltipLine").attr("stroke-width","1px").style("stroke","white"),tooltipSVG.append("text").append("textPath").attr("id","tooltipLineText").attr("xlink:href","#tooltipLine").attr("startOffset","50%").style("text-anchor","middle").style("fill","white").style("dy",-10);var dataTable=[];d3.csv("data.csv",function(t,e){if(t)throw t;for(var o=d3.keys(e[0]).filter(function(t){return"key"!==t&&"index"!==t}),a=(o.length,0);a<o.length;a++)for(var i=0;i<o.length;i++){var l={},r=e.map(t=>+t[o[a]]),n=e.map(t=>+t[o[i]]);X(r,n,!0,l),r.filter((t,e,o)=>o.indexOf(t)===e).length>=3&&n.filter((t,e,o)=>o.indexOf(t)===e).length>=3&&dataTable.push({xName:o[a],yName:o[i],xValues:r,yValues:n,linReg:l,pearson:Math.pow(M(r,n),2)})}o=dataTable.map(t=>t.xName).filter((t,e,o)=>o.indexOf(t)===e);var p=d3.select("#chart").append("svg").attr("width",width+margin.left+margin.right).attr("height",height+margin.top+margin.bottom).append("g").attr("transform","translate("+margin.left+","+margin.top+")"),s=d3.scaleBand().range([0,width]).domain(o).padding(.01);p.append("g").attr("transform","translate(0,"+height+")").call(d3.axisBottom(s)).selectAll("text").attr("class","axisValues").attr("id",t=>"xAxis"+b(t.replace("("," ").replace(")"," "))).style("text-anchor","end").attr("dx","-.8em").attr("dy",".15em").attr("transform","rotate(-45)");var d=d3.scaleBand().range([height,0]).domain(o.reverse()).padding(.01);p.append("g").call(d3.axisLeft(d)).selectAll("text").attr("class","axisValues").attr("id",t=>"yAxis"+b(t.replace("("," ").replace(")"," ")));var h=d3.scaleSequential().interpolator(d3.interpolateCool).domain([0,1]),c=d3.scaleSequential().interpolator(d3.interpolateWarm);p.selectAll().data(dataTable).enter().append("rect").attr("x",function(t){return s(t.xName)}).attr("y",function(t){return d(t.yName)}).attr("width",s.bandwidth()).attr("height",d.bandwidth()).style("fill",t=>t.xName==t.yName||t.xValues.filter(t=>t>0).length<=1||t.yValues.filter(t=>t>0).length<=1?"#333":h(t.pearson)).attr("box-sizing","border-box").on("mouseout",function(){d3.selectAll(".axisValues").transition().attr("fill","white"),tooltip.transition().style("visibility","hidden")}).on("mouseover",function(t){d3.select("#xAxis"+b(t.xName.replace("("," ").replace(")"," "))).transition().attr("fill",h(.5)),d3.select("#yAxis"+b(t.yName.replace("("," ").replace(")"," "))).transition().attr("fill",h(.5)),S(d3.mouse(this),t)}).on("mousemove",function(t){S(d3.mouse(this),t)});var g=d3.range(20).map(t=>h(t/20)).reverse();p.append("defs").append("linearGradient").attr("id","gradient-colors").attr("x1","0%").attr("y1","0%").attr("x2","0%").attr("y2","100%").selectAll("stop").data(g).enter().append("stop").attr("offset",function(t,e){return e/(g.length-1)}).attr("stop-color",function(t){return t});var m=p.append("g").attr("class","legendWrapper").attr("transform","translate("+(width+10)+","+margin.top+")");m.append("rect").attr("class","legendRect").attr("y",10).attr("width","15px").attr("height",height/2).style("fill","url(#gradient-colors)"),m.append("text").attr("class","legendTitle").text("Relationship Strength");var x=d3.scaleLinear().domain([0,1]).range([height/2-1,0]);m.append("g").attr("class","legendAxis").attr("transform","translate(15,10)").call(d3.axisRight(x).ticks(5).tickFormat(d3.format(".0%"))).selectAll("path").style("stroke","none");var f=p,u={x:window.scrollX,y:window.scrollY,w:window.innerWidth,h:window.innerHeight},y=d3.select("#chart"),w=(y.node().offsetWidth,y.node().offsetHeight,document.width,document.height,function(t){for(var e=d3.select("body").node(),o=0,a=0;null!=t&&t!=e;o+=t.offsetLeft||t.clientLeft,a+=t.offsetTop||t.clientTop,t=t.offsetParent||t.parentNode);return{x:o,y:a}}(f.node())),v={x:15,y:15},V=$("#chart").position();function b(t){return t.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g,function(t,e){return 0==+t?"":0==e?t.toLowerCase():t.toUpperCase()})}function X(t,e,o,a){"object"==typeof o&&(a=o,o=!1),void 0===a&&(a={});for(var i=0,l=0,r=0,n=0,p=t.length,s=0;s<p;++s)i+=t[s],l+=e[s],r+=t[s]*e[s],n+=t[s]*t[s];if(a.m=(r-i*l/p)/(n-i*i/p),a.b=l/p-a.m*i/p,o){for(var d=0,h=0;h<p;++h)d+=(e[h]-a.b-a.m*t[h])*(e[h]-a.b-a.m*t[h]);var c=p*n-i*i,g=1/(p-2)*d;a.bErr=Math.sqrt(g/c*n),a.mErr=Math.sqrt(p/c*g)}return function(t){return a.m*t+a.b}}function M(t,e){let{min:o,pow:a,sqrt:i}=Math,l=(t,e)=>t+e,r=o(t.length,e.length);if(0===r)return 0;[t,e]=[t.slice(0,r),e.slice(0,r)];let[n,p]=[t,e].map(t=>t.reduce(l)),[s,d]=[t,e].map(t=>t.reduce((t,e)=>t+a(e,2),0)),h=t.map((t,o)=>t*e[o]).reduce(l),c=i((s-a(n,2)/r)*(d-a(p,2)/r));return 0===c?0:(h-n*p/r)/c}function S(t,e){var o=document.getElementById("chart").offsetLeft;d3.event.pageX,margin.left;tooltipSVG.select(".x").transition().call(d3.axisBottom(tooltipX)),tooltipSVG.select(".y").transition().call(d3.axisLeft(tooltipY));var a=d3.mouse(f.node());u.x=window.scrollX,u.y=window.scrollY,a[0]+=w.x,a[1]+=w.y,tooltip.style("right",""),tooltip.style("left",""),tooltip.style("bottom",""),tooltip.style("top",""),d3.select("#tooltipText").html(e.xName+" vs. "+e.yName+"</br>Strength: <span style='color:"+h(e.pearson)+";'>"+d3.format(".0%")(e.pearson)+"</span>"),tooltip.style("height",$("#heading").height()),a[0]>$(window).innerWidth()/2?tooltip.style("left",event.clientX-V.left-v.x-$("#tooltip").width()+"px"):tooltip.style("left",event.clientX-V.left+v.x+"px"),a[1]>$(window).innerHeight()/2?tooltip.style("top",event.clientY-V.top-v.y-$("#tooltip").height()+"px"):tooltip.style("top",event.clientY-V.top+v.y+"px"),tooltip.style("visibility","visible");for(var i=[],l=e.xValues.length-1;l>=0;l--)i.push({xValues:e.xValues[l],yValues:e.yValues[l]});tooltipX.domain([0,d3.max(e.xValues)]),tooltipY.domain([0,d3.max(e.yValues)]),c.domain(tooltipX.domain());var r=tooltipSVG.select("#scatterGroup").selectAll("circle").data(i);r.exit().remove(),r.enter().append("circle").attr("r",0),r.transition().attr("cx",t=>tooltipX(t.xValues)).attr("cy",t=>tooltipY(t.yValues)).attr("r",3).style("opacity",.5).attr("fill",t=>c(t.xValues));var n=[],p=e.linReg;for(l=0;l<tooltipX.domain()[1];l+=tooltipX.domain()[1]/50)n.push({xValues:l,yValues:p.m*l+p.b});n=n.filter(t=>t.xValues>=tooltipX.domain()[0]&&t.xValues<=tooltipX.domain()[1]&&t.yValues>=tooltipY.domain()[0]&&t.yValues<=tooltipY.domain()[1]);var s=tooltipSVG.selectAll("#tooltipLine").data([n]);s.enter().append("path").attr("id","tooltipLine").merge(s).transition().attr("d",PearsonPath).attr("fill","none").attr("stroke-width",2.5),d3.select("#tooltipLineText").text(function(){return p.b>0?"y = "+p.m.toFixed(2)+"*x + "+p.b.toFixed(2):"y = "+p.m.toFixed(2)+"*x "+p.b.toFixed(2)}),d3.select("#tooltipXText").text(e.xName),d3.select("#tooltipYText").text(e.yName)}});
+    </script>
+</body>
