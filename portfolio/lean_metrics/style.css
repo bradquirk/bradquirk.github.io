@@ -1,0 +1,97 @@
+    #header {
+        /*        padding: 10px 0 0 10px;*/
+        font-family: "Poppins";
+        color: white;
+    }
+
+    #chart {
+        /*        padding: 10px 10px 10px 10px;*/
+        font-family: "Arial";
+    }
+
+    /* Required height of parents of the Full Page Intro and Intro itself */
+
+    html,
+    body,
+    .view {
+        height: 100%;
+    }
+
+    /* Navbar animation */
+
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .top-nav-collapse {
+        background-color: #000;
+    }
+
+    /* Adding color to the Navbar on mobile */
+
+    @media only screen and (max-width: 768px) {
+        .navbar {
+            background-color: #000;
+        }
+    }
+
+    /* Footer color for sake of consistency with Navbar */
+
+    .page-footer {
+        background-color: rgba(0, 0, 0, .2);
+
+    }
+
+    /* Full Page Carousel itself*/
+
+    .carousel {
+        height: 100%;
+    }
+
+    .carousel .carousel-inner {
+        height: 100%;
+    }
+
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+        height: 100%;
+    }
+
+    body {
+        background: #222;
+        background-image: url("/img/background_black_white_dark.jpg");
+        background-size: 150%;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    footer {
+        background-color: transparent !important;
+    }
+
+    div.view.overlay {
+        background: #2E2E2E;
+    }
+
+    div.card {
+        background: #2E2E2E;
+    }
+
+    .heading {
+        background-color: #2E2E2E;
+    }
+
+    .container {
+        background: #2E2E2E;
+    }
+
+    .axis line {
+        stroke: white;
+    }
+
+    .axis path {
+        stroke: white;
+    }
+
+    .axis text {
+        fill: white;
+    }

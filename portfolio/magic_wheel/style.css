@@ -1,0 +1,128 @@
+   /* set the CSS */
+
+   body {
+       font-weight: 400;
+       background-color: #2E353D;
+       margin-top: 10px;
+   }
+   #header {
+       padding: 10px 0 0 10px;
+       font-family: 'Poppins', sans-serif;
+       color: white;
+   }
+
+   #legend {
+       padding: 10px 0 0 10px;
+   }
+
+   #sequence {
+       padding: 10px 10px 10px 10px;
+   }
+
+   #sequence text,
+   #legend {
+       font-family: "Arial";
+       font-size: 0.75em;
+       font-weight: 600;
+       fill: #fff;
+   }
+
+   #chart {
+       padding: 10px 10px 10px 10px;
+       font-family: "Arial";
+   }
+
+   #chart path {
+       stroke: #fff;
+   }
+
+   #chart img {
+       max-width: 100%;
+       height: auto;
+   }
+
+   #chart p {
+       padding: 10px 10px 10px 10px;
+       background-color: red;
+       color: white;
+       text-align: center;
+   }
+
+   #percentage {
+       font-size: 2.5em;
+   }
+
+   /* Required height of parents of the Full Page Intro and Intro itself */
+
+   html,
+   body,
+   .view {
+       height: 100%;
+   }
+
+   /* Navbar animation */
+
+   .navbar {
+       background-color: rgba(0, 0, 0, 0.2);
+   }
+
+   .top-nav-collapse {
+       background-color: #000;
+   }
+
+   /* Adding color to the Navbar on mobile */
+
+   @media only screen and (max-width: 768px) {
+       .navbar {
+           background-color: #000;
+       }
+   }
+
+   /* Footer color for sake of consistency with Navbar */
+
+   .page-footer {
+       background-color: rgba(0, 0, 0, .2);
+
+   }
+
+   /* Full Page Carousel itself*/
+
+   .carousel {
+       height: 100%;
+   }
+
+   .carousel .carousel-inner {
+       height: 100%;
+   }
+
+   .carousel .carousel-inner .carousel-item,
+   .carousel .carousel-inner .active {
+       height: 100%;
+   }
+
+   body {
+       background: #222;
+       background-image: url("/img/background_black_white_dark.jpg");
+       background-size: 150%;
+       font-family: 'Poppins', sans-serif;
+   }
+
+   footer {
+       background-color: transparent !important;
+   }
+
+   div.view.overlay {
+       background: #2E2E2E;
+   }
+
+   div.card {
+       background: #2E2E2E;
+   }
+
+   .heading {
+       background-color: #2E2E2E;
+   }
+
+   .container {
+       background: #2E2E2E;
+   }
