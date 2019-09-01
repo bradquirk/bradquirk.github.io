@@ -1,0 +1,344 @@
+Key,Cost of Delay,Resolved Name,Story Points,Created Date,First In Progress Date,Last Resolved Date,Cycle Time (Bus. Days),Lead Time (Bus. Days),Epic Name
+KEY-100,Expedite,Rejected,0,2018-10-05T09:56:01,2019-01-22T08:23:01,2019-01-22T08:24:01,1,79,Create new customer channel
+KEY-101,Expedite,Released,0,2018-10-05T09:57:01,2018-11-13T11:32:01,2018-11-13T11:32:01,1,28,Create new customer channel
+KEY-102,Expedite,Released,0,2018-10-05T09:57:01,2019-01-22T08:24:01,2019-01-24T10:44:01,3,80,Create new customer channel
+KEY-103,Expedite,Duplicate,0,2018-10-05T09:57:01,2019-01-14T16:43:01,2019-01-22T08:29:01,6,79,Create new customer channel
+KEY-104,Standard,Released,0,2018-10-05T09:57:01,2019-01-22T08:24:01,2019-01-22T08:25:01,1,79,Create new customer channel
+KEY-106,Standard,Released,0,2018-10-05T09:58:01,2019-01-22T08:25:01,2019-02-13T12:32:01,17,94,Acquire VC funding
+KEY-107,Expedite,Released,0,2018-10-05T09:58:01,2018-10-05T13:17:01,2018-10-05T13:17:01,1,1,Acquire VC funding
+KEY-108,Standard,Released,0,2018-10-05T09:58:01,2018-10-08T17:19:01,2018-10-16T14:20:01,6,8,Acquire VC funding
+KEY-109,Standard,Released,0,2018-10-05T09:59:01,2019-01-22T08:27:01,2019-01-24T09:54:01,3,79,Acquire VC funding
+KEY-110,Standard,Released,8,2018-10-05T09:59:01,2018-10-08T16:56:01,2019-04-23T15:16:01,141,143,Acquire VC funding
+KEY-111,Standard,Released,0,2018-10-05T10:00:01,2018-10-05T10:22:01,2018-10-08T16:36:01,2,4,Acquire VC funding
+KEY-112,Expedite,Released,0,2018-10-05T10:01:01,2018-10-05T13:20:01,2018-10-05T13:21:01,1,1,Acquire VC funding
+KEY-113,Standard,Released,0,2018-10-05T10:01:01,2018-10-05T13:18:01,2018-10-08T16:36:01,2,4,Acquire VC funding
+KEY-114,Standard,Released,0,2018-10-05T10:02:01,2018-10-11T10:06:01,2018-10-22T13:59:01,8,14,Acquire VC funding
+KEY-116,Standard,Released,0,2018-10-05T10:02:01,2018-10-15T16:10:01,2018-12-04T10:14:01,36,43,Acquire VC funding
+KEY-118,Standard,Released,0,2018-10-05T10:04:01,2018-11-05T16:14:01,2018-11-05T16:14:01,1,24,Acquire VC funding
+KEY-120,Expedite,Released,0,2018-10-05T10:05:01,2018-11-08T12:54:01,2018-11-08T12:54:01,1,25,Build customer retention model
+KEY-121,Expedite,Released,0,2018-10-05T10:05:01,2018-11-16T11:14:01,2019-01-10T11:01:01,39,70,Build customer retention model
+KEY-122,Expedite,Released,0,2018-10-05T10:05:01,2019-01-09T09:24:01,2019-02-05T14:24:01,20,88,Create new revenue stream
+KEY-123,Standard,Released,0,2018-10-08T16:49:01,2018-10-08T17:25:01,2018-10-30T00:13:01,16,16,Optimise profit margins
+KEY-124,Standard,Released,0,2018-10-08T16:56:01,2018-10-11T12:47:01,2018-10-15T10:16:01,2,5,Prevent employee attrition
+KEY-125,Standard,Released,0,2018-10-15T11:45:01,2018-10-15T11:50:01,2019-01-30T12:33:01,78,78,Address product quality issues
+KEY-126,Standard,Released,0,2018-10-15T17:17:01,2018-10-16T17:38:01,2018-10-22T16:46:01,4,5,Prevent employee attrition
+KEY-127,Standard,Released,0,2018-10-15T17:21:01,2018-10-16T17:38:01,2018-10-30T00:07:01,10,11,Prevent employee attrition
+KEY-128,Standard,Released,0,2018-10-15T17:24:01,2018-10-25T09:26:01,2018-10-25T09:34:01,1,6,Rebuild website
+KEY-132,Standard,Released,0,2018-10-15T17:29:01,2018-10-30T00:12:01,2018-10-30T00:13:01,1,11,Build customer retention model
+KEY-133,Standard,Released,0,2018-10-16T15:03:01,2018-10-16T17:38:01,2018-10-31T14:13:01,11,11,Build customer retention model
+KEY-134,Standard,Released,0,2018-10-22T13:43:01,2018-10-22T14:36:01,2018-10-22T14:36:01,1,1,Build customer retention model
+KEY-135,Standard,Released,0,2018-10-22T13:51:01,2018-10-22T14:41:01,2018-10-22T14:41:01,1,1,Address product quality issues
+KEY-136,Expedite,Released,0,2018-10-22T13:58:01,2018-10-22T14:47:01,2018-10-22T14:47:01,1,1,Build customer retention model
+KEY-137,Standard,Released,0,2018-10-22T14:01:01,2018-10-22T15:49:01,2018-10-22T15:49:01,1,1,Build customer retention model
+KEY-138,Standard,Released,0,2018-10-22T14:08:01,2018-10-22T14:49:01,2018-10-22T14:49:01,1,1,Build customer retention model
+KEY-139,Standard,Released,0,2018-10-22T14:13:01,2018-10-22T14:18:01,2018-10-22T14:18:01,1,1,Build customer retention model
+KEY-14,Standard,Rejected,0,2018-10-04T13:17:01,2018-10-16T17:17:01,2018-10-23T16:20:01,5,14,Procure office supplies
+KEY-140,Standard,Released,0,2018-10-22T14:14:01,2018-10-22T14:45:01,2018-10-22T14:45:01,1,1,Acquire VC funding
+KEY-141,Standard,Released,0,2018-10-22T14:21:01,2018-10-22T14:51:01,2018-10-22T14:51:01,1,1,Acquire VC funding
+KEY-142,Standard,Released,0,2018-10-22T14:26:01,2018-10-22T14:54:01,2018-10-22T14:54:01,1,1,Move to new office space
+KEY-143,Standard,Released,0,2018-10-22T14:26:01,2018-10-22T14:38:01,2018-10-22T14:38:01,1,1,Acquire VC funding
+KEY-168,Standard,Released,0,2018-10-22T16:09:01,2018-10-22T16:09:01,2018-10-22T16:09:01,1,1,Improve hiring strategy
+KEY-170,Standard,Released,0,2018-10-22T16:11:01,2018-10-22T16:11:01,2018-10-22T16:11:01,1,1,Move to new office space
+KEY-171,Standard,Released,0,2018-10-22T16:11:01,2018-10-22T16:12:01,2018-10-22T16:12:01,1,1,Move to new office space
+KEY-172,Standard,Released,0,2018-10-22T16:14:01,2018-10-22T16:14:01,2018-10-22T16:15:01,1,1,Acquire VC funding
+KEY-173,Standard,Released,0,2018-10-23T15:02:01,2018-10-23T15:03:01,2019-05-22T15:01:01,151,151,Address product quality issues
+KEY-174,Standard,Released,0,2018-10-23T16:36:01,2018-10-26T09:49:01,2018-11-13T11:49:01,13,15,Acquire VC funding
+KEY-175,Standard,Released,0,2018-10-24T09:17:01,2018-12-04T10:25:01,2019-01-22T08:31:01,35,64,Address product quality issues
+KEY-176,Standard,Released,0,2018-10-24T09:24:01,2018-10-24T09:24:01,2019-02-13T16:29:01,81,81,Acquire VC funding
+KEY-177,Standard,Released,0,2018-10-24T09:29:01,2018-11-02T11:21:01,2018-11-02T11:22:01,1,6,Address product quality issues
+KEY-178,Standard,Released,0,2018-10-25T08:53:01,2019-02-13T21:47:01,2019-02-13T21:47:01,1,80,Sunset old product
+KEY-179,Standard,Duplicate,0,2018-10-30T00:10:01,2019-02-13T21:47:01,2019-02-13T21:47:01,1,77,Acquire VC funding
+KEY-180,Standard,Duplicate,0,2018-10-30T11:54:01,2019-02-13T21:44:01,2019-02-13T21:45:01,1,77,Acquire VC funding
+KEY-181,Standard,Duplicate,0,2018-11-05T15:30:01,2018-12-06T11:29:01,2019-02-13T11:56:01,50,72,Build customer retention model
+KEY-182,Standard,Released,0,2018-11-05T15:42:01,2018-11-13T11:51:01,2019-05-17T10:34:01,133,137,Build customer retention model
+KEY-183,Expedite,Released,0,2018-11-05T15:53:01,2018-11-13T11:24:01,2018-11-28T17:54:01,12,18,Build customer retention model
+KEY-184,Standard,Released,0,2018-11-05T15:58:01,2018-11-13T15:26:01,2018-11-13T15:26:01,1,6,Prevent employee attrition
+KEY-185,Standard,Released,0,2018-11-05T15:59:01,2018-11-13T11:52:01,2018-11-13T15:28:01,1,6,Increase web checkout security
+KEY-186,Standard,Released,0,2018-11-05T16:13:01,2018-11-08T11:47:01,2018-11-13T11:27:01,3,6,Optimise profit margins
+KEY-187,Standard,Released,0,2018-11-08T13:29:01,2019-01-14T17:23:01,2019-05-02T10:27:01,78,125,Improve employee morale
+KEY-189,Standard,Released,0,2018-11-08T13:39:01,2018-12-06T11:29:01,2019-02-08T11:39:01,47,66,Improve employee morale
+KEY-190,Standard,Released,0,2018-11-08T13:49:01,2019-01-14T12:47:01,2019-03-20T13:23:01,48,94,Move to new office space
+KEY-195,Standard,Released,3,2018-11-12T20:57:01,2018-11-13T15:19:01,2018-12-17T16:34:01,25,25,Move to new office space
+KEY-196,Standard,Released,0,2018-11-12T21:00:01,2018-11-21T12:20:01,2018-11-21T12:21:01,1,7,Move to new office space
+KEY-197,Standard,Released,0,2018-11-12T21:03:01,2018-11-16T10:57:01,2018-12-03T15:34:01,12,15,Improve employee morale
+KEY-198,Standard,Released,0,2018-11-12T21:07:01,2018-11-21T12:00:01,2018-12-03T15:34:01,9,15,Promote our new product
+KEY-199,Standard,Released,0,2018-11-12T21:11:01,2018-11-13T15:16:01,2018-12-11T11:45:01,20,21,Create product differentiator
+KEY-200,Standard,Released,0,2018-11-12T21:33:01,2018-11-13T15:18:01,2018-11-30T14:57:01,13,12,Address logistical inefficiencies
+KEY-201,Standard,Released,0,2018-11-12T21:34:01,2018-11-16T10:57:01,2018-11-30T14:54:01,11,12,Address logistical inefficiencies
+KEY-202,Fixed Date,Released,0,2018-11-12T21:38:01,2018-11-13T15:18:01,2018-12-04T10:17:01,15,16,Address logistical inefficiencies
+KEY-203,Standard,Released,0,2018-11-13T11:19:01,2018-11-13T11:21:01,2018-11-13T11:22:01,1,1,Create employee training strategy
+KEY-204,Standard,Released,0,2018-11-13T11:30:01,2018-11-13T11:31:01,2018-11-13T11:31:01,1,1,Create employee training strategy
+KEY-205,Standard,Released,0,2018-11-13T11:35:01,2018-12-04T10:22:01,2018-12-04T10:22:01,1,15,Create employee training strategy
+KEY-208,Standard,Released,0,2018-11-15T10:11:01,2019-02-25T12:26:01,2019-03-12T16:09:01,12,84,Acquire VC funding
+KEY-213,Fixed Date,Released,0,2018-11-20T08:57:01,2018-12-17T16:33:01,2018-12-17T16:33:01,1,20,Move to new office space
+KEY-216,Standard,Released,8,2018-11-20T10:12:01,2018-12-17T16:31:01,2018-12-17T16:32:01,1,20,Address logistical inefficiencies
+KEY-217,Standard,Released,2,2018-11-20T10:17:01,2018-12-17T16:31:01,2018-12-17T16:32:01,1,20,Create product differentiator
+KEY-218,Standard,Released,1,2018-11-20T10:21:01,2019-01-15T16:19:01,2019-01-17T08:54:01,2,42,Create product differentiator
+KEY-22,Standard,Released,0,2018-10-04T13:28:01,2018-10-08T16:58:01,2018-10-15T16:13:01,5,10,Move to new office space
+KEY-220,Expedite,Released,1,2018-11-20T10:23:01,2018-12-04T10:42:01,2018-12-04T10:43:01,1,11,Rebrand struggling product
+KEY-221,Standard,Released,1,2018-11-20T10:39:01,2018-12-04T10:18:01,2018-12-04T10:18:01,1,10,Rebrand struggling product
+KEY-222,Standard,Released,1,2018-11-20T10:56:01,2018-12-19T09:00:01,2018-12-19T09:01:01,1,21,Create product differentiator
+KEY-223,Standard,Released,2,2018-11-20T10:58:01,2018-12-04T15:10:01,2019-02-07T20:23:01,48,56,Create employee training strategy
+KEY-224,Standard,Released,8,2018-11-20T11:01:01,2018-12-04T16:12:01,2018-12-11T11:45:01,5,16,Rebrand struggling product
+KEY-225,Standard,Released,5,2018-11-20T11:02:01,2019-01-15T16:47:01,2019-01-17T08:54:01,2,42,Create employee training strategy
+KEY-229,Standard,Released,0,2018-11-20T11:23:01,2019-02-25T12:24:01,2019-03-14T16:47:01,14,81,Patent new product
+KEY-23,Standard,Released,0,2018-10-04T13:29:01,2018-10-16T11:33:01,2018-12-04T10:35:01,35,43,Move to new office space
+KEY-230,Fixed Date,Released,5,2018-11-20T11:23:01,2019-01-16T14:42:01,2019-03-08T14:25:01,37,77,Rebrand struggling product
+KEY-231,Standard,Released,0,2018-11-20T11:27:01,2019-01-24T13:48:01,2019-01-24T13:48:01,1,46,Patent new product
+KEY-232,Standard,Released,5,2018-11-20T11:28:01,2018-12-04T15:10:01,2019-01-23T09:53:01,36,46,Create new revenue stream
+KEY-233,Standard,Released,2,2018-11-20T11:29:01,2019-01-14T16:26:01,2019-01-24T09:55:01,8,47,Optimise profit margins
+KEY-235,Standard,Duplicate,0,2018-11-20T11:32:01,2019-01-24T13:48:01,2019-01-24T13:48:01,1,46,Patent new product
+KEY-236,Standard,Released,5,2018-11-20T11:32:01,2018-12-17T08:54:01,2018-12-17T08:55:01,1,19,Create new customer channel
+KEY-237,Standard,Released,2,2018-11-20T11:34:01,2019-01-23T13:58:01,2019-01-23T13:58:01,1,47,Optimise profit margins
+KEY-239,Standard,Released,3,2018-11-20T11:34:01,2018-12-17T08:55:01,2018-12-27T10:28:01,9,27,Create new customer channel
+KEY-24,Standard,Released,0,2018-10-04T13:29:01,2018-10-08T16:58:01,2018-10-08T17:25:01,1,5,Move to new office space
+KEY-240,Standard,Released,3,2018-11-20T11:34:01,2018-11-30T14:58:01,2019-01-15T15:43:01,33,41,Procure office supplies
+KEY-241,Standard,Released,3,2018-11-20T11:35:01,2018-12-17T08:56:01,2019-01-02T10:36:01,13,31,Create new customer channel
+KEY-242,Standard,Released,1,2018-11-20T11:36:01,2018-11-27T11:09:01,2019-01-11T14:06:01,34,37,Optimise profit margins
+KEY-243,Standard,Released,5,2018-11-20T11:36:01,2018-12-17T14:37:01,2018-12-27T11:05:01,8,27,Create new customer channel
+KEY-244,Expedite,Released,3,2018-11-20T11:37:01,2019-01-21T08:01:01,2019-02-07T13:27:01,14,56,Create new customer channel
+KEY-245,Standard,Released,0,2018-11-20T11:39:01,2018-12-04T10:20:01,2019-01-18T10:07:01,33,41,Prevent employee attrition
+KEY-246,Standard,Released,1,2018-11-20T11:39:01,2018-12-03T17:35:01,2018-12-03T17:35:01,1,10,Address logistical inefficiencies
+KEY-248,Standard,Released,1,2018-11-20T11:44:01,2018-12-11T14:24:01,2018-12-11T14:25:01,1,16,Address logistical inefficiencies
+KEY-249,Standard,Released,3,2018-11-20T11:44:01,2018-12-17T14:36:01,2019-01-18T07:39:01,24,41,Create new customer channel
+KEY-250,Standard,Rejected,3,2018-11-20T11:45:01,2019-01-21T08:01:01,2019-02-26T16:33:01,27,71,Move to new office space
+KEY-251,Standard,Rejected,0,2018-11-20T11:45:01,2019-01-18T10:15:01,2019-01-18T10:15:01,1,41,Create new customer channel
+KEY-253,Standard,Rejected,0,2018-11-20T11:47:01,2019-01-18T10:15:01,2019-01-18T10:15:01,1,41,Prevent employee attrition
+KEY-254,Standard,Rejected,3,2018-11-20T11:48:01,2019-01-14T21:22:01,2019-01-15T08:53:01,1,40,Prevent employee attrition
+KEY-255,Standard,Rejected,0,2018-11-20T11:49:01,2019-01-18T10:15:01,2019-01-18T10:15:01,1,41,Create new customer channel
+KEY-256,Standard,Rejected,3,2018-11-20T11:49:01,2018-12-17T14:36:01,2019-01-29T08:22:01,31,50,Prevent employee attrition
+KEY-257,Standard,Rejected,3,2018-11-20T11:49:01,2019-01-14T21:22:01,2019-01-15T08:53:01,1,40,Create new customer channel
+KEY-258,Standard,Released,0,2018-11-20T11:51:01,2019-02-25T16:53:01,2019-02-25T16:54:01,1,70,Create new customer channel
+KEY-259,Standard,Released,1,2018-11-20T12:00:01,2019-01-15T08:41:01,2019-02-08T14:32:01,19,57,Prevent employee attrition
+KEY-26,Standard,Rejected,0,2018-10-04T13:30:01,2018-10-05T10:41:01,2018-10-05T10:42:01,1,1,Move to new office space
+KEY-260,Standard,Released,2,2018-11-20T12:04:01,2019-01-15T08:35:01,2019-01-15T08:36:01,1,40,Rebuild website
+KEY-261,Standard,Released,1,2018-11-20T12:07:01,2019-01-23T13:55:01,2019-01-23T13:56:01,1,47,Rebuild website
+KEY-264,Standard,Released,2,2018-11-20T12:39:01,2018-11-27T12:18:01,2019-01-23T12:02:01,41,46,Address product quality issues
+KEY-267,Standard,Released,8,2018-11-27T11:38:01,2019-02-26T13:55:01,2019-04-23T15:14:01,41,106,Rebuild website
+KEY-268,Standard,Released,5,2018-11-27T12:15:01,2019-02-26T13:55:01,2019-04-23T15:14:01,41,106,Procure office supplies
+KEY-269,Standard,Released,5,2018-11-27T13:14:01,2019-02-26T13:56:01,2019-03-04T10:02:01,4,69,Procure office supplies
+KEY-27,Standard,Rejected,0,2018-10-04T13:30:01,2019-01-09T09:35:01,2019-01-09T09:35:01,1,69,Move to new office space
+KEY-270,Standard,Released,13,2018-11-27T13:19:01,2019-02-08T09:56:01,2019-02-19T11:16:01,8,60,Procure office supplies
+KEY-271,Standard,Released,13,2018-11-27T13:21:01,2019-03-19T10:35:01,2019-05-28T11:38:01,51,130,Procure office supplies
+KEY-272,Standard,Released,13,2018-11-27T13:26:01,2019-03-19T10:35:01,2019-05-28T11:37:01,51,130,Procure office supplies
+KEY-273,Standard,Duplicate,2,2018-12-03T17:06:01,2018-12-06T16:18:01,2018-12-10T22:51:01,3,6,Procure office supplies
+KEY-275,Standard,Released,1,2018-12-04T09:44:01,2018-12-14T13:26:01,2019-01-29T16:52:01,33,41,Move to new office space
+KEY-28,Standard,Rejected,0,2018-10-04T13:31:01,2018-10-05T10:43:01,2018-10-05T10:44:01,1,1,Move to new office space
+KEY-285,Standard,Released,0,2019-01-09T14:43:01,2019-01-09T14:45:01,2019-01-11T14:15:01,2,0,Procure office supplies
+KEY-286,Standard,Released,0,2019-01-10T11:17:01,2019-01-10T11:17:01,2019-01-11T14:20:01,2,0,Acquire VC funding
+KEY-287,Standard,Released,0,2019-01-10T11:31:01,2019-02-21T15:41:01,2019-02-21T15:41:01,1,31,Prevent employee attrition
+KEY-288,Standard,Released,5,2019-01-14T11:44:01,2019-01-15T16:31:01,2019-01-16T09:50:01,1,2,Rebrand struggling product
+KEY-289,Standard,Won't Do,0,2019-01-14T11:53:01,2019-01-15T16:32:01,2019-02-20T14:51:01,26,28,Rebrand struggling product
+KEY-29,Standard,Rejected,0,2018-10-04T13:31:01,2019-01-09T09:32:01,2019-01-09T09:32:01,1,69,Move to new office space
+KEY-290,Standard,Released,5,2019-01-14T12:01:01,2019-01-15T16:29:01,2019-02-13T16:07:01,21,23,Rebrand struggling product
+KEY-291,Standard,Released,0,2019-01-15T12:35:01,2019-01-17T12:21:01,2019-01-31T15:02:01,11,11,Improve hiring strategy
+KEY-292,Standard,Released,0,2019-01-15T12:35:01,2019-01-17T12:22:01,2019-02-07T13:04:01,16,16,Improve hiring strategy
+KEY-293,Standard,Released,0,2019-01-15T12:36:01,2019-03-18T10:34:01,2019-03-18T10:34:01,1,44,Improve hiring strategy
+KEY-294,Standard,Released,0,2019-01-15T12:38:01,2019-03-18T10:34:01,2019-03-18T10:34:01,1,44,Improve hiring strategy
+KEY-295,Standard,Released,0,2019-01-15T12:40:01,2019-03-18T10:34:01,2019-03-18T10:35:01,1,44,Improve hiring strategy
+KEY-296,Standard,Won't Do,0,2019-01-15T12:44:01,2019-01-22T08:22:01,2019-02-07T12:51:01,13,16,Improve hiring strategy
+KEY-297,Standard,Rejected,0,2019-01-15T12:45:01,2019-03-18T10:35:01,2019-03-18T10:35:01,1,44,Address product quality issues
+KEY-298,Standard,Rejected,0,2019-01-15T13:02:01,2019-03-18T10:35:01,2019-03-18T10:35:01,1,44,Address product quality issues
+KEY-299,Fixed Date,Released,0,2019-01-15T13:13:01,2019-03-18T10:35:01,2019-03-18T10:35:01,1,44,Address product quality issues
+KEY-300,Standard,Released,0,2019-01-15T13:14:01,2019-03-18T10:35:01,2019-03-18T10:35:01,1,44,Improve hiring strategy
+KEY-301,Standard,Released,5,2019-01-15T16:43:01,2019-02-14T15:01:01,2019-02-20T17:23:01,5,27,Improve hiring strategy
+KEY-302,Standard,Released,5,2019-01-15T16:48:01,2019-01-16T09:55:01,2019-01-17T08:55:01,1,2,Improve hiring strategy
+KEY-303,Standard,Released,5,2019-01-15T16:50:01,2019-01-16T14:42:01,2019-02-20T14:58:01,26,26,Improve hiring strategy
+KEY-304,Standard,Released,5,2019-01-15T17:00:01,2019-01-16T14:42:01,2019-02-20T14:59:01,26,26,Rebrand struggling product
+KEY-306,Standard,Released,0,2019-01-16T14:05:01,2019-01-16T14:42:01,2019-01-23T09:51:01,5,5,Rebrand struggling product
+KEY-309,Standard,Released,3,2019-01-21T16:33:01,2019-02-15T09:47:01,2019-02-15T09:49:01,1,17,Rebrand struggling product
+KEY-316,Standard,Released,5,2019-01-23T10:25:01,2019-02-20T14:56:01,2019-02-20T14:57:01,1,21,Rebrand struggling product
+KEY-318,Standard,Released,0,2019-01-24T13:51:01,2019-02-25T16:57:01,2019-02-25T16:57:01,1,25,Prevent employee attrition
+KEY-324,Standard,Released,0,2019-01-29T17:32:01,2019-02-01T13:42:01,2019-02-13T16:03:01,9,11,Rebrand struggling product
+KEY-325,Standard,Released,0,2019-01-30T08:09:01,2019-02-26T11:23:01,2019-02-26T11:24:01,1,20,Sunset old product
+KEY-328,Standard,Released,0,2019-01-30T08:18:01,2019-03-19T11:24:01,2019-04-01T13:02:01,10,44,Sunset old product
+KEY-33,Expedite,Rejected,0,2018-10-04T13:33:01,2018-10-05T10:47:01,2018-10-05T10:48:01,1,1,Move to new office space
+KEY-332,Standard,Released,0,2019-01-30T08:46:01,2019-02-26T11:32:01,2019-02-26T11:32:01,1,20,Sunset old product
+KEY-333,Standard,Released,2,2019-01-30T08:58:01,2019-04-23T15:18:01,2019-04-24T10:00:01,1,61,Sunset old product
+KEY-334,Standard,Won't Do,0,2019-01-30T09:14:01,2019-02-26T11:31:01,2019-02-26T11:31:01,1,20,Sunset old product
+KEY-335,Standard,Released,0,2019-01-30T16:35:01,2019-03-25T09:43:01,2019-05-27T14:13:01,46,85,Prevent employee attrition
+KEY-336,Standard,Released,0,2019-01-31T15:05:01,2019-01-31T15:06:01,2019-02-19T11:17:01,13,13,Improve hiring strategy
+KEY-337,Standard,Released,0,2019-02-01T14:37:01,2019-02-13T13:01:01,2019-05-27T19:08:01,74,84,Prevent employee attrition
+KEY-338,Standard,Released,0,2019-02-04T11:05:01,2019-02-25T17:08:01,2019-02-25T17:08:01,1,16,Prevent employee attrition
+KEY-339,Standard,Won't Do,0,2019-02-04T11:06:01,2019-02-25T17:08:01,2019-02-25T17:08:01,1,16,Prevent employee attrition
+KEY-34,Expedite,Rejected,0,2018-10-04T13:34:01,2018-10-05T10:48:01,2018-10-05T10:48:01,1,1,Address product quality issues
+KEY-340,Standard,Released,0,2019-02-04T11:06:01,2019-02-25T17:07:01,2019-02-25T17:07:01,1,16,Prevent employee attrition
+KEY-341,Standard,Released,0,2019-02-04T11:09:01,2019-02-25T17:07:01,2019-02-25T17:07:01,1,16,Prevent employee attrition
+KEY-342,Standard,Released,0,2019-02-04T11:18:01,2019-03-29T16:00:01,2019-03-29T16:00:01,1,38,Increase web checkout security
+KEY-345,Fixed Date,Released,0,2019-02-07T13:25:01,2019-02-07T13:28:01,2019-03-04T10:58:01,17,19,Improve hiring strategy
+KEY-346,Standard,Released,0,2019-02-07T13:29:01,2019-03-22T09:37:01,2019-03-22T09:37:01,1,31,Improve hiring strategy
+KEY-347,Standard,Released,0,2019-02-07T13:30:01,2019-02-07T13:31:01,2019-02-28T09:33:01,15,15,Improve hiring strategy
+KEY-349,Standard,Released,0,2019-02-07T16:04:01,2019-02-07T16:10:01,2019-03-22T09:38:01,31,31,Improve hiring strategy
+KEY-35,Expedite,Rejected,0,2018-10-04T13:34:01,2018-10-05T10:49:01,2018-10-05T10:50:01,1,1,Address product quality issues
+KEY-350,Standard,Released,0,2019-02-08T09:16:01,2019-04-01T16:23:01,2019-05-15T12:52:01,32,69,Increase web checkout security
+KEY-352,Fixed Date,Released,0,2019-02-08T13:11:01,2019-05-27T19:36:01,2019-05-27T19:36:01,1,79,Prevent employee attrition
+KEY-353,Standard,Released,4,2019-02-08T14:47:01,2019-03-05T12:01:01,2019-03-07T10:37:01,2,19,Procure office supplies
+KEY-354,Standard,Released,0,2019-02-08T17:19:01,2019-02-08T17:20:01,2019-03-20T13:45:01,28,28,Rebuild website
+KEY-355,Standard,Released,8,2019-02-11T12:16:01,2019-02-27T10:41:01,2019-03-08T09:21:01,7,17,Rebrand struggling product
+KEY-359,Intangible,Released,0,2019-02-12T13:23:01,2019-02-15T15:32:01,2019-02-28T09:33:01,9,12,Improve employee morale
+KEY-36,Standard,Rejected,0,2018-10-04T13:35:01,2019-01-30T12:34:01,2019-01-30T12:34:01,1,84,Procure office supplies
+KEY-360,Standard,Released,0,2019-02-12T13:26:01,2019-03-05T10:44:01,2019-03-05T10:44:01,1,15,Promote our new product
+KEY-361,Standard,Released,0,2019-02-12T13:27:01,2019-02-15T15:33:01,2019-03-05T10:38:01,12,15,Improve employee morale
+KEY-362,Fixed Date,Released,0,2019-02-12T13:30:01,2019-03-05T10:44:01,2019-03-05T10:44:01,1,15,Promote our new product
+KEY-363,Standard,Released,0,2019-02-12T13:32:01,2019-03-05T10:45:01,2019-03-05T10:45:01,1,15,Promote our new product
+KEY-364,Standard,Released,0,2019-02-12T13:36:01,2019-03-05T10:46:01,2019-03-05T10:46:01,1,15,Create product differentiator
+KEY-365,Standard,Won't Do,0,2019-02-12T13:38:01,2019-03-05T10:47:01,2019-03-05T10:47:01,1,15,Create product differentiator
+KEY-366,Standard,Won't Do,0,2019-02-12T13:40:01,2019-03-05T10:47:01,2019-03-05T10:47:01,1,15,Create product differentiator
+KEY-367,Standard,Won't Do,0,2019-02-12T13:40:01,2019-04-15T13:10:01,2019-04-15T13:11:01,1,44,Address logistical inefficiencies
+KEY-368,Standard,Won't Do,0,2019-02-12T13:41:01,2019-03-05T10:48:01,2019-03-05T10:48:01,1,15,Create employee training strategy
+KEY-369,Fixed Date,Won't Do,0,2019-02-12T13:43:01,2019-04-15T13:13:01,2019-04-15T13:14:01,1,44,Address logistical inefficiencies
+KEY-37,Standard,Released,0,2018-10-04T13:35:01,2019-01-30T12:39:01,2019-01-30T12:39:01,1,84,Address product quality issues
+KEY-370,Standard,Won't Do,0,2019-02-12T13:44:01,2019-04-15T13:14:01,2019-04-15T13:16:01,1,44,Address logistical inefficiencies
+KEY-371,Fixed Date,Won't Do,0,2019-02-12T13:46:01,2019-04-15T13:16:01,2019-04-15T13:16:01,1,44,Address logistical inefficiencies
+KEY-372,Standard,Won't Do,0,2019-02-12T13:47:01,2019-03-05T10:48:01,2019-03-05T10:49:01,1,15,Create employee training strategy
+KEY-373,Standard,Won't Do,0,2019-02-12T13:53:01,2019-03-05T10:49:01,2019-03-05T10:49:01,1,15,Create employee training strategy
+KEY-374,Standard,Won't Do,0,2019-02-12T13:54:01,2019-03-05T10:49:01,2019-03-05T10:50:01,1,15,Rebrand struggling product
+KEY-375,Standard,Won't Do,0,2019-02-12T14:00:01,2019-03-05T10:50:01,2019-03-05T10:51:01,1,15,Rebrand struggling product
+KEY-376,Standard,Won't Do,0,2019-02-12T14:01:01,2019-03-05T11:00:01,2019-03-05T11:01:01,1,15,Rebrand struggling product
+KEY-377,Standard,Won't Do,0,2019-02-12T15:07:01,2019-04-17T10:07:01,2019-05-21T16:16:01,25,71,Increase web checkout security
+KEY-378,Standard,Released,0,2019-02-12T16:00:01,2019-05-21T16:15:01,2019-05-21T16:16:01,1,71,Increase web checkout security
+KEY-379,Intangible,Released,0,2019-02-12T16:01:01,2019-05-21T16:15:01,2019-05-21T16:16:01,1,71,Increase web checkout security
+KEY-38,Standard,Released,0,2018-10-04T13:35:01,2019-01-30T12:39:01,2019-01-30T12:40:01,1,84,Address product quality issues
+KEY-381,Standard,Released,0,2019-02-13T10:54:01,2019-02-19T14:26:01,2019-02-21T15:43:01,3,7,Prevent employee attrition
+KEY-382,Standard,Released,0,2019-02-13T12:06:01,2019-05-03T12:49:01,2019-05-03T12:50:01,1,56,Prevent employee attrition
+KEY-383,Standard,Released,0,2019-02-13T12:53:01,2019-02-14T12:54:01,2019-03-25T10:16:01,27,30,Increase web checkout security
+KEY-384,Fixed Date,Released,13,2019-02-13T13:08:01,2019-02-27T20:15:01,2019-03-08T07:58:01,7,15,Prevent employee attrition
+KEY-385,Standard,Released,0,2019-02-13T13:11:01,2019-02-25T17:14:01,2019-02-25T17:14:01,1,9,Prevent employee attrition
+KEY-386,Standard,Released,8,2019-02-13T13:17:01,2019-02-27T13:24:01,2019-02-27T13:26:01,1,11,Prevent employee attrition
+KEY-387,Standard,Released,1,2019-02-13T13:19:01,2019-02-28T17:54:01,2019-02-28T18:00:01,1,12,Prevent employee attrition
+KEY-388,Standard,Released,1,2019-02-13T13:20:01,2019-02-15T16:51:01,2019-02-27T13:00:01,8,10,Prevent employee attrition
+KEY-389,Fixed Date,Released,1,2019-02-13T13:20:01,2019-02-27T13:28:01,2019-02-27T13:35:01,1,11,Prevent employee attrition
+KEY-39,Standard,Released,0,2018-10-04T13:36:01,2019-01-30T12:40:01,2019-01-30T12:41:01,1,84,Address product quality issues
+KEY-390,Standard,Released,8,2019-02-13T13:20:01,2019-02-27T13:36:01,2019-03-05T18:47:01,5,15,Prevent employee attrition
+KEY-391,Standard,Released,1,2019-02-13T13:21:01,2019-02-27T13:36:01,2019-02-28T17:52:01,2,12,Prevent employee attrition
+KEY-392,Standard,Released,2,2019-02-13T13:25:01,2019-02-28T17:53:01,2019-02-28T17:53:01,1,12,Prevent employee attrition
+KEY-393,Standard,Released,1,2019-02-13T13:26:01,2019-02-28T18:02:01,2019-02-28T18:02:01,1,12,Prevent employee attrition
+KEY-394,Standard,Released,1,2019-02-13T13:27:01,2019-02-28T18:03:01,2019-02-28T18:04:01,1,12,Prevent employee attrition
+KEY-395,Standard,Released,1,2019-02-13T13:27:01,2019-02-28T18:03:01,2019-02-28T18:04:01,1,12,Prevent employee attrition
+KEY-396,Standard,Released,8,2019-02-13T13:27:01,2019-02-28T18:03:01,2019-03-05T18:43:01,4,15,Prevent employee attrition
+KEY-397,Standard,Released,1,2019-02-13T13:28:01,2019-02-28T18:03:01,2019-02-28T18:04:01,1,12,Prevent employee attrition
+KEY-398,Standard,Released,1,2019-02-13T13:42:01,2019-02-14T11:16:01,2019-03-01T10:23:01,11,10,Prevent employee attrition
+KEY-399,Standard,Released,8,2019-02-13T13:44:01,2019-03-08T14:19:01,2019-03-12T16:04:01,3,20,Prevent employee attrition
+KEY-400,Standard,Released,1,2019-02-13T13:45:01,2019-03-12T09:55:01,2019-03-12T09:56:01,1,19,Prevent employee attrition
+KEY-401,Standard,Released,1,2019-02-13T13:46:01,2019-03-01T14:09:01,2019-03-08T14:10:01,6,16,Prevent employee attrition
+KEY-402,Standard,Released,1,2019-02-13T13:46:01,2019-02-28T18:06:01,2019-02-28T18:07:01,1,12,Prevent employee attrition
+KEY-403,Standard,Released,5,2019-02-13T13:46:01,2019-03-06T16:56:01,2019-03-12T16:04:01,4,20,Prevent employee attrition
+KEY-404,Fixed Date,Released,1,2019-02-13T13:47:01,2019-02-28T18:06:01,2019-02-28T18:08:01,1,12,Prevent employee attrition
+KEY-405,Standard,Released,5,2019-02-13T13:54:01,2019-03-04T11:04:01,2019-03-05T09:32:01,1,14,Prevent employee attrition
+KEY-406,Fixed Date,Released,0,2019-02-13T13:57:01,2019-03-14T16:41:01,2019-03-14T16:41:01,1,22,Prevent employee attrition
+KEY-408,Standard,Released,2,2019-02-13T14:17:01,2019-03-01T14:29:01,2019-03-06T09:56:01,3,15,Prevent employee attrition
+KEY-41,Standard,Rejected,0,2018-10-04T13:37:01,2019-01-30T12:41:01,2019-01-30T12:41:01,1,84,Address product quality issues
+KEY-410,Standard,Released,3,2019-02-13T14:35:01,2019-02-27T14:22:01,2019-03-20T14:19:01,15,25,Patent new product
+KEY-411,Standard,Released,0,2019-02-13T14:37:01,2019-03-14T16:46:01,2019-03-14T16:46:01,1,22,Prevent employee attrition
+KEY-412,Standard,Released,0,2019-02-13T14:39:01,2019-05-15T17:06:01,2019-05-15T17:06:01,1,66,Prevent employee attrition
+KEY-413,Standard,Released,0,2019-02-13T14:39:01,2019-05-15T17:07:01,2019-05-15T17:08:01,1,66,Prevent employee attrition
+KEY-414,Standard,Released,0,2019-02-13T14:40:01,2019-05-27T19:16:01,2019-05-27T19:16:01,1,74,Prevent employee attrition
+KEY-416,Standard,Released,0,2019-02-13T14:43:01,2019-05-22T12:42:01,2019-05-27T18:46:01,4,74,Prevent employee attrition
+KEY-417,Standard,Released,5,2019-02-13T14:44:01,2019-02-27T14:22:01,2019-04-08T10:30:01,28,40,Patent new product
+KEY-418,Standard,Released,0,2019-02-13T14:48:01,2019-02-25T17:08:01,2019-02-25T17:08:01,1,9,Prevent employee attrition
+KEY-419,Standard,Released,5,2019-02-13T14:57:01,2019-02-26T13:30:01,2019-03-19T10:34:01,15,24,Acquire VC funding
+KEY-42,Standard,Rejected,0,2018-10-04T13:37:01,2019-01-30T12:41:01,2019-01-30T12:42:01,1,84,Address product quality issues
+KEY-421,Standard,Released,8,2019-02-13T15:04:01,2019-03-13T14:08:01,2019-04-04T16:53:01,17,37,Create new revenue stream
+KEY-422,Standard,Released,8,2019-02-13T15:05:01,2019-03-04T10:40:01,2019-04-04T16:53:01,24,37,Create new revenue stream
+KEY-423,Standard,Released,8,2019-02-13T15:05:01,2019-05-06T15:49:01,2019-05-06T15:50:01,1,59,Create new revenue stream
+KEY-424,Standard,Released,0,2019-02-13T15:06:01,2019-04-03T14:35:01,2019-04-03T14:35:01,1,35,Acquire VC funding
+KEY-425,Standard,Won't Do,8,2019-02-13T15:06:01,2019-05-06T15:47:01,2019-05-06T15:49:01,1,59,Create new revenue stream
+KEY-426,Fixed Date,Released,21,2019-02-13T15:07:01,2019-03-13T14:08:01,2019-05-21T10:03:01,49,69,Create new revenue stream
+KEY-427,Fixed Date,Won't Do,21,2019-02-13T15:09:01,2019-04-30T13:50:01,2019-05-21T10:04:01,15,69,Create new revenue stream
+KEY-428,Intangible,Released,3,2019-02-13T15:10:01,2019-02-26T13:57:01,2019-03-12T10:49:01,10,19,Optimise profit margins
+KEY-429,Standard,Released,3,2019-02-13T15:15:01,2019-03-12T09:05:01,2019-03-12T10:50:01,1,19,Optimise profit margins
+KEY-43,Standard,Rejected,0,2018-10-04T13:38:01,2019-01-30T12:42:01,2019-01-30T12:42:01,1,84,Address product quality issues
+KEY-430,Standard,Released,3,2019-02-13T15:18:01,2019-03-12T09:05:01,2019-03-12T10:51:01,1,19,Optimise profit margins
+KEY-431,Standard,Released,3,2019-02-14T10:57:01,2019-03-20T14:22:01,2019-03-21T09:07:01,1,25,Patent new product
+KEY-432,Standard,Released,20,2019-02-14T11:04:01,2019-03-27T15:12:01,2019-03-27T15:12:01,1,30,Patent new product
+KEY-433,Standard,Released,13,2019-02-14T11:07:01,2019-03-20T14:21:01,2019-04-01T08:58:01,8,34,Patent new product
+KEY-434,Standard,Released,13,2019-02-14T11:12:01,2019-03-27T15:13:01,2019-04-01T08:56:01,3,34,Patent new product
+KEY-435,Standard,Released,13,2019-02-14T11:15:01,2019-02-27T14:22:01,2019-03-20T14:21:01,15,25,Patent new product
+KEY-436,Standard,Released,8,2019-02-14T11:18:01,2019-03-27T15:13:01,2019-04-09T09:11:01,9,38,Patent new product
+KEY-437,Standard,Released,5,2019-02-14T12:56:01,2019-03-25T10:18:01,2019-06-03T12:29:01,51,79,Increase web checkout security
+KEY-438,Standard,Released,0,2019-02-14T13:08:01,2019-04-16T12:36:01,2019-06-19T11:38:01,46,89,Increase web checkout security
+KEY-439,Standard,Won't Do,8,2019-02-14T17:15:01,2019-05-22T13:02:01,2019-05-22T13:02:01,1,69,Prevent employee attrition
+KEY-44,Standard,Rejected,0,2018-10-04T13:38:01,2019-01-30T12:42:01,2019-01-30T12:43:01,1,84,Address product quality issues
+KEY-440,Standard,Released,8,2019-02-14T17:19:01,2019-03-01T15:21:01,2019-03-01T15:21:01,1,11,Prevent employee attrition
+KEY-441,Standard,Released,5,2019-02-14T17:23:01,2019-03-01T15:24:01,2019-03-01T15:25:01,1,11,Prevent employee attrition
+KEY-442,Intangible,Duplicate,5,2019-02-14T17:28:01,2019-03-01T15:26:01,2019-03-01T15:26:01,1,11,Prevent employee attrition
+KEY-443,Fixed Date,Duplicate,5,2019-02-14T17:30:01,2019-02-28T19:29:01,2019-05-22T13:05:01,59,69,Prevent employee attrition
+KEY-444,Standard,Duplicate,3,2019-02-14T17:31:01,2019-03-01T15:23:01,2019-03-01T15:23:01,1,11,Prevent employee attrition
+KEY-445,Standard,Released,1,2019-02-19T13:09:01,2019-02-28T19:25:01,2019-03-18T16:36:01,12,20,Prevent employee attrition
+KEY-446,Standard,Released,15,2019-02-20T15:03:01,2019-03-12T10:46:01,2019-05-28T11:33:01,56,69,Address product quality issues
+KEY-45,Standard,Rejected,0,2018-10-04T13:39:01,2018-10-26T09:48:01,2018-12-04T15:07:01,28,44,Address product quality issues
+KEY-451,Standard,Rejected,0,2019-02-21T09:39:01,2019-03-14T16:28:01,2019-03-14T17:22:01,1,16,Rebuild website
+KEY-455,Standard,Released,0,2019-02-24T12:20:01,2019-05-06T11:33:01,2019-06-19T11:38:01,33,83,Prevent employee attrition
+KEY-458,Standard,Released,2,2019-02-25T15:56:01,2019-06-03T11:27:01,2019-06-03T11:28:01,1,70,Patent new product
+KEY-459,Standard,Released,0,2019-02-26T09:58:01,2019-05-14T11:23:01,2019-05-14T11:25:01,1,56,Improve employee morale
+KEY-46,Standard,Rejected,0,2018-10-04T13:39:01,2019-01-30T12:43:01,2019-01-30T12:44:01,1,84,Procure office supplies
+KEY-461,Standard,Released,0,2019-02-27T16:59:01,2019-02-27T16:59:01,2019-03-04T10:03:01,3,5,Rebuild website
+KEY-464,Standard,Released,1,2019-03-01T14:19:01,2019-03-01T14:20:01,2019-03-01T14:21:01,1,1,Procure office supplies
+KEY-465,Standard,Released,1,2019-03-01T14:24:01,2019-03-01T14:24:01,2019-03-01T14:26:01,1,1,Prevent employee attrition
+KEY-466,Standard,Released,2,2019-03-01T14:30:01,2019-03-06T09:28:01,2019-03-06T09:29:01,1,3,Prevent employee attrition
+KEY-467,Standard,Released,1,2019-03-01T14:30:01,2019-03-01T14:31:01,2019-03-01T14:32:01,1,1,Prevent employee attrition
+KEY-468,Standard,Released,2,2019-03-01T14:37:01,2019-03-06T13:42:01,2019-03-18T16:35:01,9,14,Prevent employee attrition
+KEY-469,Standard,Released,2,2019-03-01T14:39:01,2019-03-12T11:09:01,2019-03-18T16:32:01,5,14,Prevent employee attrition
+KEY-47,Standard,Rejected,0,2018-10-04T13:39:01,2019-01-30T12:43:01,2019-01-30T12:44:01,1,84,Address product quality issues
+KEY-470,Standard,Released,1,2019-03-01T14:43:01,2019-03-06T13:42:01,2019-03-18T16:37:01,9,14,Prevent employee attrition
+KEY-471,Standard,Released,1,2019-03-01T14:55:01,2019-03-06T13:00:01,2019-03-12T11:07:01,4,9,Prevent employee attrition
+KEY-472,Standard,Released,5,2019-03-01T14:59:01,2019-05-22T12:56:01,2019-05-22T13:00:01,1,58,Prevent employee attrition
+KEY-473,Standard,Released,2,2019-03-01T15:01:01,2019-05-22T13:03:01,2019-05-22T13:03:01,1,58,Prevent employee attrition
+KEY-474,Fixed Date,Released,3,2019-03-01T15:03:01,2019-03-18T16:38:01,2019-03-18T16:38:01,1,14,Prevent employee attrition
+KEY-475,Standard,Released,2,2019-03-01T15:06:01,2019-03-07T12:40:01,2019-03-28T14:11:01,16,19,Prevent employee attrition
+KEY-477,Standard,Released,0,2019-03-05T18:34:01,2019-03-14T16:46:01,2019-03-14T16:46:01,1,7,Prevent employee attrition
+KEY-478,Standard,Released,0,2019-03-05T18:45:01,2019-03-06T16:50:01,2019-03-12T16:08:01,4,5,Prevent employee attrition
+KEY-48,Standard,Rejected,0,2018-10-04T13:40:01,2019-01-30T12:44:01,2019-01-30T12:49:01,1,84,Address product quality issues
+KEY-480,Standard,Released,0,2019-03-07T09:46:01,2019-05-22T13:03:01,2019-05-22T13:03:01,1,55,Prevent employee attrition
+KEY-481,Standard,Released,0,2019-03-07T11:31:01,2019-03-07T11:32:01,2019-03-15T09:53:01,6,6,Increase web checkout security
+KEY-482,Fixed Date,Released,0,2019-03-07T11:32:01,2019-03-22T09:37:01,2019-03-29T15:53:01,6,15,Increase web checkout security
+KEY-483,Standard,Released,5,2019-03-08T14:15:01,2019-03-13T10:26:01,2019-04-08T15:32:01,19,24,Procure office supplies
+KEY-484,Intangible,Released,3,2019-03-13T11:17:01,2019-03-13T11:18:01,2019-03-18T10:02:01,3,5,Acquire VC funding
+KEY-486,Intangible,Released,0,2019-03-13T15:53:01,2019-04-17T11:33:01,2019-04-17T11:34:01,1,25,Procure office supplies
+KEY-488,Intangible,Released,2,2019-03-14T15:41:01,2019-03-15T14:17:01,2019-03-20T12:33:01,3,4,Acquire VC funding
+KEY-490,Intangible,Released,0,2019-03-18T16:48:01,2019-05-22T13:03:01,2019-05-22T13:03:01,1,47,Prevent employee attrition
+KEY-491,Intangible,Released,0,2019-03-18T16:56:01,2019-05-22T13:04:01,2019-05-22T13:04:01,1,47,Prevent employee attrition
+KEY-492,Intangible,Released,0,2019-03-18T16:59:01,2019-05-22T13:02:01,2019-05-22T13:02:01,1,47,Prevent employee attrition
+KEY-493,Fixed Date,Released,2,2019-03-19T16:10:01,2019-04-01T10:18:01,2019-05-22T13:08:01,38,46,Prevent employee attrition
+KEY-494,Standard,Released,1,2019-03-19T16:27:01,2019-05-22T13:01:01,2019-05-22T13:01:01,1,46,Prevent employee attrition
+KEY-496,Standard,Released,1,2019-03-20T12:58:01,2019-03-20T16:00:01,2019-03-25T11:22:01,3,5,Acquire VC funding
+KEY-497,Standard,Released,0,2019-03-25T23:42:01,2019-05-10T16:33:01,2019-05-10T16:53:01,1,32,Prevent employee attrition
+KEY-498,Standard,Released,0,2019-03-25T23:50:01,2019-05-15T17:14:01,2019-05-15T17:14:01,1,37,Prevent employee attrition
+KEY-499,Standard,Released,0,2019-03-25T23:54:01,2019-04-24T15:38:01,2019-05-27T18:46:01,24,45,Prevent employee attrition
+KEY-500,Standard,Won't Do,0,2019-03-25T23:59:01,2019-05-27T19:14:01,2019-05-27T19:14:01,1,45,Prevent employee attrition
+KEY-501,Standard,Released,0,2019-03-26T00:02:01,2019-05-27T18:26:01,2019-05-27T18:26:01,1,45,Prevent employee attrition
+KEY-502,Standard,Released,0,2019-03-26T00:06:01,2019-05-27T19:06:01,2019-05-27T19:06:01,1,45,Prevent employee attrition
+KEY-503,Standard,Released,0,2019-03-26T00:08:01,2019-04-01T16:13:01,2019-04-01T16:14:01,1,5,Prevent employee attrition
+KEY-504,Standard,Released,0,2019-03-26T00:18:01,2019-05-27T18:31:01,2019-05-27T18:31:01,1,45,Prevent employee attrition
+KEY-505,Standard,Duplicate,0,2019-03-26T00:21:01,2019-05-15T17:15:01,2019-05-15T17:15:01,1,37,Prevent employee attrition
+KEY-506,Standard,Released,0,2019-03-26T00:37:01,2019-05-27T19:34:01,2019-05-27T19:34:01,1,45,Prevent employee attrition
+KEY-507,Standard,Won't Do,0,2019-03-26T13:29:01,2019-03-27T16:47:01,2019-06-03T12:27:01,48,49,Increase web checkout security
+KEY-508,Standard,Released,5,2019-03-28T17:15:01,2019-03-28T17:17:01,2019-05-27T18:38:01,43,45,Prevent employee attrition
+KEY-509,Intangible,Won't Do,8,2019-03-28T17:19:01,2019-03-28T17:21:01,2019-05-27T18:38:01,43,45,Prevent employee attrition
+KEY-510,Intangible,Won't Do,0,2019-03-29T15:44:01,2019-05-21T16:15:01,2019-05-21T16:16:01,1,38,Increase web checkout security
+KEY-511,Intangible,Released,0,2019-03-29T15:45:01,2019-05-21T16:15:01,2019-05-21T16:16:01,1,38,Increase web checkout security
+KEY-512,Intangible,Released,0,2019-03-29T15:50:01,2019-05-21T16:15:01,2019-05-21T16:16:01,1,38,Increase web checkout security
+KEY-513,Intangible,Released,0,2019-03-29T15:52:01,2019-05-21T16:16:01,2019-05-21T16:16:01,1,38,Increase web checkout security
+KEY-515,Intangible,Released,1,2019-04-08T10:42:01,2019-04-08T10:46:01,2019-04-08T10:47:01,1,1,Patent new product
+KEY-519,Intangible,Released,0,2019-05-14T11:31:01,2019-06-11T13:40:01,2019-06-26T12:26:01,11,32,Prevent employee attrition
+KEY-56,Expedite,Rejected,0,2018-10-04T13:44:01,2018-10-05T10:45:01,2018-10-05T10:45:01,1,1,Address product quality issues
+KEY-6,Standard,Rejected,0,2018-10-04T13:13:01,2018-10-09T22:38:01,2018-10-09T22:39:01,1,4,Procure office supplies
+KEY-64,Standard,Released,0,2018-10-04T13:50:01,2019-01-30T12:37:01,2019-01-30T12:37:01,1,84,Address product quality issues
+KEY-65,Fixed Date,Released,0,2018-10-04T13:50:01,2019-01-30T12:38:01,2019-01-30T12:38:01,1,84,Address product quality issues
+KEY-66,Expedite,Released,0,2018-10-04T13:50:01,2018-10-16T14:19:01,2018-10-16T14:20:01,1,9,Address product quality issues
+KEY-67,Expedite,Released,0,2018-10-04T13:51:01,2019-01-30T12:37:01,2019-01-30T12:37:01,1,84,Address product quality issues
+KEY-68,Expedite,Released,0,2018-10-04T13:51:01,2019-01-30T12:36:01,2019-01-30T12:36:01,1,84,Address product quality issues
+KEY-69,Standard,Released,0,2018-10-04T13:52:01,2018-10-16T17:37:01,2018-11-13T11:45:01,20,28,Address product quality issues
+KEY-7,Standard,Rejected,0,2018-10-04T13:13:01,2018-10-16T17:16:01,2018-10-16T17:17:01,1,9,Procure office supplies
+KEY-70,Standard,Released,0,2018-10-04T13:52:01,2018-10-16T17:37:01,2018-11-05T16:15:01,14,25,Address product quality issues
+KEY-71,Expedite,Released,0,2018-10-04T13:52:01,2019-01-30T12:36:01,2019-01-30T12:36:01,1,84,Address product quality issues
+KEY-72,Standard,Released,0,2018-10-04T13:53:01,2018-10-16T17:37:01,2018-11-02T11:25:01,13,21,Address product quality issues
+KEY-73,Standard,Released,0,2018-10-04T13:55:01,2019-01-30T12:35:01,2019-01-30T12:36:01,1,84,Address product quality issues
+KEY-74,Standard,Released,0,2018-10-04T13:55:01,2019-01-30T12:35:01,2019-01-30T12:35:01,1,84,Address product quality issues
+KEY-75,Standard,Released,0,2018-10-04T13:56:01,2018-10-16T17:37:01,2018-10-22T09:02:01,4,14,Address product quality issues
+KEY-77,Standard,Released,0,2018-10-05T09:14:01,2019-01-24T13:51:01,2019-01-24T13:51:01,1,80,Sunset old product
+KEY-79,Standard,Released,0,2018-10-05T09:15:01,2019-05-22T15:00:01,2019-05-22T15:01:01,1,164,Sunset old product
+KEY-8,Fixed Date,Rejected,3,2018-10-04T13:14:01,2018-10-16T17:18:01,2019-01-15T08:52:01,65,73,Procure office supplies
+KEY-80,Standard,Released,5,2018-10-05T09:16:01,2018-10-16T17:37:01,2019-01-10T09:28:01,62,70,Move to new office space
+KEY-9,Standard,Rejected,5,2018-10-04T13:14:01,2018-10-08T16:57:01,2018-12-17T08:54:01,50,54,Create new customer channel
+KEY-95,Standard,Released,0,2018-10-05T09:54:01,2018-12-04T10:48:01,2018-12-04T10:49:01,1,43,Improve hiring strategy
