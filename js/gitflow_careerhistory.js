@@ -1,5 +1,5 @@
 var graphConfig = new GitGraph.Template({
-    colors: ["#14CC73","#FFFFFF", "#17a2b8", "#FFBB33"],
+    colors: ["#14CC73", "#FFFFFF", "#17a2b8", "#FFBB33"],
     branch: {
         //    color: "#000000",
         lineWidth: 10,
@@ -233,7 +233,7 @@ psm1.merge(career, {
 oua.commit({
     messageDisplay: false
 });
-oua.merge(elabor8,{
+oua.merge(elabor8, {
     message: "[Engagement] Started at Proquo - Scrum Master / Agile BA",
     tag: "Feb.16",
     tagColor: "#FFBB33",
@@ -313,7 +313,7 @@ akt.merge(career, {
 beteasy.commit({
     messageDisplay: false
 });
-beteasy.merge(elabor8,{
+beteasy.merge(elabor8, {
     message: "[Engagement] Started at DST Systems - Agile Coach / Data Analyst",
     tag: "Feb.18",
     tagColor: "#FFBB33",
@@ -332,8 +332,8 @@ dst.merge(elabor8, {
     messageDisplay: false
 });
 
-elabor8.merge(career,{
-    message: "[Employer] Started at ANZ - Agile Data Coach",
+elabor8.merge(career, {
+    message: "[Employer] Started at ANZ - Agile Coach",
     tag: "Nov.18",
     tagColor: "#17a2b8",
     messageColor: "#17a2b8"
@@ -345,6 +345,22 @@ var anz = gitgraph.branch({
     column: employerCol
 });
 anz.commit({
+    messageDisplay: false
+});
+
+anz.merge(career, {
+    message: "[Employer] Started at NAB - Agile Coach",
+    tag: "Jan.20",
+    tagColor: "#17a2b8",
+    messageColor: "#17a2b8"
+});
+
+var nab = gitgraph.branch({
+    parentBranch: career,
+    name: "NAB",
+    column: employerCol
+});
+nab.commit({
     messageDisplay: false,
     tag: "Present",
     tagColor: "white"
