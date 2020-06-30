@@ -1,0 +1,6 @@
+body {
+    background: #222;
+    background-image: url("/img/background_black_white_dark.jpg");
+    background-size: 150%;
+    font-family: 'Poppins', sans-serif;
+}

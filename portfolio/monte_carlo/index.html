@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Monte Carlo Risk Simulator - Quirk Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../img/logo/xsmall_125x/logo_yellow_125px.png">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/skins/yellow.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="addon.css"></script>
+
+    <!-- Template JS Files -->
+    <script src="../../js/modernizr.js"></script>
+
+</head>
+
+<body class="double-diagonal dark portfolio-project">
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="logopreloader">
+            <img src="../../img/logo/xsmall_125x/logo_yellow_125px.png" alt="logo">
+        </div>
+        <div class="loader" id="loader"></div>
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <!-- Header Starts -->
+        <header class="header header-fixed">
+            <div class="header-inner">
+                <!-- Navbar Starts -->
+                <nav class="navbar">
+                    <!-- Logo Starts -->
+                    <div class="logo">
+                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand" href="index-kenburns.html">
+                            <!-- Logo White Starts -->
+                            <img id="logo-light" class="logo-light" src="../../img/sitelogo_yellow_small.png" alt="logo-light" />
+                            <!-- Logo White Ends -->
+                            <!-- Logo Black Starts -->
+                            <img id="logo-dark" class="logo-dark" src="../../img/sitelogo_yellow_small.png" alt="logo-dark" />
+                            <!-- Logo Black Ends -->
+                        </a>
+                    </div>
+                    <!-- Logo Ends -->
+                    <!-- Toggle Icon for Mobile Starts -->
+                    <button class="navbar-toggle navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span id="icon-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                    <!-- Toggle Icon for Mobile Ends -->
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse navbar-responsive-collapse">
+                        <!-- Main Menu Starts -->
+                        <ul class="nav navbar-nav" id="main-navigation">
+                            <li><a href="index-kenburns.html"><i class="fa fa-home"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fa fa-user"></i> About Us</a></li>
+                            <li class="active dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-image"></i>
+                                    portfolio <i class="fa fa-angle-down icon-angle"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="portfolio-2-columns.html">Portfolio 2 Columns</a></li>
+                                    <li><a href="portfolio-3-columns.html">Portfolio 3 Columns</a></li>
+                                    <li><a href="portfolio-4-columns.html">Portfolio 4 Columns</a></li>
+                                    <li class="active"><a href="image-project.html">Image Project</a></li>
+                                    <li><a href="slider-project.html">Slider Project</a></li>
+                                    <li><a href="gallery-project.html">Gallery Project</a></li>
+                                    <li><a href="video-project.html">Video project</a></li>
+                                    <li><a href="youtube-project.html">youtube Project</a></li>
+                                    <li><a href="vimeo-project.html">Vimeo Project</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-edit"></i>
+                                    Blog <i class="fa fa-angle-down icon-angle"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
+                                    <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
+                                    <li><a href="blog-grid-no-sidebar.html">Grid No Sidebar</a></li>
+                                    <li><a href="blog-post.html">Single Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                        class="fa fa-file-text-o"></i> pages <i
+                                        class="fa fa-angle-down icon-angle"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="register.html">Register page</a></li>
+                                    <li><a href="login.html">Login page</a></li>
+                                    <li><a href="pricing.html">Pricing</a></li>
+                                    <li><a href="shopping-cart.html">Shopping cart</a></li>
+                                    <li><a href="shopping-checkout.html">shopping checkout</a></li>
+                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                    <li><a href="404.html">404 Page</a></li>
+                                    <li><a href="503.html">Server Error Page</a></li>
+                                    <li><a href="faq.html">FAQ page</a></li>
+                                    <li><a href="terms-of-services.html">Terms of Services</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html"><i class="fa fa-envelope"></i> Contact</a></li>
+                            <!-- Cart Icon Starts -->
+                            <li class="cart hidden-xs hidden-sm"><a href="shopping-cart.html"><i
+                                        class="fa fa-shopping-cart"></i></a></li>
+                            <!-- Cart Icon Starts -->
+                            <!-- Search Icon Starts -->
+                            <li class="search hidden-xs hidden-sm"><button id="search-button" class="fa fa-search"></button></li>
+                            <!-- Search Icon Ends -->
+                        </ul>
+                        <!-- Main Menu Ends -->
+                    </div>
+                    <!-- Search Input Starts -->
+                    <div class="site-search hidden-xs">
+                        <div class="search-container">
+                            <input id="search-input" type="text" placeholder="type your keyword and hit enter ...">
+                            <span class="close">×</span>
+                        </div>
+                    </div>
+                    <!-- Search Input Ends -->
+                    <!-- Navigation Menu Ends -->
+                </nav>
+                <!-- Navbar Ends -->
+            </div>
+        </header>
+        <!-- Header Ends -->
+        <!-- Banner Starts -->
+        <section class="banner" style="background: url('../../img/background_black_1600px.png');">
+            <div class="content text-center">
+                <div class="text-center top-text">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h1><span>Monte Carlo</span> Risk Simulator</h1>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <hr>
+                    <!-- Breadcrumb Starts -->
+                    <ul class="breadcrumb">
+                        <li><a href="index-kenburns.html"> Home</a></li>
+                        <li><a href="portfolio-3-columns.html"> Portfolio</a></li>
+                        <li>Monte Carlo Risk Simulator</li>
+                    </ul>
+                    <!-- Breadcrumb Ends -->
+                </div>
+            </div>
+        </section>
+        <!-- Banner Ends -->
+        <!-- Project Starts -->
+        <section class="project">
+            <div class="container" style="padding-top:20px !important;">
+                <div class="row m-1 h-100">
+                    <!--config inputs-->
+                    <div class="col-4 col-md-3 border border-warning dropdown white-text" id="configCadenceType"><label class="my-2">Select your cadence</label>
+                        <!-- Cadence dropdown -->
+                        <button class="btn btn-warning dropdown-toggle btn-block text-nowrap text-truncate" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="configCadenceTypeButton">Sprints
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item cadence" value="Sprints" textContent="Sprints">Sprints</a></li>
+                            <li><a class="dropdown-item cadence" value="Days" textContent="Sprints">Days</a></li>
+                            <li><a class="dropdown-item cadence" value="Weeks" textContent="Sprints">Weeks</a></li>
+                            <li><a class="dropdown-item cadence" value="Months" textContent="Sprints">Months</a></li>
+                        </ul>
+                        <!-- Cadence dropdown -->
+                    </div>
+                    <div class="col-4 col-md-3 border border-warning dropdown white-text" id="configConstraintType"><label class="my-2">Select your constraint</label>
+                        <!-- Constraint dropdown -->
+                        <button class="btn btn-warning dropdown-toggle btn-block text-nowrap text-truncate" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="configConstraintTypeButton">Scope</button>
+                        <div class="dropdown-menu">
+                            <li><a class="dropdown-item constraint" value="Scope">Scope</a></li>
+                            <li><a class="dropdown-item constraint" value="Time">Time</a></li>
+                        </div>
+                        <!-- Constraint dropdown -->
+                    </div>
+                    <div class="col-4 col-md-3 border border-warning dropdown white-text" id="configWorkItemType"><label class="my-2">Select your work item type</label>
+                        <!-- Work Item dropdown -->
+                        <button class="btn btn-warning dropdown-toggle btn-block text-nowrap text-truncate" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" id="configWorkItemTypeButton">User Stories</button>
+                        <div class="dropdown-menu workitem">
+                            <li><a class="dropdown-item" value="Scope">User Stories</a></li>
+                            <li><a class="dropdown-item" value="Time">Releases</a></li>
+                            <li><a class="dropdown-item" value="Time">Epics</a></li>
+                            <li><a class="dropdown-item" value="Time">Features</a></li>
+                            <li><a class="dropdown-item" value="Time">Initiatives</a></li>
+                        </div>
+                        <!-- Work Item dropdown -->
+                    </div>
+                    <div class="col-12 col-md-3 white-text border border-warning" id="configSimulationData">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row h-50"><label id="labelConfigWorkItems">No. of User Stories</label></div>
+                                <div class="row h-50"><input class="form-control" id="configWorkItems" type="number" value=200 oninput="updateChart()"></div>
+                            </div>
+                            <div class="col">
+                                <div class="row h-50"><label id="labelConfigGoalFocus">Goal Focus Percentage</label></div>
+                                <div class="row h-50"><input class="form-control" id="configGoalFocus" type="number" value=100 oninput="updateChart()"></div>
+                            </div>
+                            <div class="col">
+                                <div class="row h-50"><label id="labelConfigCadenceLength">Sprint Length (Work Days)</label></div>
+                                <div class="row h-50"><input class="form-control" id="configCadenceLength" type="number" value=10 oninput="updateChart()"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row m-1" id="container">
+                    <div class="col-12 col-md-4 order-1 order-md-0 amber-text border border-warning" id="dataInput">
+                        <div class="row white-text">
+                            <div class="col"><label id="labelCadenceType">History</label></div>
+                            <div class="col"><label id="labelInputThroughput">Throughput</label></div>
+                            <div class="col"><label id="labelInputLength">Length</label></div>
+                        </div>
+                        <div class="row" id="row1">
+                            <div class="col white-text" id="cadenceType1">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput1" type="number" value=5 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength1" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                        <div class="row alt" id="row2">
+                            <div class="col white-text" id="cadenceType2">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput2" type="number" value=3 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength2" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                        <div class="row" id="row3">
+                            <div class="col white-text" id="cadenceType3">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput3" type="number" value=10 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength3" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                        <div class="row alt" id="row4">
+                            <div class="col white-text" id="cadenceType4">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput4" type="number" value=8 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength4" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                        <div class="row" id="row5">
+                            <div class="col white-text" id="cadenceType5">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput5" type="number" value=3 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength5" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                        <div class="row alt" id="row6">
+                            <div class="col white-text" id="cadenceType6">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput6" type="number" value=0 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength6" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                        <div class="row" id="row7">
+                            <div class="col white-text" id="cadenceType7">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput7" type="number" value=15 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength7" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                        <div class="row alt" id="row8">
+                            <div class="col white-text" id="cadenceType8">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput8" type="number" value=5 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength8" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                        <div class="row" id="row9">
+                            <div class="col white-text" id="cadenceType9">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput9" type="number" value=5 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength9" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                        <div class="row alt" id="row10">
+                            <div class="col white-text" id="cadenceType10">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputThroughput10" type="number" value=5 oninput="updateChart()">
+                            </div>
+                            <div class="col white-text"><input class="form-control" id="inputLength10" type="number" value=10 oninput="updateChart()">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 order-0 order-md-1 border white-text border-warning" id="chart"><label id="labelCadenceType">Interactive Risk Profile</label></div>
+                </div>
+                <h6 class="m-1 amber-text">Summary</h6>
+                <div class="border border-warning">
+                    <div class="row white-text m-1 pt-3" id="outputSummary50th"></div>
+                    <div class="row white-text m-1" id="outputSummary85th"></div>
+                    <div class="row white-text m-1" id="outputSummary95th"></div>
+                </div>
+                <div>
+                    <!-- Card body -->
+                    <div>
+                        <div class="white-text">
+                            <p>An important part of adopting an agile mindset is the acceptance that we operate in complex envrionments that are surrounded by uncertainty, both internally and externally. In order to have meaningful conversations about the
+                                degree of risk involved in a project or program of work we can use a Monte Carlo simulation, which involves simulating tens of thousands of potential outcomes based on historical performance, and summarising them as a distribution.</p>
+                            <p>After understanding the degree of risk involved, and an internal perception of what is 'acceptable', we can then seek to minimise the degree of uncertainty by increasing the predictability of teams' performance. More stability
+                                = less risk.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Accordion card -->
+                <div>
+                    <!-- Card body -->
+                    <div>
+                        <div class="white-text">
+                            <p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact me!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Project Ends -->
+        <!-- Footer Section Starts -->
+        <footer class="footer top-logos">
+            <!-- Footer Top Area Starts -->
+            <div class="container top-footer">
+                <div class="row">
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <h4>Site Map</h4>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/portfolio/">Portfolio</a></li>
+                                <li><a href="/demo/">App Demos</a></li>
+                                <li><a href="/blog/">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Ends -->
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <h4>Support</h4>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="/contact/">Contact</a></li>
+                                <li><a href="/privacy_policy/">Privacy Policy</a></li>
+                                <li><a href="/eula/">EULA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Ends -->
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-4 col-md-3">
+                        <h4>Contact US</h4>
+                        <div class="menu">
+                            <ul>
+                                <li><span><i class="fa fa-envelope-open"></i> brad@quirkconsulting.com</span></li>
+                                <li><span><i class="fa fa-map-marker"></i> Melbourne, Australia</span></li>
+                                <li><span><i class="fa fa-clock-o"></i> mon-fri 9am &#x21FE; 5pm</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Ends -->
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-12 col-md-4">
+
+                        <hr>
+                        <!-- Social Media Links Starts -->
+                        <div class="social-icons">
+                            <ul class="social">
+                                <li>
+                                    <a class="twitter" href="#" title="twitter"></a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="#" title="linkedin"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Social Media Links Ends -->
+                    </div>
+                    <!-- Footer Widget Ends -->
+                </div>
+                <!-- Footer Bottom Area Starts -->
+                <div class="bottom-footer">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Copyright Text Starts -->
+                            <p class="text-center">Copyright © 2020 Quirk Consulting</p>
+                            <!-- Copyright Text Ends -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Bottom Area Ends -->
+            </div>
+            <!-- Footer Top Area Ends -->
+
+        </footer>
+        <!-- Footer Section Ends -->
+        <!-- Back To Top Starts -->
+        <div id="back-top-wrapper">
+            <p id="back-top">
+                <a href="#top"><span></span></a>
+            </p>
+        </div>
+        <!-- Back To Top Ends -->
+    </div>
+    <!-- Wrapper Ends -->
+
+    <!-- Template JS Files -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/d3-sankey@0"></script>
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/plugins/jquery.easing.1.3.js"></script>
+    <script src="../../js/plugins/bootstrap.min.js"></script>
+
+    <!-- Main JS Initialization File -->
+    <script src="../../js/custom.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
