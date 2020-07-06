@@ -89,6 +89,10 @@ input[type="button"] {
     margin: 4px;
 }
 
+.tooltipThin {
+    font-weight: lighter;
+}
+
 #label {
     display: inline-block;
 }
@@ -171,6 +175,7 @@ input[type=text] {
     color: white;
     pointer-events: none;
     font-family: 'Roboto', sans-serif !important;
+    text-transform: none !important;
 }
 
 #loading-center-absolute-one {
@@ -749,8 +754,8 @@ line {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    width: 25%;
-    width: calc(100% / 4);
+    width: 20%;
+    width: calc(100% / 5);
     font-weight: 600;
     background-color: #DDDDDD;
 }

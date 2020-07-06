@@ -138,7 +138,9 @@
                 <div class="row">
                     <div class="content">
                         <div class="tab">
-                            <button id="buttonDepRing" class="tablinks defaultOpen" onclick="openTab(event, 'depRing')">Individual
+                            <button id="buttonDepBoard" class="tablinks defaultOpen" onclick="openTab(event, 'depBoard')">Dependency
+                                Board</button>
+                            <button id="buttonDepRing" class="tablinks" onclick="openTab(event, 'depRing')">Individual
                             Dependencies</button>
                             <button id="buttonDepSankey" class="tablinks" onclick="openTab(event, 'depSankey')">Team Dynamics</button>
                             <button id="buttonDepHeatmap" class="tablinks" onclick="openTab(event, 'depHeatmap')">Grouped
@@ -150,19 +152,18 @@
                             <div id="depRing" class="tabcontent">
                                 <div class="aui-item" id="chart"></div>
                             </div>
-
                             <div id="depSankey" class="tabcontent">
                                 <div class="aui-item" id="sankeyChart"></div>
                             </div>
-
                             <div id="depHeatmap" class="tabcontent">
                                 <div class="aui-item" id="tableChart"></div>
                             </div>
-
                             <div id="depForce" class="tabcontent">
                                 <div class="aui-item" id="forceChart"></div>
                             </div>
-
+                            <div id="depBoard" class="tabcontent">
+                                <div class="aui-item" id="boardChart"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
