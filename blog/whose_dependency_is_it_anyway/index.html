@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Whose Dependency Is It Anyway - Quirk Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../img/logo/xsmall_125x/logo_yellow_125px.png">
+
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/skins/yellow.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/70477f2066.js" crossorigin="anonymous"></script>
+
+    <!-- Template JS Files -->
+    <script src="../../js/modernizr.js"></script>
+
+</head>
+
+<body class="double-diagonal dark blog-page blog-post">
+    <!-- Preloader Starts -->
+    <div class="preloader" id="preloader">
+        <div class="logopreloader">
+            <img src="../../img/logo/xsmall_125x/logo_yellow_125px.png" alt="logo">
+        </div>
+        <div class="loader" id="loader"></div>
+    </div>
+    <!-- Preloader Ends -->
+    <!-- Page Wrapper Starts -->
+    <div class="wrapper">
+        <!-- Header Starts -->
+        <header class="header">
+            <div class="header-inner">
+                <!-- Navbar Starts -->
+                <nav class="navbar">
+                    <!-- Logo Starts -->
+                    <div class="logo">
+                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand" href="index.html">
+                            <!-- Logo White Starts -->
+                            <img id="logo-light" class="logo-light" src="../../img/sitelogo_yellow_small.png" alt="logo-light" />
+                            <!-- Logo White Ends -->
+                            <!-- Logo Black Starts -->
+                            <img id="logo-dark" class="logo-dark" src="../../img/sitelogo_yellow_small.png" alt="logo-dark" />
+                            <!-- Logo Black Ends -->
+                        </a>
+                    </div>
+                    <!-- Logo Ends -->
+                    <!-- Toggle Icon for Mobile Starts -->
+                    <button class="navbar-toggle navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span id="icon-toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </button>
+                    <!-- Toggle Icon for Mobile Ends -->
+                    <div id="navbarSupportedContent" class="collapse navbar-collapse navbar-responsive-collapse">
+                        <!-- Main Menu Starts -->
+                        <ul class="nav navbar-nav" id="main-navigation">
+                            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                            <li class="dropdown">
+                                <a href="/portfolio/"><i class="fa fa-line-chart" aria-hidden="true"></i></i> Portfolio <i class="fa fa-angle-down icon-angle"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="/portfolio/value_stream_map/">Value Stream 'Flow' Map</a></li>
+                                    <li><a href="/portfolio/magic_wheel/">Backlog-on-a-Page</a></li>
+                                    <li><a href="/portfolio/dependency_ring/">Dependency Ring</a></li>
+                                    <li><a href="/portfolio/relationship_heatmap/">Relationship Heatmap</a></li>
+                                    <li><a href="/portfolio/parallel_coordinates/">Finding Corellation</a></li>
+                                    <li><a href="/portfolio/cycletime_horizon/">Cycle Time Horizon</a></li>
+                                    <li><a href="/portfolio/cfd/">Cumulative Flow Diagram</a></li>
+                                    <li><a href="/portfolio/epic_size/">Epic Size Distribution</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="/demo/dependency_mapper/"><i class="fa fa-desktop" aria-hidden="true"></i> App Demos <i class="fa fa-angle-down icon-angle"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="/demo/dependency_mapper/">Dependency Mapper for Jira</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="/blog/"><i class="fa fa-book" aria-hidden="true"></i> Blog</a></li>
+                            <li><a href="/contact/"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+                        </ul>
+                        <!-- Main Menu Ends -->
+                    </div>
+                    <!-- Navigation Menu Ends -->
+                </nav>
+                <!-- Navbar Ends -->
+            </div>
+        </header>
+        <!-- Header Ends -->
+        <!-- Banner Starts -->
+        <section class="banner banner-blog-post" style="background-image:url('img/banner.png')">
+            <div class="content text-center">
+                <div class="text-center top-text">
+                    <!-- Main Heading Starts -->
+                    <div class="text-center top-text">
+                        <h1><span>Whose dependency</span> is it anyway?</h1>
+                    </div>
+                    <!-- Main Heading Ends -->
+                    <hr>
+                    <!-- Meta Starts -->
+                    <div class="meta">
+                        <span><i class="fa fa-user"></i> <a href="#">Brad Quirk</a></span>
+                        <span><i class="fa fa-calendar"></i> 07 July 2020</span>
+                    </div>
+                    <!-- Meta Ends -->
+                </div>
+            </div>
+        </section>
+        <!-- Banner Ends -->
+        <!-- Section Content Starts -->
+        <section class="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="content col-xs-12 col-md-8">
+                        <!-- Article Starts -->
+                        <article>
+                            <h3><span>This relationship is 'complicated'</span></h3>
+                            <!-- how do you resolve a dependency? -->
+                            <p class="content-article">If you've ever worked in an organisation with more than one delivery team, chances are you've had to manage a dependency or two at some point in your career.</p>
+                            <p class="content-article">You've also felt the frustration of trying to resolve that dependency, especially when the other team has conflicting priorities. They might have a critical release coming up, a shortfall of capacity, or maybe even completely
+                                different success criteria that prevents you from even opening a dialog in the first place.</p>
+                            <p class="content-article">Let's explore a few different methods that can be applied to tackle the problem of dependency management, and assess the pros and cons for each.</p>
+
+                            <h3><span>First, start by analysing your system of dependencies</span></h3>
+                            <!-- visualise your dependencies -->
+                            <figure>
+                                <img class="blogimage" src="img/ring_only.png" alt="WIP Limit Identified" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+                                <figcaption>A view of all dependencies in a Jira instance, grouped together by project (coloured arcs) - <a href="https://marketplace.atlassian.com/1221796">App Link</a></figcaption>
+                            </figure>
+                            <p class="content-article">Before we start creating solutions, we must first seek to understand the problems. Here we've used the <a href="https://marketplace.atlassian.com/1221796">Dependency Mapper for Jira</a> app to visualise all existing dependencies
+                                between teams.</p>
+                            <p class="content-article">Using this information we can not only identify where clusters of dependencies lie, but also which teams share common sets of dependencies. What insights can you derive from the above picture?</p>
+                            <p class="content-article">It can also help inform a strategy for resolving these issues; could it be better to try and fix the problem ourselves? Do we maybe need to create some kind of contract or agreement to resolve multiple dependencies? The approach
+                                depends on what insights you derive from your analysis.</p>
+
+                            <h3><span>The DIY Approach - Resolve the dependency yourself</span></h3>
+                            <figure>
+                                <img class="blogimage" src="img/matrix_only.png" alt="WIP Limit Identified" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+                                <figcaption>Unless you have a small handful of dependencies to manage, trying to own and resolve them all may overwhelm your team - <a href="https://marketplace.atlassian.com/1221796">App Link</a></figcaption>
+                            </figure>
+                            <p class="content-article">The first instinct a team may have is to both own and resolve the dependency yourself, after all if you're consuming an asset or service then surely you have the right to contribute to it also right?</p>
+                            <p class="content-article">Unfortunately despite having good intentions, this approach can be frought with issues including, but not limited to:</p>
+                            <ul>
+                                <li>Conflict of Expertise - Depending on the nature of work you may disrupt the flow of work for the other team by introducing quality issues in their space. This could cause potential conflict and debate that would cost more
+                                    in the long run, as opposed to letting said other team prioritise the dependency in their own backlog</li>
+                                <li>Conflict of Practice - Similarly, the service or asset owned by the other team may be run in an entirely different way to what your team does. This could be a difference in operating rhythym (e.g. Scrum vs. Waterfall),
+                                    deployment method (DevOps vs. non-DevOps), or even expectactions around maintenance and aftercare that could arise further complications</li>
+                                <li>Conflict of Ownership - Leaning more towards the cultural side of many organisations, there could be a preconceived notion that any attempts to adjust another team's asset or service could be deemed invasive. This could
+                                    further complicate the trust and relationship built up to this point.</li>
+                            </ul>
+
+                            <h3><span>The Diplomatic Approach - Create a contract between teams</span></h3>
+                            <figure>
+                                <img class="blogimage" src="img/sankey_only.png" alt="WIP Limit Identified" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+                                <figcaption>If you share multiple dependencies with a team, it may be beneficial to strike a bargain with them - <a href="https://marketplace.atlassian.com/1221796">App Link</a></figcaption>
+                            </figure>
+                            <p class="content-article">A more tactical approach, especially in scaled organisations, may be to focus on striking up a trusted working relationship with the team/s you have the most dependencies on in order to resolve your issues in a timely manner.</p>
+                            <p class="content-article">Quite often teams start with this approach in mind, but forget to consider the other side of the equation; by requesting something from the other team, what's in it for them? If you can find a scenario that ends in a mutual
+                                benefit to both teams then this can create further opportunities later in time with regards to cross-skilling and knowledge-sharing.</p>
+                            <p class="content-article">However, if a mutually scenario can't be identified not all is lost. In some cases it can be possible to sit down with your dependant teams and create a type of 'contract' (similar to a social contract in the Agile world) that
+                                lays out the terms and conditions of the services provided by the responding team. This could include:</p>
+                            <ul>
+                                <li>A Service Level Expectation (SLE) of when the team can expect the dependency to be resolved</li>
+                                <li>An agreement on how both teams can communicate with each other, namely the medium (e.g. email, Slack) and the operating hours</li>
+                                <li>A clause that dictates how often requests are prioritised by the dependent party</li>
+                            </ul>
+
+                            <h3><span>Re-Organise around Value Streams - The Systemic Approach</span></h3>
+                            <figure>
+                                <img class="blogimage" src="img/value_stream_card.png" alt="WIP Limit Identified" style="width:80%;display: block;margin-left: auto;margin-right: auto;">
+                                <figcaption>Aligning work around Value Streams can yield benefits beyond the systemic elimination of dependencies - <a href="https://quirkconsulting.com.au/portfolio/value_stream_map/">Portfolio Link</a></figcaption>
+                            </figure>
+                            <!-- systemic resolution - re-organise around a value stream -->
+                            <!-- talk about how its easier to start talking about OKRs -->
+
+                            <p class="content-article">Last, and perhaps most difficult but rewarding, is the option of exploring opportunities to re-organise the structure of all teams within the system to deliver a fully realised value stream of work.</p>
+                            <p class="content-article">Despite the fact that eliminating all cross-team dependencies within a scaled organisation is practically impossible, there are quite often many opportunities to optimise teams away from 'horizontal' or 'component'-owned assets
+                                and services and more towards 'vertical' end-to-end delivery mechanisms.</p>
+                            <p class="content-article">Aligning teams towards collaboration and delivery of real customer value can also have effects on workplace culture, enabling discussions around shifting from Key Performance Indicators (KPIs) and towards Objectives and Key
+                                Results (OKRs).</p>
+
+
+                            <h3><span>Conclusion</span></h3>
+                            <p class="content-article">In closing, dependency management is a critical skill for any Scrum Master, Product Owner or Project Manager to master. There are various techniques to address dependencies, and depending on the context of your work may yield
+                                positive or negative results. Ultimately these conversations should lend themselves towards delivering frequent customer value, not just managing process.</p>
+                            <p class="content-article">How have you managed your dependencies in your organisation? I'd love to hear more about how your team currently operates! <a href="https://quirkconsulting.com.au/contact/">Feel free to contact me to start a discussion!</a></p>
+
+                            <h3><span>want to enhance your agile reporting?</span></h3>
+                            <p class="content-article">Are you a Jira user? Check out <a href="https://marketplace.atlassian.com/vendors/1217451/quirk-consulting">these apps</a> that focus on themes like dependency management, scaled backlog views and WIP management to help your
+                                teams navigate and understand their complex environments!</p>
+
+
+                            <!-- Content Ends -->
+                        </article>
+                        <!-- Article Ends -->
+                    </div>
+                    <!-- Sidebar Starts -->
+                    <div class="sidebar col-xs-12 col-md-4">
+                        <!-- Latest Posts Widget Ends -->
+                        <div class="widget recent-posts">
+                            <h3 class="widget-title">Recent Posts</h3>
+                            <ul class="unstyled clearfix">
+                                <!-- Recent Post Widget Starts -->
+                                <li>
+                                    <div class="posts-thumb pull-left">
+                                        <a href="/blog/whose_dependency_is_it_anyway/">
+                                            <img alt="img" src="../thumbnail/whose_dependency_is_it_anyway.png">
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <h4 class="entry-title">
+                                            <a href="/blog/whose_dependency_is_it_anyway/">WHOSE DEPENDENCY IS IT ANYWAY?</a>
+                                        </h4>
+                                        <p class="post-meta">
+                                            <span class="post-date"><i class="fa fa-clock-o"></i> July 8,
+                                                2020</span>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                                <!-- Recent Post Widget Ends -->
+                                <!-- Recent Post Widget Starts -->
+                                <li>
+                                    <div class="posts-thumb pull-left">
+                                        <a href="/blog/how_to_actually_get_started_with_wip_limits/">
+                                            <img alt="img" src="../thumbnail/how_to_actually_get_started_with_wip_limits.png">
+                                        </a>
+                                    </div>
+                                    <div class="post-info">
+                                        <h4 class="entry-title">
+                                            <a href="/blog/how_to_actually_get_started_with_wip_limits/">HOW TO ACTUALLY GET STARTED WITH WIP LIMITS</a>
+                                        </h4>
+                                        <p class="post-meta">
+                                            <span class="post-date"><i class="fa fa-clock-o"></i> June 30,
+                                                2020</span>
+                                        </p>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </li>
+                                <!-- Recent Post Widget Ends -->
+                            </ul>
+                        </div>
+                        <!-- Latest Posts Widget Ends -->
+                    </div>
+                    <!-- Sidebar Ends -->
+                </div>
+            </div>
+        </section>
+        <!-- Section Content Ends -->
+        <!-- Footer Section Starts -->
+        <footer class="footer top-logos">
+            <!-- Footer Top Area Starts -->
+            <div class="container top-footer">
+                <div class="row">
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <h4>Site Map</h4>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/portfolio/">Portfolio</a></li>
+                                <li><a href="/demo/">App Demos</a></li>
+                                <li><a href="/blog/">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Ends -->
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-4 col-md-2">
+                        <h4>Support</h4>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="/contact/">Contact</a></li>
+                                <li><a href="/privacy_policy/">Privacy Policy</a></li>
+                                <li><a href="/eula/">EULA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Ends -->
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-4 col-md-3">
+                        <h4>Contact US</h4>
+                        <div class="menu">
+                            <ul>
+                                <li><span><i class="fa fa-envelope-open"></i> brad@quirkconsulting.com</span></li>
+                                <li><span><i class="fa fa-map-marker"></i> Melbourne, Australia</span></li>
+                                <li><span><i class="fa fa-clock-o"></i> mon-fri 9am &#x21FE; 5pm</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer Widget Ends -->
+                    <!-- Footer Widget Starts -->
+                    <div class="col-xs-6 col-sm-12 col-md-4">
+
+                        <hr>
+                        <!-- Social Media Links Starts -->
+                        <div class="social-icons">
+                            <ul class="social">
+                                <li>
+                                    <a class="twitter" href="https://twitter.com/QuirkBrad" title="twitter"></a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="https://www.linkedin.com/company/quirkconsulting" title="linkedin"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Social Media Links Ends -->
+                    </div>
+                    <!-- Footer Widget Ends -->
+                </div>
+                <!-- Footer Bottom Area Starts -->
+                <div class="bottom-footer">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Copyright Text Starts -->
+                            <p class="text-center">Copyright © 2020 Quirk Consulting</p>
+                            <!-- Copyright Text Ends -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Bottom Area Ends -->
+            </div>
+            <!-- Footer Top Area Ends -->
+
+        </footer>
+        <!-- Footer Section Ends -->
+        <!-- Back To Top Starts -->
+        <div id="back-top-wrapper">
+            <p id="back-top">
+                <a href="#top"><span></span></a>
+            </p>
+        </div>
+        <!-- Back To Top Ends -->
+    </div>
+    <!-- Wrapper Ends -->
+
+    <!-- Template JS Files -->
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/plugins/jquery.easing.1.3.js"></script>
+    <script src="../../js/plugins/bootstrap.min.js"></script>
+
+    <!-- Main JS Initialization File -->
+    <script src="../../js/custom.js"></script>
+
+</body>
+
+</html>

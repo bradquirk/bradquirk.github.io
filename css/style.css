@@ -2074,7 +2074,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 
 .custom-button {
     border: none;
-    color: #fff;
+    color: #333333;
     text-decoration: none;
     background: #00bbda;
     cursor: pointer;
@@ -2099,14 +2099,14 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 .custom-button,
 .custom-button:hover,
 .custom-button:focus {
-    color: #fff;
+    color: #333333;
     text-decoration: none;
 }
 
 .custom-button:before {
     content: "\f1d8";
     font: 15px/1.2em FontAwesome;
-    color: #fff;
+    color: #333333;
     position: absolute;
     height: 100%;
     right: 18px;
