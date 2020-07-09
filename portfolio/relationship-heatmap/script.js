@@ -1,0 +1,86 @@
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) || /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform)) $("#chart").append('<img src="../../img/portfolio/cards/relationship-heatmap_card.png"/>'), $("#chart").append("<p>For the interactive version, please visit this site on desktop!</p>"), d3.select("#header").html("<h3 class='amber-text'>Relationship Heatmap</h3><h6>version 1.0</h6>");
+else {
+    var margin = { top: 10, right: 200, bottom: 150, left: 150 },
+        tooltipMargin = { top: 20, right: 20, bottom: 60, left: 60 },
+        width = $("#chart").width() - margin.left - margin.right,
+        height = .6 * $(window).innerHeight() - margin.top - margin.bottom,
+        tooltipWidth = .4 * $(window).innerHeight() - tooltipMargin.left - tooltipMargin.right,
+        tooltipHeight = .4 * $(window).innerHeight() - tooltipMargin.top - tooltipMargin.bottom,
+        tooltip = d3.select("#chart").append("div").attr("id", "tooltip").style("max-width", 1.2 * tooltipWidth).style("position", "absolute").style("visibility", "hidden");
+    tooltipSVG = tooltip.append("p").attr("id", "tooltipText").attr("font-size", "0.5em"), tooltipSVG = tooltip.append("svg").attr("width", tooltipWidth + tooltipMargin.left + tooltipMargin.right).attr("height", tooltipHeight + tooltipMargin.top + tooltipMargin.bottom).style("background-color", "#333").append("g").attr("transform", "translate(" + tooltipMargin.left + "," + tooltipMargin.top + ")");
+    var tooltipX = d3.scaleLinear().domain([0, 1]).range([0, tooltipWidth]);
+    tooltipSVG.append("g").attr("class", "x axis").attr("transform", "translate(0," + tooltipHeight + ")").call(d3.axisBottom(tooltipX)), tooltipSVG.append("text").attr("id", "tooltipXText").attr("transform", "translate(" + tooltipWidth / 2 + " ," + (tooltipHeight + tooltipMargin.top + 20) + ")").style("text-anchor", "middle");
+    var tooltipY = d3.scaleLinear().domain([0, 1]).range([tooltipHeight, 0]);
+    tooltipSVG.append("g").attr("class", "y axis").call(d3.axisLeft(tooltipY)), tooltipSVG.append("text").attr("id", "tooltipYText").attr("transform", "rotate(-90)").attr("x", 0 - tooltipHeight / 2).attr("dy", "1em").style("text-anchor", "middle"), d3.select("#tooltipYText").attr("y", 0 - tooltipMargin.left), tooltipSVG.append("g").attr("id", "scatterGroup");
+    var PearsonPath = d3.line().x(t => tooltipX(t.xValues)).y(t => tooltipY(t.yValues));
+    tooltipSVG.append("path").attr("id", "tooltipLine").attr("stroke-width", "1px").style("stroke", "white"), tooltipSVG.append("text").append("textPath").attr("id", "tooltipLineText").attr("xlink:href", "#tooltipLine").attr("startOffset", "50%").style("text-anchor", "middle").style("fill", "white").style("dy", -10);
+    var dataTable = [];
+    d3.csv("data.csv").then(function(t) {
+        for (var e = d3.keys(t[0]).filter(function(t) { return "key" !== t && "index" !== t }), a = (e.length, 0); a < e.length; a++)
+            for (var o = 0; o < e.length; o++) {
+                var i = {},
+                    l = t.map(t => +t[e[a]]),
+                    r = t.map(t => +t[e[o]]);
+                leastSquares(l, r, !0, i), l.filter((t, e, a) => a.indexOf(t) === e).length >= 3 && r.filter((t, e, a) => a.indexOf(t) === e).length >= 3 && dataTable.push({ xName: e[a], yName: e[o], xValues: l, yValues: r, linReg: i, pearson: Math.pow(corr(l, r), 2) })
+            }
+        e = dataTable.map(t => t.xName).filter((t, e, a) => a.indexOf(t) === e);
+        var n = d3.select("#chart").append("svg").attr("width", width + margin.left + margin.right).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")"),
+            s = d3.scaleBand().range([0, width]).domain(e).padding(.01);
+        n.append("g").attr("transform", "translate(0," + height + ")").call(d3.axisBottom(s)).selectAll("text").attr("class", "axisValues").attr("id", t => "xAxis" + camelise(t.replace("(", " ").replace(")", " "))).style("text-anchor", "end").attr("dx", "-.8em").attr("dy", ".15em").attr("transform", "rotate(-45)");
+        var p = d3.scaleBand().range([height, 0]).domain(e.reverse()).padding(.01);
+        n.append("g").call(d3.axisLeft(p)).selectAll("text").attr("class", "axisValues").attr("id", t => "yAxis" + camelise(t.replace("(", " ").replace(")", " ")));
+        var d = d3.scaleSequential().interpolator(d3.interpolateWarm),
+            c = d3.scaleSequential().interpolator(d3.interpolateWarm);
+        n.selectAll().data(dataTable).enter().append("rect").attr("x", function(t) { return s(t.xName) }).attr("y", function(t) { return p(t.yName) }).attr("width", s.bandwidth()).attr("height", p.bandwidth()).style("fill", t => t.xName == t.yName || t.xValues.filter(t => t > 0).length <= 1 || t.yValues.filter(t => t > 0).length <= 1 ? "#333" : d(t.pearson)).attr("box-sizing", "border-box").on("mouseout", function() { d3.selectAll(".axisValues").transition().attr("fill", "white"), tooltip.transition().style("visibility", "hidden") }).on("mouseover", function(t) { d3.select("#xAxis" + camelise(t.xName.replace("(", " ").replace(")", " "))).transition().attr("fill", d(.5)), d3.select("#yAxis" + camelise(t.yName.replace("(", " ").replace(")", " "))).transition().attr("fill", d(.5)), updateMouseOver(d3.mouse(this), t) }).on("mousemove", function(t) { updateMouseOver(d3.mouse(this), t) });
+        var h = d3.range(20).map(t => d(t / 20)).reverse();
+        n.append("defs").append("linearGradient").attr("id", "gradient-colors").attr("x1", "0%").attr("y1", "0%").attr("x2", "0%").attr("y2", "100%").selectAll("stop").data(h).enter().append("stop").attr("offset", function(t, e) { return e / (h.length - 1) }).attr("stop-color", function(t) { return t });
+        var m = n.append("g").attr("class", "legendWrapper").attr("transform", "translate(" + (width + 10) + "," + margin.top + ")");
+        m.append("rect").attr("class", "legendRect").attr("y", 10).attr("width", "15px").attr("height", height / 2).style("fill", "url(#gradient-colors)"), m.append("text").attr("class", "legendTitle").text("Relationship Strength");
+        var g = d3.scaleLinear().domain([0, 1]).range([height / 2 - 1, 0]);
+        m.append("g").attr("class", "legendAxis").attr("transform", "translate(15,10)").call(d3.axisRight(g).ticks(5).tickFormat(d3.format(".0%"))).selectAll("path").style("stroke", "none");
+        var x = n,
+            f = { x: window.scrollX, y: window.scrollY, w: window.innerWidth, h: window.innerHeight },
+            u = d3.select("#chart"),
+            y = (u.node().offsetWidth, u.node().offsetHeight, document.width, document.height, function getNodePos(t) { for (var e = d3.select("body").node(), a = 0, o = 0; null != t && t != e; a += t.offsetLeft || t.clientLeft, o += t.offsetTop || t.clientTop, t = t.offsetParent || t.parentNode); return { x: a, y: o } }(x.node())),
+            v = { x: 15, y: 15 },
+            w = $("#chart").position();
+
+        function camelise(t) { return t.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(t, e) { return 0 == +t ? "" : 0 == e ? t.toLowerCase() : t.toUpperCase() }) }
+
+        function leastSquares(t, e, a, o) {
+            "object" == typeof a && (o = a, a = !1), void 0 === o && (o = {});
+            for (var i = 0, l = 0, r = 0, n = 0, s = t.length, p = 0; p < s; ++p) i += t[p], l += e[p], r += t[p] * e[p], n += t[p] * t[p];
+            if (o.m = (r - i * l / s) / (n - i * i / s), o.b = l / s - o.m * i / s, a) {
+                for (var d = 0, c = 0; c < s; ++c) d += (e[c] - o.b - o.m * t[c]) * (e[c] - o.b - o.m * t[c]);
+                var h = s * n - i * i,
+                    m = 1 / (s - 2) * d;
+                o.bErr = Math.sqrt(m / h * n), o.mErr = Math.sqrt(s / h * m)
+            }
+            return function(t) { return o.m * t + o.b }
+        }
+
+        function corr(t, e) {
+            let { min: a, pow: o, sqrt: i } = Math, l = (t, e) => t + e, r = a(t.length, e.length);
+            if (0 === r) return 0;
+            [t, e] = [t.slice(0, r), e.slice(0, r)];
+            let [n, s] = [t, e].map(t => t.reduce(l)), [p, d] = [t, e].map(t => t.reduce((t, e) => t + o(e, 2), 0)), c = t.map((t, a) => t * e[a]).reduce(l), h = i((p - o(n, 2) / r) * (d - o(s, 2) / r));
+            return 0 === h ? 0 : (c - n * s / r) / h
+        }
+
+        function updateMouseOver(t, e) {
+            document.getElementById("chart").offsetLeft, d3.event.pageX, margin.left, tooltipSVG.select(".x").transition().call(d3.axisBottom(tooltipX)), tooltipSVG.select(".y").transition().call(d3.axisLeft(tooltipY));
+            var a = d3.mouse(x.node());
+            f.x = window.scrollX, f.y = window.scrollY, a[0] += y.x, a[1] += y.y, tooltip.style("right", ""), tooltip.style("left", ""), tooltip.style("bottom", ""), tooltip.style("top", ""), d3.select("#tooltipText").html(e.xName + " vs. " + e.yName + "</br>Strength: <span style='color:" + d(e.pearson) + ";'>" + d3.format(".0%")(e.pearson) + "</span>"), tooltip.style("height", $("#heading").height()), a[0] > $(window).innerWidth() / 2 ? tooltip.style("left", event.clientX - w.left - v.x - $("#tooltip").width() + "px") : tooltip.style("left", event.clientX - w.left + v.x + "px"), a[1] > $(window).innerHeight() / 2 ? tooltip.style("top", event.clientY - w.top - v.y - $("#tooltip").height() + "px") : tooltip.style("top", event.clientY - w.top + v.y + "px"), tooltip.style("visibility", "visible");
+            for (var o = [], i = e.xValues.length - 1; i >= 0; i--) o.push({ xValues: e.xValues[i], yValues: e.yValues[i] });
+            tooltipX.domain([0, d3.max(e.xValues)]), tooltipY.domain([0, d3.max(e.yValues)]), c.domain(tooltipX.domain());
+            var l = tooltipSVG.select("#scatterGroup").selectAll("circle").data(o);
+            l.exit().remove(), l.enter().append("circle").attr("r", 0), l.transition().attr("cx", t => tooltipX(t.xValues)).attr("cy", t => tooltipY(t.yValues)).attr("r", 3).style("opacity", .5).attr("fill", t => c(t.xValues));
+            var r = [],
+                n = e.linReg;
+            for (i = 0; i < tooltipX.domain()[1]; i += tooltipX.domain()[1] / 50) r.push({ xValues: i, yValues: n.m * i + n.b });
+            r = r.filter(t => t.xValues >= tooltipX.domain()[0] && t.xValues <= tooltipX.domain()[1] && t.yValues >= tooltipY.domain()[0] && t.yValues <= tooltipY.domain()[1]);
+            var s = tooltipSVG.selectAll("#tooltipLine").data([r]);
+            s.enter().append("path").attr("id", "tooltipLine").merge(s).transition().attr("d", PearsonPath).attr("fill", "none").attr("stroke-width", 2.5), d3.select("#tooltipLineText").text(function() { return n.b > 0 ? "y = " + n.m.toFixed(2) + "*x + " + n.b.toFixed(2) : "y = " + n.m.toFixed(2) + "*x " + n.b.toFixed(2) }), d3.select("#tooltipXText").text(e.xName), d3.select("#tooltipYText").text(e.yName)
+        }
+    })
+}

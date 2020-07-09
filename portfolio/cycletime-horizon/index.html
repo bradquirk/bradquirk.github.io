@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Value Stream Map - Quirk Consulting</title>
+    <title>Cycle Time Horizon - Quirk Consulting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/logo/xsmall_125x/logo_yellow_125px.png">
+    <link rel="shortcut icon" href="../../img/logo/xsmall_125x/logo_yellow_125px.png">
 
     <!-- Template CSS Files -->
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/skins/yellow.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="addon.css"></script>
 
     <!-- Template JS Files -->
     <script src="../../js/modernizr.js"></script>
@@ -79,20 +80,20 @@
                             <li class="dropdown active">
                                 <a href="/portfolio/"><i class="fa fa-line-chart" aria-hidden="true"></i></i> Portfolio <i class="fa fa-angle-down icon-angle"></i></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li class="active"><a href="/portfolio/value_stream_map/">Value Stream 'Flow' Map</a></li>
-                                    <li><a href="/portfolio/magic_wheel/">Backlog-on-a-Page</a></li>
-                                    <li><a href="/portfolio/dependency_ring/">Dependency Ring</a></li>
-                                    <li><a href="/portfolio/relationship_heatmap/">Relationship Heatmap</a></li>
-                                    <li><a href="/portfolio/parallel_coordinates/">Finding Corellation</a></li>
-                                    <li><a href="/portfolio/cycletime_horizon/">Cycle Time Horizon</a></li>
+                                    <li><a href="/portfolio/value-stream-map/">Value Stream 'Flow' Map</a></li>
+                                    <li><a href="/portfolio/magic-wheel/">Backlog-on-a-Page</a></li>
+                                    <li><a href="/portfolio/dependency-ring/">Dependency Ring</a></li>
+                                    <li><a href="/portfolio/relationship-heatmap/">Relationship Heatmap</a></li>
+                                    <li><a href="/portfolio/parallel-coordinates/">Finding Corellation</a></li>
+                                    <li class="active"><a href="/portfolio/cycletime-horizon/">Cycle Time Horizon</a></li>
                                     <li><a href="/portfolio/cfd/">Cumulative Flow Diagram</a></li>
-                                    <li><a href="/portfolio/epic_size/">Epic Size Distribution</a></li>
+                                    <li><a href="/portfolio/epic-size/">Epic Size Distribution</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="/demo/dependency_mapper/"><i class="fa fa-desktop" aria-hidden="true"></i> App Demos <i class="fa fa-angle-down icon-angle"></i></a>
+                                <a href="/demo/dependency-mapper/"><i class="fa fa-desktop" aria-hidden="true"></i> App Demos <i class="fa fa-angle-down icon-angle"></i></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/demo/dependency_mapper/">Dependency Mapper for Jira</a></li>
+                                    <li><a href="/demo/dependency-mapper/">Dependency Mapper for Jira</a></li>
                                 </ul>
                             </li>
                             <li><a href="/blog/"><i class="fa fa-book" aria-hidden="true"></i> Blog</a></li>
@@ -112,7 +113,7 @@
                 <div class="text-center top-text">
                     <!-- Main Heading Starts -->
                     <div class="text-center top-text">
-                        <h1><span>Value Stream</span> Map</h1>
+                        <h1><span>Cycle Time Horizon</span> Chart</h1>
                     </div>
                     <!-- Main Heading Ends -->
                     <hr>
@@ -120,7 +121,7 @@
                     <ul class="breadcrumb">
                         <li><a href="/"> Home</a></li>
                         <li><a href="/portfolio/"> Portfolio</a></li>
-                        <li>Value Stream Map</li>
+                        <li>Cycle Time Horizon Chart</li>
                     </ul>
                     <!-- Breadcrumb Ends -->
                 </div>
@@ -130,21 +131,16 @@
         <!-- Project Starts -->
         <section class="project">
             <div class="container" style="padding-top:20px !important;">
-                <div class="col" id="chart" style="position:relative;overflow-x: auto; overflow-y:hidden;"></div>
+                <div class="row" id="cycleChart">
+                </div>
+                <div class="row" id="releaseChart">
+                </div>
                 <div>
                     <!-- Card body -->
                     <div>
                         <div class="white-text">
-                            <p>
-                                When undertaking large-scale change programs, we want to understand our existing end-to-end processes in order to indentify more efficient avenues to add customer value, or in other words eliminate waste. The Value Stream Map (VSM) is a decades-old lean-manufacturing
-                                technique that has been used by thousands of companies to fulfil this exact purpose. Especially in agile transformation programs, it doesn't take too long until the topic of VSMs start creeping to the surface.</p>
-                            <p>
-                                But if we're all talking about VSMs, why aren't the outputs of the exercise sitting in a framed poster inside every boardroom or meeting hub? I believe the answer is simple; <b>traditional Value Stream Maps are really difficult to interpret.</b></p>
-                            Without a detailed workshop or instruction manual they don't hold much conveyance to the end user.
-
-                            <p>
-                                So what if we took these confusing outputs and repurposed them to make them much easier to interpret? By using the metaphor of 'flow', which is a key principle of lean manufacturing to begin with, and extending it to represent a pipeline of customer value,
-                                it should be much easier to highlight the current state of an organisation's processes and where the opportunities for improvement lie.</p>
+                            <p>This Cycle Time Horizon chart is a prototype to showcase how shorter cycle teams lead to higher throughput, and therefore more opportunities to know your customer.</p>
+                            <p>Unfortunately the randomised dataset does not portray the right message here just yet.</p>
                         </div>
                     </div>
 
@@ -154,8 +150,7 @@
                     <!-- Card body -->
                     <div>
                         <div class="white-text">
-                            <p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact me!</a>
-                            </p>
+                            <p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact me!</a></p>
                         </div>
                     </div>
                 </div>
@@ -186,7 +181,7 @@
                         <div class="menu">
                             <ul>
                                 <li><a href="/contact/">Contact</a></li>
-                                <li><a href="/privacy_policy/">Privacy Policy</a></li>
+                                <li><a href="/privacy-policy/">Privacy Policy</a></li>
                                 <li><a href="/eula/">EULA</a></li>
                             </ul>
                         </div>

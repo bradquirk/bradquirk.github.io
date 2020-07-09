@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Dependency Ring Prototype - Quirk Consulting</title>
+    <title>Epic Size Distribution - Quirk Consulting</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon -->
@@ -80,20 +80,20 @@
                             <li class="dropdown active">
                                 <a href="/portfolio/"><i class="fa fa-line-chart" aria-hidden="true"></i></i> Portfolio <i class="fa fa-angle-down icon-angle"></i></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/portfolio/value_stream_map/">Value Stream 'Flow' Map</a></li>
-                                    <li><a href="/portfolio/magic_wheel/">Backlog-on-a-Page</a></li>
-                                    <li class="active"><a href="/portfolio/dependency_ring/">Dependency Ring</a></li>
-                                    <li><a href="/portfolio/relationship_heatmap/">Relationship Heatmap</a></li>
-                                    <li><a href="/portfolio/parallel_coordinates/">Finding Corellation</a></li>
-                                    <li><a href="/portfolio/cycletime_horizon/">Cycle Time Horizon</a></li>
+                                    <li><a href="/portfolio/value-stream-map/">Value Stream 'Flow' Map</a></li>
+                                    <li><a href="/portfolio/magic-wheel/">Backlog-on-a-Page</a></li>
+                                    <li><a href="/portfolio/dependency-ring/">Dependency Ring</a></li>
+                                    <li><a href="/portfolio/relationship-heatmap/">Relationship Heatmap</a></li>
+                                    <li><a href="/portfolio/parallel-coordinates/">Finding Corellation</a></li>
+                                    <li><a href="/portfolio/cycletime-horizon/">Cycle Time Horizon</a></li>
                                     <li><a href="/portfolio/cfd/">Cumulative Flow Diagram</a></li>
-                                    <li><a href="/portfolio/epic_size/">Epic Size Distribution</a></li>
+                                    <li class="active"><a href="/portfolio/epic-size/">Epic Size Distribution</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="/demo/dependency_mapper/"><i class="fa fa-desktop" aria-hidden="true"></i> App Demos <i class="fa fa-angle-down icon-angle"></i></a>
+                                <a href="/demo/dependency-mapper/"><i class="fa fa-desktop" aria-hidden="true"></i> App Demos <i class="fa fa-angle-down icon-angle"></i></a>
                                 <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/demo/dependency_mapper/">Dependency Mapper for Jira</a></li>
+                                    <li><a href="/demo/dependency-mapper/">Dependency Mapper for Jira</a></li>
                                 </ul>
                             </li>
                             <li><a href="/blog/"><i class="fa fa-book" aria-hidden="true"></i> Blog</a></li>
@@ -113,7 +113,7 @@
                 <div class="text-center top-text">
                     <!-- Main Heading Starts -->
                     <div class="text-center top-text">
-                        <h1><span>Dependency Ring</span> Prototype</h1>
+                        <h1><span>Epic Size Distribution</span> Chart</h1>
                     </div>
                     <!-- Main Heading Ends -->
                     <hr>
@@ -121,7 +121,7 @@
                     <ul class="breadcrumb">
                         <li><a href="/"> Home</a></li>
                         <li><a href="/portfolio/"> Portfolio</a></li>
-                        <li>Dependency Ring Prototype</li>
+                        <li>Epic Size Distribution Chart</li>
                     </ul>
                     <!-- Breadcrumb Ends -->
                 </div>
@@ -138,15 +138,14 @@
                     <!-- Card body -->
                     <div>
                         <div class="white-text">
-                            <p>When implementing agile at scale, especially at the beginning of the journey, we often find squads managing a multitude of dependencies in their work, both internal and external. In many environments this is seen as a standard
-                                expectation with regards to managing complexity, but when do we take a step back to observe systemic bottlenecks that may arise from the squad design model?</p>
-                            <p>By taking every dependency captured in your digital tool (in this example, Jira) and mapping out the relationships between squads (the coloured arcs in the ring), we can gather insights around:</p>
+                            <p>A common question for beginner and intermediate-level squads is what does 'good' look like when creating an Epic. This usually includes some sort of quantifiable measure around how large said Epic shoudl be.</p>
+                            <p>Rather than trying to look externally for a 'best practice' solution, we should instead look internally. By collecting every Epic, and the number of child User Stories beneath them, and tallying them up into a histogram we
+                                can see what a 'typical' Epic has looked like up until now. This should in turn spark questions around the characteristics of those Epics, namely:</p>
                             <ul>
-                                <li>Which squads have the most dependencies (largest coloured arc)</li>
-                                <li>Common dependency patterns (where dependencies converge)</li>
-                                <li>The complexity of each dependency (are they 1:1 or 1:many?)</li>
+                                <li>Were the Epics of X size large enough to deliver real customer value?</li>
+                                <li>Were those same Epics small enough to fit in our release cadence, or customer measurement cycle?</li>
+                                <li>Based on these answers, should we be trying to shift the needle towards larger, or smaller Epics?</li>
                             </ul>
-                            <p>With this view, we can start making informed decisions around the current state of the operating model, and identify ways to further optimise squads around value streams.</p>
                         </div>
                     </div>
 
@@ -187,7 +186,7 @@
                         <div class="menu">
                             <ul>
                                 <li><a href="/contact/">Contact</a></li>
-                                <li><a href="/privacy_policy/">Privacy Policy</a></li>
+                                <li><a href="/privacy-policy/">Privacy Policy</a></li>
                                 <li><a href="/eula/">EULA</a></li>
                             </ul>
                         </div>
