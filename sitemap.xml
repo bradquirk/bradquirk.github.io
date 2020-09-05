@@ -2,520 +2,208 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://quirkconsulting.com.au/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/background_black_white_dark.png</image:loc>
+        <image:loc>https://quirkconsulting.com.au/images/cfd-card.png</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/revolution-slider/product/macbookpro.png</image:loc>
+        <image:loc>https://quirkconsulting.com.au/images/cycle-time-horizon-card.png</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/dependency-ring/sankey_homepage.png</image:loc>
+        <image:loc>https://quirkconsulting.com.au/images/dependency-ring-card.png</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/revolution-slider/product/ipad_dark.png</image:loc>
+        <image:loc>https://quirkconsulting.com.au/images/feature-size-card.png</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/dependency-ring/ring_homepage.png</image:loc>
+        <image:loc>https://quirkconsulting.com.au/images/status-correlation-card.png</image:loc>
         <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/apps/dependency-ring/dependency-logo_125px.png</image:loc>
-        <image:title>client</image:title>
+        <image:loc>https://quirkconsulting.com.au/images/magic-wheel-card.png</image:loc>
+        <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/apps/truesight_backlog/truesight-logo_125px.png</image:loc>
-        <image:title>client</image:title>
+        <image:loc>https://quirkconsulting.com.au/images/relationship-heatmap.png</image:loc>
+        <image:title></image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/apps/wip_calculator/wip-calculator-logo_125px.png</image:loc>
-        <image:title>client</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/value_stream_card.png</image:loc>
-        <image:title>Value Stream 'Flow' Map</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/magic-wheel_card.png</image:loc>
-        <image:title>Scaled Backlog Manager</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/dependency-ring_card.png</image:loc>
-        <image:title>Dependency Ring</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/relationship-heatmap.png</image:loc>
-        <image:title>Dependency Ring</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/status_correlation_card.png</image:loc>
-        <image:title>Finding Corellation</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/cycle_time_horizon_card.png</image:loc>
-        <image:title>Cycle Time Horizon</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/cfd_card.png</image:loc>
-        <image:title>Cumulative Flow Diagram</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/epic-size_card.png</image:loc>
-        <image:title>Epic Size Distribution</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/blog/how-to-actually-get-started-with-wip-limits.png</image:loc>
-        <image:title>img</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipstock.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipstory.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipstats.png</image:loc>
-        <image:title>WIP vs. Throughput Experiment</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipstart.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipexperiment.png</image:loc>
-        <image:title>WIP vs. Throughput Experiment</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/thumbnail/whose-dependency-is-it-anyway.png</image:loc>
-        <image:title>img</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/thumbnail/how-to-actually-get-started-with-wip-limits.png</image:loc>
-        <image:title>img</image:title>
+        <image:loc>https://quirkconsulting.com.au/images/value-stream-card.png</image:loc>
+        <image:title></image:title>
       </image:image>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/contact/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/portfolio/epic-size/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/about/</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/portfolio/relationship-heatmap/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/projects/magic-wheel</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/portfolio/parallel-coordinates/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/projects/value-stream-map</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/portfolio/magic-wheel/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/projects/relationship-heatmap</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/portfolio/cycletime-horizon/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/projects/dependency-ring</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/eula/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/projects/cycle-time-horizon</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/portfolio/value-stream-map/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/projects/finding-correlation</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/portfolio/cfd/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/projects/cfd</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/demo/dependency-mapper/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/projects/</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/dependency-ring/</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/background_black_white_dark.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/revolution-slider/product/macbookpro.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/dependency-ring/sankey_homepage.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/revolution-slider/product/ipad_dark.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/dependency-ring/ring_homepage.png</image:loc>
-        <image:title></image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/apps/dependency-ring/dependency-logo_125px.png</image:loc>
-        <image:title>client</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/apps/truesight_backlog/truesight-logo_125px.png</image:loc>
-        <image:title>client</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/apps/wip_calculator/wip-calculator-logo_125px.png</image:loc>
-        <image:title>client</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/value_stream_card.png</image:loc>
-        <image:title>Value Stream 'Flow' Map</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/magic-wheel_card.png</image:loc>
-        <image:title>Scaled Backlog Manager</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/dependency-ring_card.png</image:loc>
-        <image:title>Dependency Ring</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/relationship-heatmap.png</image:loc>
-        <image:title>Dependency Ring</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/status_correlation_card.png</image:loc>
-        <image:title>Finding Corellation</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/cycle_time_horizon_card.png</image:loc>
-        <image:title>Cycle Time Horizon</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/cfd_card.png</image:loc>
+        <image:loc>https://quirkconsulting.com.au/images/cfd-card.png</image:loc>
         <image:title>Cumulative Flow Diagram</image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/epic-size_card.png</image:loc>
-        <image:title>Epic Size Distribution</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/blog/how-to-actually-get-started-with-wip-limits.png</image:loc>
-        <image:title>img</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/privacy-policy/</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/value_stream_card.png</image:loc>
-        <image:title>Value Stream 'Flow' Map</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/magic-wheel_card.png</image:loc>
-        <image:title>Scaled Backlog Manager</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/dependency-ring_card.png</image:loc>
-        <image:title>Dependency Ring</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/relationship-heatmap.png</image:loc>
-        <image:title>Dependency Ring</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/status_correlation_card.png</image:loc>
-        <image:title>Finding Corellation</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/cycle_time_horizon_card.png</image:loc>
+        <image:loc>https://quirkconsulting.com.au/images/cycle-time-horizon-card.png</image:loc>
         <image:title>Cycle Time Horizon</image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/cfd_card.png</image:loc>
-        <image:title>Cumulative Flow Diagram</image:title>
+        <image:loc>https://quirkconsulting.com.au/images/dependency-ring-card.png</image:loc>
+        <image:title>Dependency Ring</image:title>
       </image:image>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/epic-size_card.png</image:loc>
-        <image:title>Epic Size Distribution</image:title>
+        <image:loc>https://quirkconsulting.com.au/images/feature-size-card.png</image:loc>
+        <image:title>Feature Size Distribution</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/images/status-correlation-card.png</image:loc>
+        <image:title>Finding Corellation</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/images/magic-wheel-card.png</image:loc>
+        <image:title>Scaled Backlog-On-A-Page</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/images/relationship-heatmap.png</image:loc>
+        <image:title>Relationship Heatmap</image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/images/value-stream-card.png</image:loc>
+        <image:title>Value 'Flow' Map</image:title>
       </image:image>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/blog/</loc>
-    <lastmod>2020-07-09</lastmod>
+    <lastmod>2020-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/projects/feature-size</loc>
+    <lastmod>2020-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/blog/3-tips-to-run-a-better-retro</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
       <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/blog/whose-dependency-is-it-anyway.png</image:loc>
-        <image:title>Value Stream 'Flow' Map</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/blog/how-to-actually-get-started-with-wip-limits.png</image:loc>
-        <image:title>Value Stream 'Flow' Map</image:title>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-08-12-3-tips-to-run-a-better-retro/retro_start.png</image:loc>
+        <image:title></image:title>
       </image:image>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/portfolio/value-stream-map/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
+    <loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway</loc>
+    <lastmod>2020-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-07-07-whose-dependency-is-it-anyway/ring_only.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-07-07-whose-dependency-is-it-anyway/matrix_only.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-07-07-whose-dependency-is-it-anyway/sankey_only.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-07-07-whose-dependency-is-it-anyway/value_stream_card.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-WIP-limits</loc>
+    <lastmod>2020-09-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipstock.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipstory.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipstats.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipstart.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+      <image:image>
+        <image:loc>https://quirkconsulting.com.au/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipexperiment.png</image:loc>
+        <image:title></image:title>
+      </image:image>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/blog/tags</loc>
+    <lastmod>2020-09-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipstock.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipstory.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipstats.png</image:loc>
-        <image:title>WIP vs. Throughput Experiment</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipstart.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-wip-limits/img/wipexperiment.png</image:loc>
-        <image:title>WIP vs. Throughput Experiment</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/thumbnail/whose-dependency-is-it-anyway.png</image:loc>
-        <image:title>img</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/thumbnail/how-to-actually-get-started-with-wip-limits.png</image:loc>
-        <image:title>img</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/relationship-heatmap/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/dependency-ring/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/cycletime-horizon/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/epic-size/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/privacy-policy/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/blog/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/blog/whose-dependency-is-it-anyway.png</image:loc>
-        <image:title>Value Stream 'Flow' Map</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/blog/how-to-actually-get-started-with-wip-limits.png</image:loc>
-        <image:title>Value Stream 'Flow' Map</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/magic-wheel/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/value_stream_card.png</image:loc>
-        <image:title>Value Stream 'Flow' Map</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/magic-wheel_card.png</image:loc>
-        <image:title>Scaled Backlog Manager</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/dependency-ring_card.png</image:loc>
-        <image:title>Dependency Ring</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/relationship-heatmap.png</image:loc>
-        <image:title>Dependency Ring</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/status_correlation_card.png</image:loc>
-        <image:title>Finding Corellation</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/cycle_time_horizon_card.png</image:loc>
-        <image:title>Cycle Time Horizon</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/cfd_card.png</image:loc>
-        <image:title>Cumulative Flow Diagram</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/img/portfolio/cards/epic-size_card.png</image:loc>
-        <image:title>Epic Size Distribution</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/cfd/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/demo/dependency-mapper/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/eula/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/portfolio/parallel-coordinates/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.7</priority>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/img/ring_only.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/img/matrix_only.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/img/sankey_only.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/img/value_stream_card.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/thumbnail/whose-dependency-is-it-anyway.png</image:loc>
-        <image:title>img</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/thumbnail/how-to-actually-get-started-with-wip-limits.png</image:loc>
-        <image:title>img</image:title>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/index.html</loc>
-    <lastmod>2020-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/img/ring_only.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/img/matrix_only.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/img/sankey_only.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway/img/value_stream_card.png</image:loc>
-        <image:title>WIP Limit Identified</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/thumbnail/whose-dependency-is-it-anyway.png</image:loc>
-        <image:title>img</image:title>
-      </image:image>
-      <image:image>
-        <image:loc>https://quirkconsulting.com.au/blog/thumbnail/how-to-actually-get-started-with-wip-limits.png</image:loc>
-        <image:title>img</image:title>
-      </image:image>
   </url>
 </urlset>
