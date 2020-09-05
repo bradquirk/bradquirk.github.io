@@ -1,0 +1,138 @@
+#chart svg,
+#chart canvas {
+    font: 10px sans-serif;
+    position: absolute;
+}
+
+#chart canvas {
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.axis .title {
+    font-size: 10px;
+    transform: rotate(-21deg) translate(-5px, -6px);
+    fill: #ccc;
+}
+
+.axis line,
+.axis path {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+}
+
+.axis .tick text {
+    fill: #ccc;
+    opacity: .3;
+    pointer-events: none;
+}
+
+.axis.manufac_name .tick text,
+.axis.food_group .tick text {
+    opacity: 1;
+}
+
+.axis:hover line,
+.axis:hover path,
+.axis.active line,
+.axis.active path {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+}
+
+.axis:hover .title {
+    font-weight: bold;
+}
+
+.axis:hover .tick text {
+    opacity: 1;
+}
+
+.axis.active .title {
+    font-weight: bold;
+}
+
+.axis.active .tick text {
+    opacity: 1;
+    font-weight: bold;
+}
+
+.brush .extent {
+    fill-opacity: .3;
+    stroke: #fff;
+    stroke-width: 1px;
+}
+
+pre {
+    color: white;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    margin: 6px 12px;
+    tab-size: 40;
+    font-size: 10px;
+    overflow: auto;
+}
+
+
+/* Reset Select */
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #2c3e50;
+    background-image: none;
+}
+
+
+/* Custom Select */
+
+.select {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.axis line {
+    stroke: white;
+}
+
+.axis path {
+    stroke: white;
+}
+
+text {
+    fill: white;
+}
+
+#table>pre {
+    background-color: #2E2E2E;
+    color: white;
+    width: 95%;
+}

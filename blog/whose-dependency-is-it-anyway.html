@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Turning your data into insightful, consumable and engaging insights">
+
+  <title>Quirk Consulting</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/flexslider.css">
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/" style="width:20%;height:auto;"><img src="/assets/img/logo/xsmall_125x/logo_yellow_long_125px.png" style="width:100%;height:auto;"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/contact/">Contact</a>
+
+      
+
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 class="text-warning"><b>Whose dependency is it anyway?</b></h1>
+
+<p class="post-metadata text-muted">
+  07 July 2020 -  
+  <b>5 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#agile">
+      <span class="tag badge badge-pill text-warning border border-warning">Agile</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#scaled">
+      <span class="tag badge badge-pill text-warning border border-warning">Scaled</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#org-design">
+      <span class="tag badge badge-pill text-warning border border-warning">Org Design</span>
+    </a>
+    </p>
+
+<h2 id="this-relationship-is-complicated">This relationship is ‘complicated’</h2>
+
+<p>If you’ve ever worked in an organisation with more than one delivery team, chances are you’ve had to manage a dependency or two at some point in your career.</p>
+
+<p>You’ve also felt the frustration of trying to resolve that dependency, especially when the other team has conflicting priorities. They might have a critical release coming up, a shortfall of capacity, or maybe even completely different success criteria that prevents you from even opening a dialog in the first place.</p>
+
+<p>Let’s explore a few different methods that can be applied to tackle the problem of dependency management, and assess the pros and cons for each.</p>
+
+<h2 id="first-start-by-analysing-your-system-of-dependencies">First, start by analysing your system of dependencies</h2>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-07-07-whose-dependency-is-it-anyway/ring_only.png" />
+    <figcaption><i>A view of all dependencies in a Jira instance, grouped together by project (coloured arcs) - <a href="https://marketplace.atlassian.com/1221796">App Link</a></i></figcaption>
+</figure>
+<p><br /></p>
+
+<p>Before we start creating solutions, we must first seek to understand the problems. Here we’ve used the <a href="https://marketplace.atlassian.com/1221796">Dependency Mapper for Jira</a> app to visualise all existing dependencies between teams.</p>
+
+<p>Using this information we can not only identify where clusters of dependencies lie, but also which teams share common sets of dependencies. What insights can you derive from the above picture?</p>
+
+<p>It can also help inform a strategy for resolving these issues; could it be better to try and fix the problem ourselves? Do we maybe need to create some kind of contract or agreement to resolve multiple dependencies? The approach depends on what insights you derive from your analysis.</p>
+
+<h2 id="the-diy-approach---resolve-the-dependency-yourself">The DIY approach - Resolve the dependency yourself</h2>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-07-07-whose-dependency-is-it-anyway/matrix_only.png" />
+    <figcaption><i>Unless you have a small handful of dependencies to manage, trying to own and resolve them all may overwhelm your team - <a href="https://marketplace.atlassian.com/1221796">App Link</a></i></figcaption>
+</figure>
+<p><br /></p>
+
+<p>The first instinct a team may have is to both own and resolve the dependency yourself, after all if you’re consuming an asset or service then surely you have the right to contribute to it also right?</p>
+
+<p>Unfortunately despite having good intentions, this approach can be frought with issues including, but not limited to:</p>
+
+<ul>
+  <li>Conflict of Expertise - Depending on the nature of work you may disrupt the flow of work for the other team by introducing quality issues in their space. This could cause potential conflict and debate that would cost more in the long run, as opposed to letting said other team prioritise the dependency in their own backlog</li>
+  <li>Conflict of Practice - Similarly, the service or asset owned by the other team may be run in an entirely different way to what your team does. This could be a difference in operating rhythym (e.g. Scrum vs. Waterfall), deployment method (DevOps vs. non-DevOps), or even expectactions around maintenance and aftercare that could arise further complications</li>
+  <li>Conflict of Ownership - Leaning more towards the cultural side of many organisations, there could be a preconceived notion that any attempts to adjust another team’s asset or service could be deemed invasive. This could further complicate the trust and relationship built up to this point.</li>
+</ul>
+
+<h2 id="the-diplomatic-approach---create-a-contract-between-teams">The diplomatic approach - Create a contract between teams</h2>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-07-07-whose-dependency-is-it-anyway/sankey_only.png" />
+    <figcaption><i>If you share multiple dependencies with a team, it may be beneficial to strike a deal with them - <a href="https://marketplace.atlassian.com/1221796">App Link</a></i></figcaption>
+</figure>
+<p><br /></p>
+
+<p>A more tactical approach, especially in scaled organisations, may be to focus on striking up a trusted working relationship with the team/s you have the most dependencies on in order to resolve your issues in a timely manner.</p>
+
+<p>Quite often teams start with this approach in mind, but forget to consider the other side of the equation; by requesting something from the other team, what’s in it for them? If you can find a scenario that ends in a mutual benefit to both teams then this can create further opportunities later in time with regards to cross-skilling and knowledge-sharing.</p>
+
+<p>However, if a mutually scenario can’t be identified not all is lost. In some cases it can be possible to sit down with your dependant teams and create a type of ‘contract’ (similar to a social contract in the Agile world) that lays out the terms and conditions of the services provided by the responding team. This could include:</p>
+
+<ul>
+  <li>A Service Level Expectation (SLE) of when the team can expect the dependency to be resolved</li>
+  <li>An agreement on how both teams can communicate with each other, namely the medium (e.g. email, Slack) and the operating hours</li>
+  <li>A clause that dictates how often requests are prioritised by the dependent party</li>
+</ul>
+
+<h2 id="re-organise-around-value-streams---the-system-approach">Re-organise around value streams - The system approach</h2>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-07-07-whose-dependency-is-it-anyway/value_stream_card.png" />
+    <figcaption><i>Aligning work around Value Streams can yield benefits beyond the systemic elimination of dependencies - <a href="https://marketplace.atlassian.com/1221796">App Link</a></i></figcaption>
+</figure>
+<p><br /></p>
+
+<p>Last, and perhaps most difficult but rewarding, is the option of exploring opportunities to re-organise the structure of all teams within the system to deliver a fully realised value stream of work.</p>
+
+<p>Despite the fact that eliminating all cross-team dependencies within a scaled organisation is practically impossible, there are quite often many opportunities to optimise teams away from ‘horizontal’ or ‘component’-owned assets and services and more towards ‘vertical’ end-to-end delivery mechanisms.</p>
+
+<p>Aligning teams towards collaboration and delivery of real customer value can also have effects on workplace culture, enabling discussions around shifting from Key Performance Indicators (KPIs) and towards Objectives and Key Results (OKRs).</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>In closing, dependency management is a critical skill for any Scrum Master, Product Owner or Project Manager to master. There are various techniques to address dependencies, and depending on the context of your work may yield positive or negative results. Ultimately these conversations should lend themselves towards delivering frequent customer value, not just managing process.</p>
+
+<p>How have you managed your dependencies in your organisation? I’d love to hear more about how your team currently operates! <a href="/contact">Feel free to contact me to start a discussion</a>!</p>
+
+<h2 id="want-to-enhance-your-agile-reporting">Want to enhance your agile reporting?</h2>
+
+<p>Are you a Jira user? Check out <a href="https://marketplace.atlassian.com/vendors/1217451/quirk-consulting">these apps</a> that focus on themes like dependency management, scaled backlog views and WIP management to help your teams navigate and understand their complex environments!</p>
+
+
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-light mb-2">
+    Quirk Consulting
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:brad@quirkconsulting.com"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/bradquirk"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/quirkbrad"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div></footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Flexslider Scripts -->
+	<!-- Google CDN Hosted jQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!-- Flexslider Library  -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+	<!-- Initialisation Code  -->
+	<script src="/assets/js/app.js"></script>
+
+</body>
+
+</html>

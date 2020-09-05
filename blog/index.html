@@ -1,258 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Blogs - Quirk Consulting</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/logo/xsmall_125x/logo_yellow_125px.png">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Turning your data into insightful, consumable and engaging insights">
 
-    <!-- Template CSS Files -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css" />
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/skins/yellow.css" />
+  <title>Quirk Consulting</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
-    <!-- Template JS Files -->
-    <script src="../js/modernizr.js"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/flexslider.css">
 
 </head>
 
-<body class="double-diagonal dark portfolio-page">
-    <!-- Page Wrapper Starts -->
-    <div class="wrapper">
-        <!-- Header Starts -->
-        <header class="header header-fixed">
-            <div class="header-inner">
-                <!-- Navbar Starts -->
-                <nav class="navbar">
-                    <!-- Logo Starts -->
-                    <div class="logo">
-                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand" href="index.html">
-                            <!-- Logo White Starts -->
-                            <img id="logo-light" class="logo-light" src="../../img/sitelogo_yellow_small.png" alt="logo-light" />
-                            <!-- Logo White Ends -->
-                            <!-- Logo Black Starts -->
-                            <img id="logo-dark" class="logo-dark" src="../../img/sitelogo_yellow_small.png" alt="logo-dark" />
-                            <!-- Logo Black Ends -->
-                        </a>
-                    </div>
-                    <!-- Logo Ends -->
-                    <!-- Toggle Icon for Mobile Starts -->
-                    <button class="navbar-toggle navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span id="icon-toggler">
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						</span>
-					</button>
-                    <!-- Toggle Icon for Mobile Ends -->
-                    <div id="navbarSupportedContent" class="collapse navbar-collapse navbar-responsive-collapse">
-                        <!-- Main Menu Starts -->
-                        <ul class="nav navbar-nav" id="main-navigation">
-                            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-                            <li class="dropdown">
-                                <a href="/portfolio/"><i class="fa fa-line-chart" aria-hidden="true"></i></i> Portfolio <i class="fa fa-angle-down icon-angle"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/portfolio/value-stream-map/">Value Stream 'Flow' Map</a></li>
-                                    <li><a href="/portfolio/magic-wheel/">Backlog-on-a-Page</a></li>
-                                    <li><a href="/portfolio/dependency-ring/">Dependency Ring</a></li>
-                                    <li><a href="/portfolio/relationship-heatmap/">Relationship Heatmap</a></li>
-                                    <li><a href="/portfolio/parallel-coordinates/">Finding Corellation</a></li>
-                                    <li><a href="/portfolio/cycletime-horizon/">Cycle Time Horizon</a></li>
-                                    <li><a href="/portfolio/cfd/">Cumulative Flow Diagram</a></li>
-                                    <li><a href="/portfolio/epic-size/">Epic Size Distribution</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="/demo/dependency-mapper/"><i class="fa fa-desktop" aria-hidden="true"></i> App Demos <i class="fa fa-angle-down icon-angle"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/demo/dependency-mapper/">Dependency Mapper for Jira</a></li>
-                                </ul>
-                            </li>
-                            <li class="active"><a href="/blog/"><i class="fa fa-book" aria-hidden="true"></i> Blog</a></li>
-                            <li><a href="/contact/"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
-                        </ul>
-                        <!-- Main Menu Ends -->
-                    </div>
-                    <!-- Navigation Menu Ends -->
-                </nav>
-                <!-- Navbar Ends -->
-            </div>
-        </header>
-        <!-- Header Ends -->
-        <!-- Banner Starts -->
-        <section class="banner" style="background: url('../../img/background_black_1600px.png');">
-            <div class="content text-center">
-                <div class="text-center top-text">
-                    <!-- Main Heading Starts -->
-                    <div class="text-center top-text">
-                        <h1>Blogs</h1>
-                    </div>
-                    <!-- Main Heading Ends -->
-                    <hr>
-                    <!-- Breadcrumb Starts -->
-                    <ul class="breadcrumb">
-                        <li><a href="/">Home</a></li>
-                        <li>Blogs</li>
-                    </ul>
-                    <!-- Breadcrumb Ends -->
-                </div>
-            </div>
-        </section>
-        <!-- Banner Ends -->
-        <!-- Portfolio Section Starts -->
-        <section class="portfolio">
-            <!-- Container Starts -->
-            <div class="container">
-                <div>
-                    <div class="filtr-container">
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="1">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="whose-dependency-is-it-anyway/" title="Image project"><img class="img-responsive" src="../img/blog/whose-dependency-is-it-anyway.png" alt="Value Stream 'Flow' Map" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="whose-dependency-is-it-anyway/">
-                                        <h3>Whose dependency is it <br>anyway?</h3>
-                                    </a>
-                                    <p>It's hard to talk about Kanban for more than 5 minutes without some mention of WIP limits. Short for...</p>
-                                    <a class="custom-button" href="whose-dependency-is-it-anyway/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="1">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="how-to-actually-get-started-with-wip-limits/" title="Image project"><img class="img-responsive" src="../img/blog/how-to-actually-get-started-with-wip-limits.png" alt="Value Stream 'Flow' Map" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="how-to-actually-get-started-with-wip-limits/">
-                                        <h3>How to actually get started with WIP limits</h3>
-                                    </a>
-                                    <p>It's hard to talk about Kanban for more than 5 minutes without some mention of WIP limits. Short for...</p>
-                                    <a class="custom-button" href="how-to-actually-get-started-with-wip-limits/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                    </div>
-                </div>
-            </div>
-            <!-- Container Ends -->
-        </section>
-        <!-- Portfolio Section Ends -->
-        <!-- Footer Section Starts -->
-        <footer class="footer top-logos">
-            <!-- Footer Top Area Starts -->
-            <div class="container top-footer">
-                <div class="row">
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <h4>Site Map</h4>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/portfolio/">Portfolio</a></li>
-                                <li><a href="/demo/">App Demos</a></li>
-                                <li><a href="/blog/">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Ends -->
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <h4>Support</h4>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="/contact/">Contact</a></li>
-                                <li><a href="/privacy-policy/">Privacy Policy</a></li>
-                                <li><a href="/eula/">EULA</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Ends -->
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <h4>Contact US</h4>
-                        <div class="menu">
-                            <ul>
-                                <li><span><i class="fa fa-envelope-open"></i> brad@quirkconsulting.com</span></li>
-                                <li><span><i class="fa fa-map-marker"></i> Melbourne, Australia</span></li>
-                                <li><span><i class="fa fa-clock-o"></i> mon-fri 9am &#x21FE; 5pm</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Ends -->
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-12 col-md-4">
 
-                        <hr>
-                        <!-- Social Media Links Starts -->
-                        <div class="social-icons">
-                            <ul class="social">
-                                <li>
-                                    <a class="twitter" href="https://twitter.com/QuirkBrad" title="twitter"></a>
-                                </li>
-                                <li>
-                                    <a class="linkedin" href="https://www.linkedin.com/company/quirkconsulting" title="linkedin"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Social Media Links Ends -->
-                    </div>
-                    <!-- Footer Widget Ends -->
-                </div>
-                <!-- Footer Bottom Area Starts -->
-                <div class="bottom-footer">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <!-- Copyright Text Starts -->
-                            <p class="text-center">Copyright © 2020 Quirk Consulting</p>
-                            <!-- Copyright Text Ends -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer Bottom Area Ends -->
-            </div>
-            <!-- Footer Top Area Ends -->
+<body class="d-flex flex-column h-100">
 
-        </footer>
-        <!-- Footer Section Ends -->
-        <!-- Back To Top Starts -->
-        <div id="back-top-wrapper">
-            <p id="back-top">
-                <a href="#top"><span></span></a>
-            </p>
-        </div>
-        <!-- Back To Top Ends -->
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/" style="width:20%;height:auto;"><img src="/assets/img/logo/xsmall_125x/logo_yellow_long_125px.png" style="width:100%;height:auto;"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/contact/">Contact</a>
+
+      
+
     </div>
-    <!-- Wrapper Ends -->
+  </div>
 
-    <!-- Template JS Files -->
-    <script src="../js/jquery-2.2.4.min.js"></script>
-    <script src="../js/plugins/jquery.easing.1.3.js"></script>
-    <script src="../js/plugins/bootstrap.min.js"></script>
-    <script src="../js/plugins/jquery.filterizr.js"></script>
-    <script src="../js/plugins/jquery.magnific-popup.min.js"></script>
+</nav>
+  <!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
 
-    <!-- Main JS Initialization File -->
-    <script src="../js/custom.js"></script>
+<div class="input-group mt-5 px-3">
+  <input id="search-input" type="text" class="form-control search-box" placeholder="Search posts..">
+  <div class="input-group-append">
+    <span class="input-group-text border border-warning bg-warning text-white">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+  <button class="btn btn-outline-warning ml-1" onclick="location.href = '/blog/tags';">
+    <i class="fas fa-tags"></i>
+  </button>
+</div>
+<ul class="px-3" id="results-container"></ul>
+
+<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+<script>
+  var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
+        noResultsText: '<li class="list-group-item">No results found</li>',
+        json: '/search.json'
+      })
+</script>
+<div class="card-group mt-2">
+
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/3-tips-to-run-a-better-retro" class="post card border border-warning">
+    <div class="card-body text-light">
+      <h3 class="card-title text-warning">3 tips to run a better Retro</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-warning">Agile</span>
+        
+        <span class="badge badge-warning">Continuous Improvement</span>
+        
+        <span class="badge badge-warning">Retrospectives</span>
+        
+      </p>
+      <p class="card-text text-light">Some quick tips to get 'back to the future' with your retrospective ceremonies.</p>
+      
+    </div>
+    <div class="card-footer text-light">
+      <p>
+        12 August 2020
+      </p>
+      <p class="card-text text-light">
+        
+        
+          
+          3
+          
+             minutes to read.
+          
+        
+      </p>
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/whose-dependency-is-it-anyway" class="post card border border-warning">
+    <div class="card-body text-light">
+      <h3 class="card-title text-warning">Whose dependency is it anyway?</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-warning">Agile</span>
+        
+        <span class="badge badge-warning">Scaled</span>
+        
+        <span class="badge badge-warning">Org Design</span>
+        
+      </p>
+      <p class="card-text text-light">Exploring different methods to optimise delivery across a portfolio.</p>
+      
+    </div>
+    <div class="card-footer text-light">
+      <p>
+        07 July 2020
+      </p>
+      <p class="card-text text-light">
+        
+        
+          
+          5
+          
+             minutes to read.
+          
+        
+      </p>
+    </div>
+  </a>
+</div>
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/how-to-actually-get-started-with-WIP-limits" class="post card border border-warning">
+    <div class="card-body text-light">
+      <h3 class="card-title text-warning">How to actually get started with WIP limits</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-warning">Agile</span>
+        
+        <span class="badge badge-warning">Kanban</span>
+        
+        <span class="badge badge-warning">Flow</span>
+        
+      </p>
+      <p class="card-text text-light">A practical guide to improving the flow of agile delivery.</p>
+      
+    </div>
+    <div class="card-footer text-light">
+      <p>
+        30 June 2020
+      </p>
+      <p class="card-text text-light">
+        
+        
+          
+          11
+          
+             minutes to read.
+          
+        
+      </p>
+    </div>
+  </a>
+</div>
+  
+  
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-light mb-2">
+    Quirk Consulting
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:brad@quirkconsulting.com"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/bradquirk"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/quirkbrad"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div></footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Flexslider Scripts -->
+	<!-- Google CDN Hosted jQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!-- Flexslider Library  -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+	<!-- Initialisation Code  -->
+	<script src="/assets/js/app.js"></script>
 
 </body>
 

@@ -1,715 +1,191 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Quirk Consulting</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/logo/xsmall_125x/logo_yellow_125px.png">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Turning your data into insightful, consumable and engaging insights">
 
-    <!-- Template CSS Files -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/skins/goldenrod.css" />
+  <title>Quirk Consulting</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
-    <!-- Revolution Slider CSS Files -->
-    <link rel="stylesheet" type="text/css" href="js/plugins/revolution/css/settings.css" />
-    <link rel="stylesheet" type="text/css" href="js/plugins/revolution/css/layers.css" />
-    <link rel="stylesheet" type="text/css" href="js/plugins/revolution/css/navigation.css" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
 
-    <!-- Template JS Files -->
-    <script src="js/modernizr.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50453785-4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-50453785-4');
-    </script>
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/flexslider.css">
 
 </head>
 
-<body class="dark">
-    <!-- Page Wrapper Starts -->
-    <div class="wrapper">
-        <!-- Header Starts -->
-        <header class="header header-fixed">
-            <div class="header-inner">
-                <!-- Navbar Starts -->
-                <nav class="navbar">
-                    <!-- Logo Starts -->
-                    <div class="logo">
-                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand" href="index.html">
-                            <!-- Logo White Starts -->
-                            <img id="logo-light" class="logo-light" src="img/sitelogo_yellow_small.png" alt="logo-light" />
-                            <!-- Logo White Ends -->
-                            <!-- Logo Black Starts -->
-                            <img id="logo-dark" class="logo-dark" src="img/sitelogo_yellow_small.png" alt="logo-dark" />
-                            <!-- Logo Black Ends -->
-                        </a>
-                    </div>
-                    <!-- Logo Ends -->
-                    <!-- Toggle Icon for Mobile Starts -->
-                    <button class="navbar-toggle navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span id="icon-toggler">
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						</span>
-					</button>
-                    <!-- Toggle Icon for Mobile Ends -->
-                    <div id="navbarSupportedContent" class="collapse navbar-collapse navbar-responsive-collapse">
-                        <!-- Main Menu Starts -->
-                        <ul class="nav navbar-nav" id="main-navigation">
-                            <li class="active"><a href="/"><i class="fa fa-home"></i> Home</a></li>
-                            <li class="dropdown">
-                                <a href="/portfolio/"><i class="fa fa-line-chart" aria-hidden="true"></i></i> Portfolio <i class="fa fa-angle-down icon-angle"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/portfolio/value-stream-map/">Value Stream 'Flow' Map</a></li>
-                                    <li><a href="/portfolio/magic-wheel/">Backlog-on-a-Page</a></li>
-                                    <li><a href="/portfolio/dependency-ring/">Dependency Ring</a></li>
-                                    <li><a href="/portfolio/relationship-heatmap/">Relationship Heatmap</a></li>
-                                    <li><a href="/portfolio/parallel-coordinates/">Finding Corellation</a></li>
-                                    <li><a href="/portfolio/cycletime-horizon/">Cycle Time Horizon</a></li>
-                                    <li><a href="/portfolio/cfd/">Cumulative Flow Diagram</a></li>
-                                    <li><a href="/portfolio/epic-size/">Epic Size Distribution</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="/demo/dependency-mapper/"><i class="fa fa-desktop" aria-hidden="true"></i> App Demos <i class="fa fa-angle-down icon-angle"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/demo/dependency-mapper/">Dependency Mapper for Jira</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/blog/"><i class="fa fa-book" aria-hidden="true"></i> Blog</a></li>
-                            <li><a href="/contact/"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
-                        </ul>
-                        <!-- Main Menu Ends -->
-                    </div>
-                    <!-- Navigation Menu Ends -->
-                </nav>
-                <!-- Navbar Ends -->
-            </div>
-        </header>
-        <!-- Header Ends -->
-        <!-- Main Slider Section Starts -->
-        <section class="mainslider" id="mainslider">
-            <!-- Slider Hero Starts -->
-            <div id="rev_slider_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="product" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-                <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
-                <div id="rev_slider_product" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
-                    <ul>
-                        <!-- SLIDE  -->
-                        <li data-index="rs-235" data-transition="fade" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="1500" data-rotate="0" data-saveperformance="off" data-title="Intro" data-description="">
-                            <!-- MAIN IMAGE -->
-                            <img src="img/background_black_white_dark.png" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
-                            <!-- LAYERS -->
 
-                            <!-- LAYER NR. 1 -->
-                            <div class="tp-caption tp-resizeme rs-parallaxlevel-1" id="slide-235-layer-1" data-x="['right','right','center','center']" data-hoffset="['-254','-453','70','60']" data-y="['middle','middle','middle','bottom']" data-voffset="['50','50','211','25']" data-width="none"
-                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:right;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="2500" data-responsive_offset="on"
-                                style="z-index: 5;"><img src="img/revolution-slider/product/macbookpro.png" alt="" width="1000" height="600" data-ww="['1000px','1000px','500px','350px']" data-hh="['600px','600px','300px','210px']" data-no-retina>
-                            </div>
+<body class="d-flex flex-column h-100">
 
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-235-layer-2" data-x="['left','left','center','center']" data-hoffset="['828','865','70','60']" data-y="['top','top','top','bottom']" data-voffset="['217','216','580','63']" data-width="none"
-                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
-                                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="3350" data-responsive_offset="on" style="z-index: 6;"><img src="img/dependency-ring/sankey-homepage.png" alt="" width="653" height="408" data-ww="['653px','653px','330px','230px']" data-hh="['408px','408px','206px','144px']" data-no-retina>
-                            </div>
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
 
-                            <!-- LAYER NR. 3 -->
-                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-235-layer-3" data-x="['left','left','center','center']" data-hoffset="['593','633','-110','-60']" data-y="['top','top','top','bottom']" data-voffset="['203','203','590','20']" data-width="none"
-                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:right;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="2750" data-responsive_offset="on"
-                                style="z-index: 7;"><img src="img/revolution-slider/product/ipad_dark.png" alt="" width="430" height="540" data-ww="['430px','430px','200px','170px']" data-hh="['540px','540px','251px','213px']" data-no-retina>
-                            </div>
+  <a class="navbar-brand" href="/" style="width:20%;height:auto;"><img src="/assets/img/logo/xsmall_125x/logo_yellow_long_125px.png" style="width:100%;height:auto;"></a>
 
-                            <!-- LAYER NR. 4 -->
-                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-235-layer-4" data-x="['left','left','left','center']" data-hoffset="['663','703','212','-60']" data-y="['top','top','top','bottom']" data-voffset="['291','291','632','50']" data-width="none"
-                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
-                                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="3700" data-responsive_offset="on" style="z-index: 8;"><img src="img/dependency-ring/ring-homepage.png" alt="" width="290" height="374" data-ww="['290px','290px','135px','115px']" data-hh="['374px','374px','174px','148px']" data-no-retina>
-                            </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-                            <!-- LAYER NR. 5
-                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-235-layer-5" data-x="['left','left','left','left']" data-hoffset="['530','553','127','58']" data-y="['top','top','top','top']" data-voffset="['297','297','622','529']" data-width="none"
-                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:right;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="3000" data-responsive_offset="on"
-                                style="z-index: 9;"><img src="img/revolution-slider/product/ihpone_dark.png" alt="" width="260" height="450" data-ww="['260px','260px','130px','100px']" data-hh="['450px','450px','225px','173px']" data-no-retina>
-                            </div> -->
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
 
-                            <!-- LAYER NR. 6
-                            <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-235-layer-6" data-x="['left','left','left','left']" data-hoffset="['575','598','150','75']" data-y="['top','top','top','top']" data-voffset="['380','379','663','560']" data-width="none"
-                                data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
-                                data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="3950" data-responsive_offset="on" style="z-index: 10;"><img src="http://via.placeholder.com/170x286" alt="" width="170" height="286" data-ww="['170px','170px','85px','66px']" data-hh="['286px','286px','143px','111px']" data-no-retina>
-                            </div> -->
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
 
-                            <!-- LAYER NR. 7 -->
-                            <div class="tp-caption NotGeneric-Title   tp-resizeme rs-parallaxlevel-0" id="slide-235-layer-7" data-x="['left','left','left','left']" data-hoffset="['30','30','200','80']" data-y="['middle','middle','top','top']" data-voffset="['-110','-110','137','130']"
-                                data-fontsize="['90','90','75','75']" data-lineheight="['90','90','75','70']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;"
-                                data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 11; white-space: nowrap;font-size:60px;">OBSERVE.<br/>IMPROVE.
-                            </div>
+      <a class="nav-item nav-link " href="/about/">About</a>
 
-                            <!-- LAYER NR. 8 -->
-                            <div class="tp-caption NotGeneric-SubTitle   tp-resizeme rs-parallaxlevel-0" id="slide-235-layer-10" data-x="['left','left','left','left']" data-hoffset="['30','30','200','80']" data-y="['middle','middle','top','top']" data-voffset="['14','44','294','277']"
-                                data-fontsize="['15','15','15','13']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;"
-                                data-start="1250" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 12; white-space: nowrap;letter-spacing:2px;font-weight:500;">QUIRK CONSULTING
-                            </div>
+      <a class="nav-item nav-link " href="/contact/">Contact</a>
 
-                            <!-- LAYER NR. 9 -->
-                            <div class="tp-caption WebProduct-Content-Light   tp-resizeme rs-parallaxlevel-0 hidden-xs" id="slide-235-layer-9" data-x="['left','left','left','left']" data-hoffset="['30','30','200','80']" data-y="['middle','middle','top','top']" data-voffset="['99','127','345','316']"
-                                data-fontsize="['16','16','16','14']" data-lineheight="['24','24','24','22']" data-width="['448','356','334','277']" data-height="['none','none','76','68']" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;"
-                                data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="1500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 13; min-width: 448px; max-width: 448px; white-space: normal;">We help companies understand their own<br/> ways of working to help create<br/> tangible, meaningful change<br/> in their delivery.
-                            </div>
+      
 
-                            <!-- LAYER NR. 10 -->
-                            <div class="tp-caption" data-x="['left','left','left','left']" data-hoffset="['30','30','200','80']" data-y="['middle','middle','top','top']" data-voffset="['238','238','456','350']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
-                                data-transform_in="x:-50px;opacity:0;s:1000;e:Power2.easeOut;" data-transform_out="opacity:0;s:1500;e:Power4.easeIn;s:1500;e:Power4.easeIn;" data-start="1750" data-splitin="none" data-splitout="none" data-responsive_offset="on"
-                                data-responsive="off" style="z-index: 14; white-space: nowrap;letter-spacing:1px;"><a href="#about" class="custom-button slider-button scroll-to-target">Learn more</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="tp-static-layers">
-                    </div>
-                    <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
-                </div>
-            </div>
-            <!-- END REVOLUTION SLIDER -->
-            <!-- Slider Hero Ends -->
-        </section>
-        <!-- Main Slider Section Ends -->
-        <!-- About Section Starts -->
-        <section id="about" class="about">
-            <!-- Container Starts -->
-            <div class="container">
-                <!-- Main Heading Starts -->
-                <div class="text-center top-text">
-                    <h1><span>About</span> Quirk Consulting</h1>
-                    <h4>Taking Agile to the next level</h4>
-                </div>
-                <!-- Main Heading Ends -->
-                <!-- About Content Starts -->
-                <div class="row about-content">
-                    <div class="col-sm-12 col-md-12 col-lg-12" style="text-align: center;">
-                        <hr>
-                        <p style="font-size: 24px;"><span style="color:#daa520;">We believe</span> that<br/> creating <span style="color:#daa520;">cultural shifts</span> based on <span style="color:#daa520;">data-driven insights</span><br/> for software and service-oriented organisations
-                            <br/> will take their
-                            <span style="color:#daa520;">transformation</span> to the <span style="color:#daa520;">next level</span></p>
-                        <hr>
-                        <p>From Scrum to Kanban. Startups to scaled enterprises. Data-curious to data-driven. We've been there and can help fast-track you to your destination.</p>
-                        <a class="custom-button" href="/portfolio/">View Viz Portfolio</a>
-
-                    </div>
-                </div>
-                <!-- About Content Ends -->
-            </div>
-            <!-- Container Ends -->
-        </section>
-        <!-- About Section Ends -->
-        <!-- Services Section Starts -->
-        <section class="services">
-            <!-- Container Starts -->
-            <div class="container">
-                <!-- Main Heading Starts -->
-                <div class="text-center top-text">
-                    <h1><span>Services</span> On Offer</h1>
-                </div>
-                <!-- Main Heading Starts -->
-                <!-- Divider Starts -->
-                <div class="divider text-center">
-                    <span class="outer-line"></span>
-                    <span class="fa fa-cogs" aria-hidden="true"></span>
-                    <span class="outer-line"></span>
-                </div>
-                <!-- Divider Ends -->
-                <!-- Services Starts -->
-                <div class="row services-box">
-                    <!-- Service Item Starts -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 services-box-item">
-                        <!-- Service Item Cover Starts -->
-                        <span class="services-box-item-cover fa fa-book" data-headline="Agile Coaching"></span>
-                        <!-- Service Item Cover Ends -->
-                        <!-- Service Item Content Starts -->
-                        <div class="services-box-item-content fa fa-book">
-                            <h2>Agile Coaching</h2>
-                            <p>The next wave of agile coaches will go beyond basic practices and implementing frameworks, and instead will focus on creating bespoke delivery systems that fit the context of an organisation.</p>
-                            <p>Using data-driven insights will become paramount to improve both the delivery of services, and sustaining a healthy work culture in your organisation.</p>
-                        </div>
-                        <!-- Service Item Content Ends -->
-                    </div>
-                    <!-- Service Item Ends -->
-
-                    <!-- Service Item Starts -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 services-box-item">
-                        <!-- Service Item Cover Starts -->
-                        <span class="services-box-item-cover fa fa-cogs" data-headline="Jira App Development"></span>
-                        <!-- Service Item Cover Ends -->
-                        <!-- Service Item Content Starts -->
-                        <div class="services-box-item-content fa fa-cogs">
-                            <h2>Jira App Development</h2>
-                            <p>Many companies are pushing the boundaries of Atlassian's software management tool, Jira, to it's full extent. Having accessible, and insightful, dashboards that are easy to consume allow your teams to focus on what matters
-                                most.
-                            </p>
-                            <p> To help you with your agile reporting we've created a set of Jira apps that can be installed on both Cloud and Server instances to help take your teams to the next level.
-                        </div>
-                        <!-- Service Item Content Ends -->
-                    </div>
-                    <!-- Service Item Ends -->
-
-                    <!-- Service Item Starts -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 services-box-item">
-                        <!-- Service Item Cover Starts -->
-                        <span class="services-box-item-cover fa fa-paper-plane" data-headline="Software Delivery Expertise"></span>
-                        <!-- Service Item Cover Ends -->
-                        <!-- Service Item Content Starts -->
-                        <div class="services-box-item-content fa fa-paper-plane">
-                            <h2>Agile Delivery Expertise</h2>
-                            <p>As agile delivery practices mature, Scrum Masters and Iteration Managers will need to embed customer centricity in everything their team does.</p>
-                            <p>Continuous improvement will go beyond the team and become a relentless pursuit of experimentation and value creation. We can help you optimise your pipeline to deliver quality services to your customers.</p>
-                        </div>
-                        <!-- Service Item Content Ends -->
-                    </div>
-                    <!-- Service Item Ends -->
-                </div>
-                <!-- Services Ends -->
-            </div>
-        </section>
-        <!-- Services Section Ends -->
-        <!-- Testimonials Section Starts -->
-        <section class="testimonials" style="background: url('img/background_black_1600px.png');">
-            <div class="section-overlay">
-                <!-- Container Starts -->
-                <div class="container">
-                    <!-- Main Heading Starts -->
-                    <div class="text-center top-text">
-                        <h1><span>Jira</span> Apps</h1>
-                        <h4>Helping teams <span style="color: #ffb400;">understand and navigate</span> complex delivery</h4>
-                    </div>
-                    <!-- Main Heading Starts -->
-                    <!-- Blockquotes Starts -->
-                    <div id="quote-carousel" class="carousel slide" data-ride="carousel">
-                        <!-- Wrapper For Sliders Starts -->
-                        <!-- Indicators Starts -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#quote-carousel" data-slide-to="1"></li>
-                            <li data-target="#quote-carousel" data-slide-to="2"></li>
-                        </ol>
-                        <!-- Indicators Ends -->
-                        <div class="carousel-inner">
-                            <!-- Quote #1 Starts -->
-                            <div class="item active">
-                                <blockquote>
-                                    <a style="text-decoration: none;" ahref="https://marketplace.atlassian.com/apps/1221796/dependency-mapper-for-jira"><img class="img-circle img-responsive" src="img/apps/dependency-ring/dependency-logo_125px.png" alt="client"></a>
-                                    <p>Take your existing issue links and summarise them using the Dependency Mapper app. By specifying a JQL search query, or existing filter you've created previously, you will gain new insights around dependency management
-                                        and team structure.</p>
-                                    <h5><a style="text-decoration: none;" href="https://marketplace.atlassian.com/apps/1221796/dependency-mapper-for-jira">Dependency Mapper</a></h5>
-                                    <h6>for Jira</h6>
-                                </blockquote>
-                            </div>
-                            <!-- Quote #1 Ends -->
-                            <!-- Quote #2 Starts -->
-                            <div class="item">
-                                <blockquote>
-                                    <a href="https://marketplace.atlassian.com/apps/1221796/dependency-mapper-for-jira"><img class="img-circle img-responsive" src="img/apps/truesight-backlog/truesight-logo_125px.png" alt="client"></a>
-                                    <p>If you work in a scaled environment with multiple layers of issue types, you can use the Backlog Manager app to create an engaging and actionable visualisation of your backlog to assist in reporting and management of
-                                        work.
-                                    </p>
-                                    <h5><a href="https://marketplace.atlassian.com/apps/1221796/dependency-mapper-for-jira">Backlog Manager</a></h5>
-                                    <h6>for Jira</h6>
-                                </blockquote>
-                            </div>
-                            <!-- Quote #2 Ends -->
-                            <!-- Quote #3 Starts -->
-                            <div class="item">
-                                <blockquote>
-                                    <a href="https://marketplace.atlassian.com/apps/1221796/dependency-mapper-for-jira"><img class="img-circle img-responsive" src="img/apps/wip-calculator/wip-calculator-logo_125px.png" alt="client"></a>
-                                    <p>WIP Advisor analyses your 'In Progress' and Assignee history to calculate the optimal WIP limit for your team. This can help increase throughput, collaboration and wellbeing depending on your own objective.</p>
-                                    <h5><a href="https://marketplace.atlassian.com/apps/1221796/dependency-mapper-for-jira">WIP Advisor</a></h5>
-                                    <h6>for Jira</h6>
-                                </blockquote>
-                            </div>
-                            <!-- Quote #3 Ends -->
-                        </div>
-                        <!-- Wrapper For Sliders Ends -->
-                    </div>
-                    <!-- Blockquotes Ends -->
-                </div>
-                <!-- Container Ends -->
-            </div>
-        </section>
-        <!-- Testimonials Section Ends -->
-        <!-- Portfolio Section Starts -->
-        <section class="portfolio">
-            <!-- Container Starts -->
-            <div class="container">
-                <div class="text-center top-text">
-                    <h1><span>Viz</span> Portfolio</h1>
-                    <h4>Turning <span style="color: #ffb400;">your data</span> into <span style="color: #ffb400;">insightful, consumable and engaging</span> insights</h4>
-                </div>
-                <div>
-                    <div class="filtr-container">
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="1">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="/portfolio/value-stream-map/" title="Value Stream Map Chart"><img class="img-responsive" src="img/portfolio/cards/value-stream-card.png" alt="Value Stream 'Flow' Map" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="/portfolio/value-stream-map/">
-                                        <h3>Value Stream 'Flow' Map</h3>
-                                    </a>
-                                    <p>Tracing value from creation to execution is hardly a new concept, but the ability to generate insights from the...</p>
-                                    <a class="custom-button" href="/portfolio/value-stream-map/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="2">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="/portfolio/magic-wheel/" title="Backlog On A Page Chart"><img class="img-responsive" src="img/portfolio/cards/magic-wheel-card.png" alt="Scaled Backlog Manager" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="/portfolio/magic-wheel/">
-                                        <h3>Scaled Backlog-On-A-Page</h3>
-                                    </a>
-                                    <p>Quite often in the world of agile, the simplest questions are often the most difficult to answer. How do we...</p>
-                                    <a class="custom-button" href="/portfolio/magic-wheel/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="2">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="/portfolio/dependency-ring/" title="Dependency Ring Chart"><img class="img-responsive" src="img/portfolio/cards/dependency-ring-card.png" alt="Dependency Ring" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="/portfolio/dependency-ring/">
-                                        <h3>Dependency Ring</h3>
-                                    </a>
-                                    <p>When implementing agile at scale, we often find squads managing a multitude of dependencies in their work...</p>
-                                    <a class="custom-button" href="/portfolio/dependency-ring/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="2">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="/portfolio/relationship-heatmap/" title="Relationship Heatmap Chart"><img class="img-responsive" src="img/portfolio/cards/relationship-heatmap.png" alt="Dependency Ring" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="/portfolio/relationship-heatmap/">
-                                        <h3>Jira Field Relationship Heatmap</h3>
-                                    </a>
-                                    <p>The practicality of Agile is embedded within the world of complexity (from a Cynefin standpoint). As such...</p>
-                                    <a class="custom-button" href="/portfolio/relationship-heatmap/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="2">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="/portfolio/parallel-coordinates/" title="Parallel Coordinates Chart"><img class="img-responsive" src="img/portfolio/cards/status-correlation-card.png" alt="Finding Corellation" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="/portfolio/parallel-coordinates/">
-                                        <h3>Finding Corellation</h3>
-                                    </a>
-                                    <p>When implementing a continuous improvement strategy in a complex environment, we want to know...</p>
-                                    <a class="custom-button" href="/portfolio/parallel-coordinates/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="2">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="/portfolio/cycletime-horizon/" title="Cycle Time Horizon Chart"><img class="img-responsive" src="img/portfolio/cards/cycle-time-horizon-card.png" alt="Cycle Time Horizon" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="/portfolio/cycletime-horizon/">
-                                        <h3>Cycle Time Horizon</h3>
-                                    </a>
-                                    <p>The relationship between throughput and cycle time is a fascinating one. On one hand, delivering a lot...</p>
-                                    <a class="custom-button" href="/portfolio/cycletime-horizon/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="2">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="/portfolio/cfd/" title="Cumulkative Flow Diagram Chart"><img class="img-responsive" src="img/portfolio/cards/cfd-card.png" alt="Cumulative Flow Diagram" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="/portfolio/cfd/">
-                                        <h3>Cumulative Flow Diagram</h3>
-                                    </a>
-                                    <p>The CFD, one of the most insightful, yet alienating agile charts out there. Unless you have a degree in...</p>
-                                    <a class="custom-button" href="/portfolio/cfd/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                        <!-- Project Starts -->
-                        <div class="col-xs-12 col-sm-4 col-md-4 filtr-item" data-category="2">
-                            <div class="magnific-popup-gallery">
-                                <!-- Thumbnail Starts -->
-                                <figure class="thumbnail thumbnail__portfolio">
-                                    <a class="image-wrap" href="/portfolio/epic-size/" title="Epic Size Distribution Chart"><img class="img-responsive" src="img/portfolio/cards/epic-size-card.png" alt="Epic Size Distribution" /><span class="zoom-icon"></span></a>
-                                </figure>
-                                <!-- Thumbnail Ends -->
-                                <!-- Caption Starts -->
-                                <div class="caption">
-                                    <a class="title-link" href="/portfolio/epic-size/">
-                                        <h3>Epic Size Distribution</h3>
-                                    </a>
-                                    <p>The common question "how large should our Epics be?" may seem akin to asking "how long is a piece...</p>
-                                    <a class="custom-button" href="/portfolio/epic-size/">Read More</a>
-                                </div>
-                                <!-- Caption Ends -->
-                            </div>
-                        </div>
-                        <!-- Project Ends -->
-                    </div>
-                </div>
-            </div>
-            <!-- Container Ends -->
-        </section>
-        <!-- Portfolio Section Ends -->
-        <!-- Blog Section Starts -->
-        <section class="blog">
-            <!-- Container Starts -->
-            <div class="container">
-                <!-- Main Heading Starts -->
-                <div class="text-center top-text">
-                    <h1><span>Blog</span> Posts</h1>
-                    <h4>Latest Articles</h4>
-                </div>
-                <!-- Main Heading Starts -->
-                <!-- Divider Starts -->
-                <div class="divider text-center">
-                    <span class="outer-line"></span>
-                    <span class="fa fa-comments" aria-hidden="true"></span>
-                    <span class="outer-line"></span>
-                </div>
-                <!-- Divider Ends -->
-                <div class="row latest-posts-content">
-                    <!-- Article Starts -->
-                    <div class="col-sm-4 col-md-4 col-xs-12">
-                        <div class="latest-post">
-                            <!-- Featured Image Starts -->
-                            <a class="img-thumb" href="/blog/whose-dependency-is-it-anyway"><img class="img-responsive" src="img/blog/whose-dependency-is-it-anyway.png" alt="img"></a>
-                            <!-- Featured Image Ends -->
-                            <!-- Article Content Starts -->
-                            <div class="post-body">
-                                <h4 class="post-title">
-                                    <a href="/blog/whose-dependency-is-it-anyway/">Whose dependency is it anyway</a>
-                                </h4>
-                                <div class="post-text">
-                                    <p>If you've ever worked in an organisation with more than one delivery team, chances are you've had to...</p>
-                                </div>
-                            </div>
-                            <!-- Post Date Starts -->
-                            <div class="post-date">
-                                <span>JUL</span>
-                                <span>20</span>
-                            </div>
-                            <!-- Post Date Ends -->
-                            <a class="custom-button" href="/blog/whose-dependency-is-it-anyway/">Read more</a>
-                            <!-- Article Content Ends -->
-                        </div>
-                    </div>
-                    <!-- Article Ends -->
-                    <!-- Article Starts -->
-                    <div class="col-sm-4 col-md-4 col-xs-12">
-                        <div class="latest-post">
-                            <!-- Featured Image Starts -->
-                            <a class="img-thumb" href="/blog/how-to-actually-get-started-with-wip-limits/"><img class="img-responsive" src="img/blog/how-to-actually-get-started-with-wip-limits.png" alt="img"></a>
-                            <!-- Featured Image Ends -->
-                            <!-- Article Content Starts -->
-                            <div class="post-body">
-                                <h4 class="post-title">
-                                    <a href="/blog/how-to-actually-get-started-with-wip-limits/">How to actually get started with WIP limits</a>
-                                </h4>
-                                <div class="post-text">
-                                    <p>It's hard to talk about Kanban for more than 5 minutes without some mention of WIP limits. Short for...</p>
-                                </div>
-                            </div>
-                            <!-- Post Date Starts -->
-                            <div class="post-date">
-                                <span>JUN</span>
-                                <span>20</span>
-                            </div>
-                            <!-- Post Date Ends -->
-                            <a class="custom-button" href="/blog/how-to-actually-get-started-with-wip-limits/">Read more</a>
-                            <!-- Article Content Ends -->
-                        </div>
-                    </div>
-                    <!-- Article Ends -->
-                </div>
-                <!-- Latest Blog Posts Ends -->
-            </div>
-        </section>
-        <!-- Blog Section Ends -->
-        <!-- Footer Section Starts -->
-        <footer class="footer top-logos">
-            <!-- Footer Top Area Starts -->
-            <div class="container top-footer">
-                <div class="row">
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <h4>Site Map</h4>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/portfolio/">Portfolio</a></li>
-                                <li><a href="/demo/">App Demos</a></li>
-                                <li><a href="/blog/">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Ends -->
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <h4>Support</h4>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="/contact/">Contact</a></li>
-                                <li><a href="/privacy-policy/">Privacy Policy</a></li>
-                                <li><a href="/eula/">EULA</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Ends -->
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <h4>Contact US</h4>
-                        <div class="menu">
-                            <ul>
-                                <li><span><i class="fa fa-envelope-open"></i> brad@quirkconsulting.com</span></li>
-                                <li><span><i class="fa fa-map-marker"></i> Melbourne, Australia</span></li>
-                                <li><span><i class="fa fa-clock-o"></i> mon-fri 9am &#x21FE; 5pm</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Ends -->
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-12 col-md-4">
-
-                        <hr>
-                        <!-- Social Media Links Starts -->
-                        <div class="social-icons">
-                            <ul class="social">
-                                <li>
-                                    <a class="twitter" href="https://twitter.com/QuirkBrad" title="twitter"></a>
-                                </li>
-                                <li>
-                                    <a class="linkedin" href="https://www.linkedin.com/company/quirkconsulting" title="linkedin"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Social Media Links Ends -->
-                    </div>
-                    <!-- Footer Widget Ends -->
-                </div>
-                <!-- Footer Bottom Area Starts -->
-                <div class="bottom-footer">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <!-- Copyright Text Starts -->
-                            <p class="text-center">Copyright © 2020 Quirk Consulting</p>
-                            <!-- Copyright Text Ends -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer Bottom Area Ends -->
-            </div>
-            <!-- Footer Top Area Ends -->
-
-        </footer>
-        <!-- Footer Section Ends -->
-        <!-- Back To Top Starts -->
-        <div id="back-top-wrapper">
-            <p id="back-top">
-                <a href="#top"><span></span></a>
-            </p>
-        </div>
-        <!-- Back To Top Ends -->
     </div>
-    <!-- Wrapper Ends -->
+  </div>
 
-    <!-- Template JS Files -->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/plugins/jquery.easing.1.3.js"></script>
-    <script src="js/plugins/bootstrap.min.js"></script>
-    <script src="js/plugins/jquery.bxslider.min.js"></script>
-    <script src="js/plugins/jquery.filterizr.js"></script>
-    <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+</nav>
+  <div class="row justify-content-center align-items-center p-4">
+  <div class="col-lg-8 col-md-6 text-center mt-4">
 
-    <!-- Revolution Slider Main JS Files -->
-    <script src="js/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-    <script src="js/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <div>
+    <div class="home-title">
+      <h3>I help companies understand<br /> and navigate complexity <br /> through data-driven agile coaching</h3>
+      <br />
+    </div>
+  <div class="flexslider">
+      <ul class="slides">
+        
+            <li>
+                <a href="/projects/cfd">
+                  <img src="/images/cfd-card.png" />
+                  <p class="flex-caption">Cumulative Flow Diagram</p>
+              </a>
+           </li>
+            
+            <li>
+                <a href="/projects/cycle-time-horizon">
+                  <img src="/images/cycle-time-horizon-card.png" />
+                  <p class="flex-caption">Cycle Time Horizon</p>
+              </a>
+           </li>
+            
+            <li>
+                <a href="/projects/dependency-ring">
+                  <img src="/images/dependency-ring-card.png" />
+                  <p class="flex-caption">Dependency Ring</p>
+              </a>
+           </li>
+            
+            <li>
+                <a href="/projects/feature-size">
+                  <img src="/images/feature-size-card.png" />
+                  <p class="flex-caption">Feature Size Distribution</p>
+              </a>
+           </li>
+            
+            <li>
+                <a href="/projects/finding-correlation">
+                  <img src="/images/status-correlation-card.png" />
+                  <p class="flex-caption">Finding Corellation</p>
+              </a>
+           </li>
+            
+            <li>
+                <a href="/projects/magic-wheel">
+                  <img src="/images/magic-wheel-card.png" />
+                  <p class="flex-caption">Scaled Backlog-On-A-Page</p>
+              </a>
+           </li>
+            
+            <li>
+                <a href="/projects/relationship-heatmap">
+                  <img src="/images/relationship-heatmap.png" />
+                  <p class="flex-caption">Relationship Heatmap</p>
+              </a>
+           </li>
+            
+            <li>
+                <a href="/projects/value-stream-map">
+                  <img src="/images/value-stream-card.png" />
+                  <p class="flex-caption">Value 'Flow' Map</p>
+              </a>
+           </li>
+            
+      </ul>
+  </div>
+  <p>Latest Blog Post - <a href="/blog/how-to-actually-get-started-with-WIP-limits/posts-page">3 tips to run a better Retro</a></p>
+  <p style="text-align: center"><a href="http://localhost:4000/posts-page">See more of my work</a></p>
+</div>
 
-    <!-- Revolution Slider Extensions -->
+  </div>
+</div>
 
-    <script src="js/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="js/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-    <script src="js/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="js/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="js/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="js/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="js/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-    <script src="js/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="js/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+  </main>
 
-    <!-- Main JS Initialization File -->
-    <script src="js/custom.js"></script>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-light mb-2">
+    Quirk Consulting
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:brad@quirkconsulting.com"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/bradquirk"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/quirkbrad"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div></footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Flexslider Scripts -->
+	<!-- Google CDN Hosted jQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!-- Flexslider Library  -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+	<!-- Initialisation Code  -->
+	<script src="/assets/js/app.js"></script>
 
 </body>
 

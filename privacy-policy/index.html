@@ -1,594 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Privacy Policy - Quirk Consulting</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/logo/xsmall_125x/logo_yellow_125px.png">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Turning your data into insightful, consumable and engaging insights">
 
-    <!-- Template CSS Files -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/skins/yellow.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <script src="addon.css"></script>
+  <title>Quirk Consulting</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
-    <!-- Template JS Files -->
-    <script src="../js/modernizr.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50453785-4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-        gtag('config', 'UA-50453785-4');
-    </script>
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/flexslider.css">
 
 </head>
 
-<body class="double-diagonal dark portfolio-project">
-    <!-- Page Wrapper Starts -->
-    <div class="wrapper">
-        <!-- Header Starts -->
-        <header class="header header-fixed">
-            <div class="header-inner">
-                <!-- Navbar Starts -->
-                <nav class="navbar">
-                    <!-- Logo Starts -->
-                    <div class="logo">
-                        <a data-toggle="collapse" data-target=".navbar-collapse.show" class="navbar-brand" href="index.html">
-                            <!-- Logo White Starts -->
-                            <img id="logo-light" class="logo-light" src="img/sitelogo_yellow_small.png" alt="logo-light" />
-                            <!-- Logo White Ends -->
-                            <!-- Logo Black Starts -->
-                            <img id="logo-dark" class="logo-dark" src="img/sitelogo_yellow_small.png" alt="logo-dark" />
-                            <!-- Logo Black Ends -->
-                        </a>
-                    </div>
-                    <!-- Logo Ends -->
-                    <!-- Toggle Icon for Mobile Starts -->
-                    <button class="navbar-toggle navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span id="icon-toggler">
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						  <span></span>
-						</span>
-					</button>
-                    <!-- Toggle Icon for Mobile Ends -->
-                    <div id="navbarSupportedContent" class="collapse navbar-collapse navbar-responsive-collapse">
-                        <!-- Main Menu Starts -->
-                        <ul class="nav navbar-nav" id="main-navigation">
-                            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
-                            <li class="dropdown">
-                                <a href="/portfolio/"><i class="fa fa-line-chart" aria-hidden="true"></i></i> Portfolio <i class="fa fa-angle-down icon-angle"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/portfolio/value-stream-map/">Value Stream 'Flow' Map</a></li>
-                                    <li><a href="/portfolio/magic-wheel/">Backlog-on-a-Page</a></li>
-                                    <li><a href="/portfolio/dependency-ring/">Dependency Ring</a></li>
-                                    <li><a href="/portfolio/relationship-heatmap/">Relationship Heatmap</a></li>
-                                    <li><a href="/portfolio/parallel-coordinates/">Finding Corellation</a></li>
-                                    <li><a href="/portfolio/cycletime-horizon/">Cycle Time Horizon</a></li>
-                                    <li><a href="/portfolio/cfd/">Cumulative Flow Diagram</a></li>
-                                    <li><a href="/portfolio/epic-size/">Epic Size Distribution</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="/demo/dependency-mapper/"><i class="fa fa-desktop" aria-hidden="true"></i> App Demos <i class="fa fa-angle-down icon-angle"></i></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="/demo/dependency-mapper/">Dependency Mapper for Jira</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/blog/"><i class="fa fa-book" aria-hidden="true"></i> Blog</a></li>
-                            <li><a href="/contact/"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
-                        </ul>
-                        <!-- Main Menu Ends -->
-                    </div>
-                    <!-- Navigation Menu Ends -->
-                </nav>
-                <!-- Navbar Ends -->
-            </div>
-        </header>
-        <!-- Header Ends -->
-        <!-- Banner Starts -->
-        <section class="banner" style="background: url('../img/background_black_1600px.png');">
-            <div class="content text-center">
-                <div class="text-center top-text">
-                    <!-- Main Heading Starts -->
-                    <div class="text-center top-text">
-                        <h1><span>Privacy Policy</span></h1>
-                    </div>
-                    <!-- Main Heading Ends -->
-                    <hr>
-                    <!-- Breadcrumb Starts -->
-                    <ul class="breadcrumb">
-                        <li><a href="/"> Home</a></li>
-                        <li>Privacy Policy</li>
-                    </ul>
-                    <!-- Breadcrumb Ends -->
-                </div>
-            </div>
-        </section>
-        <!-- Banner Ends -->
-        <!-- Project Starts -->
-        <section class="project">
-            <div class="container">
-                <div class="row">
-                    <div class="col amber-text" id="header">
-                        <h1>Privacy Policy</h1>
-                        <h6>Last Updated: 12 January, 2020</h6>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Introduction
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>Quirk Consulting (“<span class="amber-text">We</span>”, “<span class="amber-text">Us</span>”, the “<span class="amber-text">Company</span>”, or “<span class="amber-text"> Quirk Consulting </span>”) is committed to protecting
-                                and respecting your privacy. We want to tell You (“<span class="amber-text">you</span>”, “<span class="amber-text">your</span>” or “<span class="amber-text">end-user</span>”) how we use and protect your personal information
-                                or data (“Personal Data”). This includes informing You of your rights regarding your Personal Data that we hold.</p>
-                            <p>This Privacy Policy (the “<span class="amber-text">Policy</span>”) covers the information we collect about you when you use our products or services, including all of our SaaS/Cloud software products and our downloadable software
-                                products (collectively, the “<span class="amber-text">Apps</span>”) and all public websites (“<span class="amber-text">Website(s)</span>”) provided and/or maintained by Quirk Consulting, or otherwise interact with us (for
-                                example, by contact us through email or Jira Service Desk). We refer to all of these products, Apps, and Websites, together with our other services as “<span class="amber-text">Services</span>” in this Policy. “<span class="amber-text">You</span>”
-                                means the end-user of our products or the legal entity who is the licensee of our products, or the visitor of our public websites.</p>
-                            <p>This Policy sets out how we may use, process and store your Personal Data. We may get that information from You or our partners, through contracts or other legal arrangements You have with us or our partners on behalf of us,
-                                in order to deliver contractual/legal obligations. In other cases, we will get that information from You with your permission and consent, or we may receive your Personal Data from third parties who You have given consent
-                                to pass this information on to us.</p>
-                            <p>By using, downloading, or visiting any of the Company’s Services, You are accepting and consenting to the practices outlined in this Policy.</p>
-                            <p><span class="amber-text">If you do not agree with this policy, do not access or use our Services or interact with any other aspect of our business</span>.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Notice to End Users
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>Many of our Services are intended for use by organisations. Where the Services are made available to you through an organisation (e.g., your employer), that organisation is the administrator of the Services and is responsible
-                                for controlling the access. If this is the case, please direct your data privacy questions to your administrator, as your use of the Services is subject to that Quirk Consulting’s policies.</p>
-                            <p>Administrators are able to:</p>
-                            <ul style="padding-left: 30px;">
-                                <li><span class="s2">restrict your access to the Services and therefore restrict your ability to edit, modify or delete your Personal Data; and </span></li>
-                                <li class="li1"><span class="s2">access, modify and remove the information about you.</span></li>
-                            </ul>
-                            <p>Even if the Services are not currently administered or made available to you by an organisation, if you use an email address provided by an organisation (such as your work email address) to access the Services, then the owner
-                                of the domain associated with your email address (e.g. your employer) may assert administrative control over your account and your use of the Services at a later date.</p>
-                            <p>If you do not want an administrator to be able to assert control over your account and your use of the Services, please use your personal email address to register for or access the Services.</p>
-                            <p>Please contact your organisation or refer to your administrator’s organisational policies for more information.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Information We May Collect From You
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>We may collect information from You because we have a legal reason (allowed by law or under contract) to collect the information, or because You have consented for us to do so for a specific purpose.</p>
-                            <h5><u>Information You Give Us</u></h5>
-                            <p>You may give us information about You with your consent, for example:</p>
-                            <ol>
-                                <li class="li1"><span class="s2">By filling in a form or sending us an e-mail;</span></li>
-                                <li class="li1"><span class="s2">By contacting us via e-mail or some other medium to request service or support (e.g., Jira Service Desk);</span></li>
-                                <li class="li1"><span class="s2">Applying for a job at Quirk Consulting.</span></li>
-                            </ol>
-                            <p>When you contact us via e-mail or for service through the Jira Service Desk, we will collect your name, your email address, and any other information you choose to provide. This other information you choose to provide may be
-                                personal, financial, educational, or related to your employment history.</p>
-                            <p>You may give us information for legal reasons, such as to enter into a contract with us, when You order products or services from us, or when You are taking a job at Quirk Consulting.</p>
-                            <h5><u>Information We Collect About You</u></h5>
-                            <p>If You visit our Website, we may automatically collect information about you, for example:</p>
-                            <ol>
-                                <li><span class="s2">Technical information;</span></li>
-                                <li><span class="s2">IP addresses;</span></li>
-                                <li><span class="s2">Information about what type of&nbsp;device You use to connect to our Website or Services; and</span></li>
-                                <li><span class="s2">The manner in which You interact with our Services.</span></li>
-                            </ol>
-                            <p>Any data or information that is entered into any form on Our Services is only used for the indicated purposes or as described in the present Privacy Policy.</p>
-                            <h5><u>Information received from the Atlassian Marketplace</u></h5>
-                            <p>As part of Our products and Services, We have access to the contact information (e.g., your name, phone number, e-mail address, any physical address) and license information (e.g., number of licenses, term of the license, etc.)
-                                You provide when You subscribe to a license for any of Our Services or when You renew maintenance for Our Services on the Atlassian Marketplace. We do not have any access to customer data from the Atlassian Marketplace
-                                beyond this.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Why Does Quirk Consulting Collect Your Data?
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>Quirk Consulting may collect your data for some or all of the following reasons:</p>
-                            <ul style="padding-left: 30px;">
-                                <li><span class="s2">To allow us to enhance and your experience and the usability of the Services;</span></li>
-                                <li><span class="s2">To provide support services (including technical support) to You after You have requested or purchased such services;</span></li>
-                                <li><span class="s2">To send You information and updates pertaining to our Services if You have consented to receive such communications;</span></li>
-                                <li><span class="s2">To send You occasional company news, updates, related products and Services, promotions, special offers or service information pertaining to our products and Services if You have consented or requested to receive such communications. You may choose to opt-out of certain e-mail communication at any time by utilising the “unsubscribe” feature in the e-mail message;</span></li>
-                                <li><span class="s2">To provide information about Services You have shown interest in purchasing within a reasonable time afterwards, if You are already an existing Quirk Consulting customer;</span></li>
-                                <li><span class="s2">For any other specific purpose for which you have specifically provided consent;</span></li>
-                                <li><span class="s2">To employ You or consider You for employment; or</span></li>
-                                <li><span class="s2">To provide Services to You under contract.</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                What Legal Basis Does Quirk Consulting Have For Processing Your Personal Data?
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>Quirk Consulting may process your information because:</p>
-                            <ul style="padding-left: 30px;">
-                                <li class="li1"><span class="s2">We have a contract with You;</span></li>
-                                <li><span class="s2">You have given us permission to do so;</span></li>
-                                <li><span class="s2">We must provide products or Services to You after You have purchased something from us;</span></li>
-                                <li><span class="s2">We must provide Services to You because You have requested such Services; and/or</span></li>
-                                <li><span class="s2">It is necessary in order to comply with the law.</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Who Might Quirk Consulting Share Your Information With?
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>Quirk Consulting will share the information we have collected about You (including Your Personal Data) only if we are required to do so by law, or if:</p>
-                            <ul style="padding-left: 30px;">
-                                <li><span class="s2">a third party acquires Quirk Consulting or substantially all of its assets, Personal Data held by Quirk Consulting about its customers will be one of the transferred assets of the company;</span></li>
-                                <li><span class="s2">Quirk Consulting must comply with any legal obligation; or</span></li>
-                                <li><span class="s2">it is necessary in order to protect the rights, property, or safety of Quirk Consulting, our customers or others.</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Data Storage
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <h5><u>How Long Do We Store Your Data</u></h5>
-                            <p>We store data for varying lengths of time depending on the circumstances:</p>
-                            <ul style="padding-left: 30px;">
-                                <li><span class="s2">If Your account is deactivated, terminated, or disabled, all data and content You have provided or that has been provided on or through your account will remain active and accessible for as long as necessary to allow Your team members or other users to make full use of the Services.</span></li>
-                                <li><span class="s2">After uninstalling the App, We store data for ninety (90) days to make sure it is there if you want to renew subscription and start using the Service again. If you want us to remove the data earlier, please follow the procedure provided below.</span></li>
-                            </ul>
-                            <h5><u>Data Stored In Our Apps</u></h5>
-                            <p>Downloadable Apps</p>
-                            <p>Our downloaded Apps store all information in the Atlassian Jira server product where they are installed. All data is located in your IT system (server or data center) that hosts the Atlassian Jira server product.</p>
-                            <p>No information stored on the installation IT system is made available to Us when You download, install, or use the Apps. The Apps do not transmit data from your IT system or from the end-user’s web browser to us or to any third-party.</p>
-                            <p>SaaS/Cloud Apps</p>
-                            <p>SaaS/Cloud Apps, (e.g., Issue Checklist) may only be installed in the Atlassian Jira Cloud service. With SaaS/Cloud Apps, we have access to user information as provided in this Privacy Policy, which may include data regarding
-                                how and when the Apps are utilised.</p>
-                            <h5><u>Data About You We Store or Transfer</u></h5>
-                            <p>In the case of SaaS/Cloud Apps, We primarily store and process the data or information you provide in Australia, it being understood that we do not store any of your Personal Data. Furthermore, in the case of SaaS/Cloud Apps,
-                                your Personal Data will never be transferred, out of the host application (Jira) and browser, to us or to any other third-party.<br> However, in the case of downloadable Apps, the information will be stored on Your systems
-                                and servers, wherever Your systems and servers are located.<br> We will use our best efforts to ensure your Personal Data is only processed or utilised, as identified in this Privacy Policy, inside Australia. If your Personal
-                                Data cannot be processed within Australia, we will comply with applicable law and use our best efforts to protect your Personal Data.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                What If You Chose Not To Give Us Your Personal Data?
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>If the Personal Data is necessary in order to supply products or services to You under a contract between You and Quirk Consulting, then we will not enter into that contract or provide the services or goods if You do not give
-                                us Your Personal Data.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Your Rights
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>Quirk Consulting will respect your legal rights to your data.</p>
-                            <p>As a processor of Personal Data, we will assist our customers and end users with responding to individual rights requests that they receive. In many cases, customers may be able to address these types of requests by logging
-                                into the applicable product and using settings available within such product or your account. Where this is not possible, please contact us to request assistance with any such individual rights requests.</p>
-                            <p>Below are the Legal rights that You have under law, and what Quirk Consulting does to protect those rights:</p>
-                            <h5><u>The right to be informed</u></h5>
-                            <p>Quirk Consulting is publishing this Privacy Policy to keep You informed as to what we do with your Personal Data. We strive to be transparent about how we use your data.</p>
-                            <h5><u>The right to access</u></h5>
-                            <p>You have the right to access your information. Our Services give you the ability to access certain information about you from within the Service. In certain cases, you may need to contact the administrator of your account or
-                                your company’s account. Please <a href="/contact/" class="amber-text">contact Us</a> if have any questions or You wish to access the Personal Data Quirk Consulting holds about you.</p>
-                            <h5><u>The right to rectification</u></h5>
-                            <p>If the information Quirk Consulting holds about You is inaccurate or not complete, You have the right to ask us to rectify it. If that data has been passed to a third party with your consent or for legal reasons, then we must
-                                also ask them to rectify the data. Please <a href="/contact/" class="amber-text">contact Us</a> if You need us to rectify your information.</p>
-                            <h5><u>The right to erasure</u></h5>
-                            <p>This is sometimes called ‘the right to be forgotten’. If You want Quirk Consulting to erase all your Personal Data and we do not have a legal reason to continue to process and hold it, please <a href="/contact/" class="amber-text">contact Us</a>.</p>
-                            <h5><u>The right to restrict processing</u></h5>
-                            <p>You have the right to ask Quirk Consulting to restrict how we process your data. This means We are permitted to store the data but not further process it. We keep just enough data to make sure we respect your request in the
-                                future. If You want Us to restrict processing of your data, please <a href="/contact/" class="amber-text">contact Us</a></p>
-                            <h5><u>The right to object</u></h5>
-                            <p>You have the right to object to Quirk Consulting processing your data even if it is based on Our legitimate interests, the exercise of official authority, direct marketing (including data aggregation), and processing for the
-                                purpose of statistics. If You wish to object please <a href="/contact/" class="amber-text">contact Us</a></p>
-                            <h5><u>The right to withdraw consent</u></h5>
-                            <p>If You have given Us your consent to process your data but change your mind later, You have the right to withdraw your consent at any time, and Quirk Consulting must stop processing your data. If You want to withdraw your consent,
-                                please <a href="/contact/" class="amber-text">contact Us</a>.</p>
-                            <h5><u>The right to complain to a Supervisory Authority</u></h5>
-                            <p>You have the right to complain to the competent Data Protection Authority if You feel that Quirk Consulting has not responded to your requests to solve a problem.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Data Security
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>Data provided through Jira Service Desk are securely stored on our Atlassian Jira Cloud instance bradquirk.atlassian.net hosted and maintained by Atlassian.</p>
-                            <p>All other data is stored on servers with restricted access and only Quirk Consulting’ authorised users have access to such data, to the extent required for the performance of their job duties. All staff with access to customer
-                                data are required to sign a non-disclosure agreement and complete security and privacy awareness training. In addition, We will take reasonable precautions to prevent the loss, misuse or alteration of your Personal Data.
-                                Data transmission over the Internet is inherently insecure and we cannot guarantee the security of data sent over the Internet.</p>
-                            <p>You are responsible for keeping your passwords confidential. We will not ask You for your passwords.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Cookies
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <h5><u>What Are Cookies?</u></h5>
-                            <p>Cookies are small files which are stored on a user’s computer. They are designed to hold a modest amount of data specific to a particular client and website. This allows the server to deliver a page tailored to a particular
-                                user, or the page itself can contain some script which is aware of the data in the cookie and so is able to carry information from one visit to the website (or related site) to the next.</p>
-                            <p>We use cookies in our Services to save session data (for example to store your configuration inputs). The Atlassian Connect framework and JIRA use cookies in the authentication and authorisation process, which are sent to Our
-                                servers. These cookies are then employed to secure communication and match the request to customer and end-user data that we store.</p>
-                            <p>You may refuse the use of cookies by selecting the appropriate settings on your browser, however, please note that if You do this You may not be able to use the full functionality of the Website or Services.</p>
-                            <h5><u>Enabling and Disabling Cookies</u></h5>
-                            <p>View your browser’s help pages or information on how to manage cookies at&nbsp;www.allaboutcookies.org.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Links to Other Websites
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>From time to time, the Website or Services may contain links to and from other websites, advertisers, and affiliates. If You follow a link to any of these websites, please note that these websites may have their own privacy
-                                notices and that We do not accept any responsibility or liability for any such notices. Please check these notices, where available, before You submit any Personal Data to these websites.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Legal bases for processing information under the GDPR (for users in the EEA)
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>For Services users in the the European Economic Area (EEA) Quirk Consulting processes your information in accordance with European laws and regulations such as the General Data Protection Regulation (GDPR). The GDPR governs
-                                how Quirk Consulting may process your information, and the rights that EEA users have in relation to it. This means that Quirk Consulting will collect and use your information only where:</p>
-                            <ul>
-                                <li>We need it to provide you the Service and fulfil our obligations to you under our Terms of Service. This includes providing you with access to the information that you create in your designs.</li>
-                                <li>It it justified because of a legitimate interest such as for research and development or marketing the Service (but only where our legitimate interest isn’t overridden by your interest in protecting your data).</li>
-                                <li>You consent to us using your information in a certain way.</li>
-                                <li>It is necessary for compliance with our legal obligations.</li>
-                            </ul>
-                            <p>If you have consented to our use of your information you may withdraw that consent at any time. Depending on the situation you can either withdraw your consent by <a href="/contact/" class="amber-text">contacting Us</a>, or
-                                through your account settings page. Where we are using your information because of a legitimate interest to do so, you have the right to object to that use. However, if you do so it may mean that it is not possible for
-                                you to continue using the Services.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <!-- Accordion card -->
-                <div class="accordion md-accordion" id="accordionValue" role="tablist" aria-multiselectable="true">
-                    <div>
-                        <!-- Card header -->
-                        <div>
-                            <h3 class="amber">
-                                Changes to Our Privacy Policy
-                            </h3>
-                        </div>
-                        <!-- Card body -->
-                        <div class="white-text">
-                            <p>Quirk Consulting may change this Policy from time to time in the future. Any such changes will be posted here and, where appropriate, notified to You in writing. We advise You to check back frequently to see any updates or
-                                changes.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Accordion card -->
-                <div class="row">
-                    <div class="col white-text">
-                        <!--                <p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact me!</a></p>-->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Project Ends -->
-        <!-- Footer Section Starts -->
-        <footer class="footer top-logos">
-            <!-- Footer Top Area Starts -->
-            <div class="container top-footer">
-                <div class="row">
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <h4>Site Map</h4>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/portfolio/">Portfolio</a></li>
-                                <li><a href="/demo/">App Demos</a></li>
-                                <li><a href="/blog/">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Ends -->
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-4 col-md-2">
-                        <h4>Support</h4>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="/contact/">Contact</a></li>
-                                <li><a href="/privacy-policy/">Privacy Policy</a></li>
-                                <li><a href="/eula/">EULA</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Ends -->
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <h4>Contact US</h4>
-                        <div class="menu">
-                            <ul>
-                                <li><span><i class="fa fa-envelope-open"></i> brad@quirkconsulting.com</span></li>
-                                <li><span><i class="fa fa-map-marker"></i> Melbourne, Australia</span></li>
-                                <li><span><i class="fa fa-clock-o"></i> mon-fri 9am &#x21FE; 5pm</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer Widget Ends -->
-                    <!-- Footer Widget Starts -->
-                    <div class="col-xs-6 col-sm-12 col-md-4">
 
-                        <hr>
-                        <!-- Social Media Links Starts -->
-                        <div class="social-icons">
-                            <ul class="social">
-                                <li>
-                                    <a class="twitter" href="https://twitter.com/QuirkBrad" title="twitter"></a>
-                                </li>
-                                <li>
-                                    <a class="linkedin" href="https://www.linkedin.com/company/quirkconsulting" title="linkedin"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- Social Media Links Ends -->
-                    </div>
-                    <!-- Footer Widget Ends -->
-                </div>
-                <!-- Footer Bottom Area Starts -->
-                <div class="bottom-footer">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <!-- Copyright Text Starts -->
-                            <p class="text-center">Copyright © 2020 Quirk Consulting</p>
-                            <!-- Copyright Text Ends -->
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer Bottom Area Ends -->
-            </div>
-            <!-- Footer Top Area Ends -->
+<body class="d-flex flex-column h-100">
 
-        </footer>
-        <!-- Footer Section Ends -->
-        <!-- Back To Top Starts -->
-        <div id="back-top-wrapper">
-            <p id="back-top">
-                <a href="#top"><span></span></a>
-            </p>
-        </div>
-        <!-- Back To Top Ends -->
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/" style="width:20%;height:auto;"><img src="/assets/img/logo/xsmall_125x/logo_yellow_long_125px.png" style="width:100%;height:auto;"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/contact/">Contact</a>
+
+      
+
     </div>
-    <!-- Wrapper Ends -->
+  </div>
 
-    <!-- Template JS Files -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://unpkg.com/d3-sankey@0"></script>
-    <script src="../js/jquery-2.2.4.min.js"></script>
-    <script src="../js/plugins/jquery.easing.1.3.js"></script>
-    <script src="../js/plugins/bootstrap.min.js"></script>
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 id="privacy-policy"><strong>PRIVACY POLICY</strong></h1>
+<p>LAST UPDATED: 12 JANUARY, 2020</p>
 
-    <!-- Main JS Initialization File -->
-    <script src="../js/custom.js"></script>
-    <script src="chart.js"></script>
+<h3 id="introduction">INTRODUCTION</h3>
+
+<p>Quirk Consulting (“We”, “Us”, the “Company”, or “ Quirk Consulting ”) is committed to protecting and respecting your privacy. We want to tell You (“you”, “your” or “end-user”) how we use and protect your personal information or data (“Personal Data”). This includes informing You of your rights regarding your Personal Data that we hold.</p>
+
+<p>This Privacy Policy (the “Policy”) covers the information we collect about you when you use our products or services, including all of our SaaS/Cloud software products and our downloadable software products (collectively, the “Apps”) and all public websites (“Website(s)”) provided and/or maintained by Quirk Consulting, or otherwise interact with us (for example, by contact us through email or Jira Service Desk). We refer to all of these products, Apps, and Websites, together with our other services as “Services” in this Policy. “You” means the end-user of our products or the legal entity who is the licensee of our products, or the visitor of our public websites.</p>
+
+<p>This Policy sets out how we may use, process and store your Personal Data. We may get that information from You or our partners, through contracts or other legal arrangements You have with us or our partners on behalf of us, in order to deliver contractual/legal obligations. In other cases, we will get that information from You with your permission and consent, or we may receive your Personal Data from third parties who You have given consent to pass this information on to us.</p>
+
+<p>By using, downloading, or visiting any of the Company’s Services, You are accepting and consenting to the practices outlined in this Policy.</p>
+
+<p>If you do not agree with this policy, do not access or use our Services or interact with any other aspect of our business.</p>
+
+<h3 id="notice-to-end-users">NOTICE TO END USERS</h3>
+
+<p>Many of our Services are intended for use by organisations. Where the Services are made available to you through an organisation (e.g., your employer), that organisation is the administrator of the Services and is responsible for controlling the access. If this is the case, please direct your data privacy questions to your administrator, as your use of the Services is subject to that Quirk Consulting’s policies.</p>
+
+<p>Administrators are able to:</p>
+
+<ul>
+  <li>restrict your access to the Services and therefore restrict your ability to edit, modify or delete your Personal Data; and
+access, modify and remove the information about you.</li>
+  <li>Even if the Services are not currently administered or made available to you by an organisation, if you use an email address provided by an organisation (such as your work email address) to access the Services, then the owner of the domain associated with your email address (e.g. your employer) may assert administrative control over your account and your use of the Services at a later date.</li>
+</ul>
+
+<p>If you do not want an administrator to be able to assert control over your account and your use of the Services, please use your personal email address to register for or access the Services.</p>
+
+<p>Please contact your organisation or refer to your administrator’s organisational policies for more information.</p>
+
+<h3 id="information-we-may-collect-from-you">INFORMATION WE MAY COLLECT FROM YOU</h3>
+
+<p>We may collect information from You because we have a legal reason (allowed by law or under contract) to collect the information, or because You have consented for us to do so for a specific purpose.</p>
+
+<p><em>INFORMATION YOU GIVE US</em></p>
+
+<p>You may give us information about You with your consent, for example:</p>
+
+<ol>
+  <li>By filling in a form or sending us an e-mail;</li>
+  <li>By contacting us via e-mail or some other medium to request service or support (e.g., Jira Service Desk);</li>
+  <li>Applying for a job at Quirk Consulting.</li>
+</ol>
+
+<p>When you contact us via e-mail or for service through the Jira Service Desk, we will collect your name, your email address, and any other information you choose to provide. This other information you choose to provide may be personal, financial, educational, or related to your employment history.</p>
+
+<p>You may give us information for legal reasons, such as to enter into a contract with us, when You order products or services from us, or when You are taking a job at Quirk Consulting.</p>
+
+<p><em>INFORMATION WE COLLECT ABOUT YOU</em></p>
+
+<p>If You visit our Website, we may automatically collect information about you, for example:</p>
+
+<ol>
+  <li>Technical information;</li>
+  <li>IP addresses;</li>
+  <li>Information about what type of device You use to connect to our Website or Services; and</li>
+  <li>The manner in which You interact with our Services.
+Any data or information that is entered into any form on Our Services is only used for the indicated purposes or as described in the present Privacy Policy.</li>
+</ol>
+
+<p><em>INFORMATION RECEIVED FROM THE ATLASSIAN MARKETPLACE</em></p>
+
+<p>As part of Our products and Services, We have access to the contact information (e.g., your name, phone number, e-mail address, any physical address) and license information (e.g., number of licenses, term of the license, etc.) You provide when You subscribe to a license for any of Our Services or when You renew maintenance for Our Services on the Atlassian Marketplace. We do not have any access to customer data from the Atlassian Marketplace beyond this.</p>
+
+<h3 id="why-does-quirk-consulting-collect-your-data">WHY DOES QUIRK CONSULTING COLLECT YOUR DATA?</h3>
+
+<p>Quirk Consulting may collect your data for some or all of the following reasons:</p>
+
+<ul>
+  <li>To allow us to enhance and your experience and the usability of the Services;</li>
+  <li>To provide support services (including technical support) to You after You have requested or purchased such services;</li>
+  <li>To send You information and updates pertaining to our Services if You have consented to receive such communications;</li>
+  <li>To send You occasional company news, updates, related products and Services, promotions, special offers or service information pertaining to our products and Services if You have consented or requested to receive such communications. You may choose to opt-out of certain e-mail communication at any time by utilising the “unsubscribe” feature in the e-mail message;</li>
+  <li>To provide information about Services You have shown interest in purchasing within a reasonable time afterwards, if You are already an existing Quirk Consulting customer;</li>
+  <li>For any other specific purpose for which you have specifically provided consent;</li>
+  <li>To employ You or consider You for employment; or</li>
+  <li>To provide Services to You under contract.</li>
+</ul>
+
+<h3 id="what-legal-basis-does-quirk-consulting-have-for-processing-your-personal-data">WHAT LEGAL BASIS DOES QUIRK CONSULTING HAVE FOR PROCESSING YOUR PERSONAL DATA?</h3>
+<p>Quirk Consulting may process your information because:</p>
+
+<ul>
+  <li>We have a contract with You;</li>
+  <li>You have given us permission to do so;</li>
+  <li>We must provide products or Services to You after You have purchased something from us;</li>
+  <li>We must provide Services to You because You have requested such Services; and/or</li>
+  <li>It is necessary in order to comply with the law.</li>
+</ul>
+
+<h3 id="who-might-quirk-consulting-share-your-information-with">WHO MIGHT QUIRK CONSULTING SHARE YOUR INFORMATION WITH?</h3>
+<p>Quirk Consulting will share the information we have collected about You (including Your Personal Data) only if we are required to do so by law, or if:</p>
+
+<ul>
+  <li>a third party acquires Quirk Consulting or substantially all of its assets, Personal Data held by Quirk Consulting about its customers will be one of the transferred assets of the company;</li>
+  <li>Quirk Consulting must comply with any legal obligation; or</li>
+  <li>it is necessary in order to protect the rights, property, or safety of Quirk Consulting, our customers or others.</li>
+</ul>
+
+<h3 id="data-storage">DATA STORAGE</h3>
+
+<p><em>HOW LONG DO WE STORE YOUR DATA</em></p>
+
+<p>We store data for varying lengths of time depending on the circumstances:</p>
+
+<ul>
+  <li>If Your account is deactivated, terminated, or disabled, all data and content You have provided or that has been provided on or through your account will remain active and accessible for as long as necessary to allow Your team members or other users to make full use of the Services.</li>
+  <li>After uninstalling the App, We store data for ninety (90) days to make sure it is there if you want to renew subscription and start using the Service again. If you want us to remove the data earlier, please follow the procedure provided below.</li>
+</ul>
+
+<p><em>DATA STORED IN OUR APPS</em></p>
+
+<p>Downloadable Apps</p>
+
+<p>Our downloaded Apps store all information in the Atlassian Jira server product where they are installed. All data is located in your IT system (server or data center) that hosts the Atlassian Jira server product.</p>
+
+<p>No information stored on the installation IT system is made available to Us when You download, install, or use the Apps. The Apps do not transmit data from your IT system or from the end-user’s web browser to us or to any third-party.</p>
+
+<p>SaaS/Cloud Apps</p>
+
+<p>SaaS/Cloud Apps, (e.g., Issue Checklist) may only be installed in the Atlassian Jira Cloud service. With SaaS/Cloud Apps, we have access to user information as provided in this Privacy Policy, which may include data regarding how and when the Apps are utilised.</p>
+
+<p><em>DATA ABOUT YOU WE STORE OR TRANSFER</em></p>
+
+<p>In the case of SaaS/Cloud Apps, We primarily store and process the data or information you provide in Australia, it being understood that we do not store any of your Personal Data. Furthermore, in the case of SaaS/Cloud Apps, your Personal Data will never be transferred, out of the host application (Jira) and browser, to us or to any other third-party.
+However, in the case of downloadable Apps, the information will be stored on Your systems and servers, wherever Your systems and servers are located.
+We will use our best efforts to ensure your Personal Data is only processed or utilised, as identified in this Privacy Policy, inside Australia. If your Personal Data cannot be processed within Australia, we will comply with applicable law and use our best efforts to protect your Personal Data.</p>
+
+<h3 id="what-if-you-chose-not-to-give-us-your-personal-data">WHAT IF YOU CHOSE NOT TO GIVE US YOUR PERSONAL DATA?</h3>
+
+<p>If the Personal Data is necessary in order to supply products or services to You under a contract between You and Quirk Consulting, then we will not enter into that contract or provide the services or goods if You do not give us Your Personal Data.</p>
+
+<h3 id="your-rights">YOUR RIGHTS</h3>
+
+<p>Quirk Consulting will respect your legal rights to your data.</p>
+
+<p>As a processor of Personal Data, we will assist our customers and end users with responding to individual rights requests that they receive. In many cases, customers may be able to address these types of requests by logging into the applicable product and using settings available within such product or your account. Where this is not possible, please contact us to request assistance with any such individual rights requests.</p>
+
+<p>Below are the Legal rights that You have under law, and what Quirk Consulting does to protect those rights:</p>
+
+<p><em>THE RIGHT TO BE INFORMED</em></p>
+
+<p>Quirk Consulting is publishing this Privacy Policy to keep You informed as to what we do with your Personal Data. We strive to be transparent about how we use your data.</p>
+
+<p><em>THE RIGHT TO ACCESS</em></p>
+
+<p>You have the right to access your information. Our Services give you the ability to access certain information about you from within the Service. In certain cases, you may need to contact the administrator of your account or your company’s account. Please <a href="/contact">contact Us</a> if have any questions or You wish to access the Personal Data Quirk Consulting holds about you.</p>
+
+<p><em>THE RIGHT TO RECTIFICATION</em></p>
+
+<p>If the information Quirk Consulting holds about You is inaccurate or not complete, You have the right to ask us to rectify it. If that data has been passed to a third party with your consent or for legal reasons, then we must also ask them to rectify the data. Please <a href="/contact">contact Us</a> if You need us to rectify your information.</p>
+
+<p><em>THE RIGHT TO ERASURE</em></p>
+
+<p>This is sometimes called ‘the right to be forgotten’. If You want Quirk Consulting to erase all your Personal Data and we do not have a legal reason to continue to process and hold it, please <a href="/contact">contact Us</a>.</p>
+
+<p><em>THE RIGHT TO RESTRICT PROCESSING</em></p>
+
+<p>You have the right to ask Quirk Consulting to restrict how we process your data. This means We are permitted to store the data but not further process it. We keep just enough data to make sure we respect your request in the future. If You want Us to restrict processing of your data, please <a href="/contact">contact Us</a></p>
+
+<p><em>THE RIGHT TO OBJECT</em></p>
+
+<p>You have the right to object to Quirk Consulting processing your data even if it is based on Our legitimate interests, the exercise of official authority, direct marketing (including data aggregation), and processing for the purpose of statistics. If You wish to object please <a href="/contact">contact Us</a></p>
+
+<p><em>THE RIGHT TO WITHDRAW CONSENT</em></p>
+
+<p>If You have given Us your consent to process your data but change your mind later, You have the right to withdraw your consent at any time, and Quirk Consulting must stop processing your data. If You want to withdraw your consent, please <a href="/contact">contact Us</a>.</p>
+
+<p><em>THE RIGHT TO COMPLAIN TO A SUPERVISORY AUTHORITY</em></p>
+
+<p>You have the right to complain to the competent Data Protection Authority if You feel that Quirk Consulting has not responded to your requests to solve a problem.</p>
+
+<h3 id="data-security">DATA SECURITY</h3>
+
+<p>Data provided through Jira Service Desk are securely stored on our Atlassian Jira Cloud instance bradquirk.atlassian.net hosted and maintained by Atlassian.</p>
+
+<p>All other data is stored on servers with restricted access and only Quirk Consulting’ authorised users have access to such data, to the extent required for the performance of their job duties. All staff with access to customer data are required to sign a non-disclosure agreement and complete security and privacy awareness training. In addition, We will take reasonable precautions to prevent the loss, misuse or alteration of your Personal Data. Data transmission over the Internet is inherently insecure and we cannot guarantee the security of data sent over the Internet.</p>
+
+<p>You are responsible for keeping your passwords confidential. We will not ask You for your passwords.</p>
+
+<h3 id="cookies">COOKIES</h3>
+
+<p><em>WHAT ARE COOKIES?</em></p>
+
+<p>Cookies are small files which are stored on a user’s computer. They are designed to hold a modest amount of data specific to a particular client and website. This allows the server to deliver a page tailored to a particular user, or the page itself can contain some script which is aware of the data in the cookie and so is able to carry information from one visit to the website (or related site) to the next.</p>
+
+<p>We use cookies in our Services to save session data (for example to store your configuration inputs). The Atlassian Connect framework and JIRA use cookies in the authentication and authorisation process, which are sent to Our servers. These cookies are then employed to secure communication and match the request to customer and end-user data that we store.</p>
+
+<p>You may refuse the use of cookies by selecting the appropriate settings on your browser, however, please note that if You do this You may not be able to use the full functionality of the Website or Services.</p>
+
+<p><em>ENABLING AND DISABLING COOKIES</em></p>
+
+<p>View your browser’s help pages or information on how to manage cookies at www.allaboutcookies.org.</p>
+
+<h3 id="links-to-other-websites">LINKS TO OTHER WEBSITES</h3>
+
+<p>From time to time, the Website or Services may contain links to and from other websites, advertisers, and affiliates. If You follow a link to any of these websites, please note that these websites may have their own privacy notices and that We do not accept any responsibility or liability for any such notices. Please check these notices, where available, before You submit any Personal Data to these websites.</p>
+
+<h3 id="legal-bases-for-processing-information-under-the-gdpr-for-users-in-the-eea">LEGAL BASES FOR PROCESSING INFORMATION UNDER THE GDPR (FOR USERS IN THE EEA)</h3>
+
+<p>For Services users in the the European Economic Area (EEA) Quirk Consulting processes your information in accordance with European laws and regulations such as the General Data Protection Regulation (GDPR). The GDPR governs how Quirk Consulting may process your information, and the rights that EEA users have in relation to it. This means that Quirk Consulting will collect and use your information only where:</p>
+
+<ul>
+  <li>We need it to provide you the Service and fulfil our obligations to you under our Terms of Service. This includes providing you with access to the information that you create in your designs.</li>
+  <li>It it justified because of a legitimate interest such as for research and development or marketing the Service (but only where our legitimate interest isn’t overridden by your interest in protecting your data).</li>
+  <li>You consent to us using your information in a certain way.</li>
+  <li>It is necessary for compliance with our legal obligations.</li>
+</ul>
+
+<p>If you have consented to our use of your information you may withdraw that consent at any time. Depending on the situation you can either withdraw your consent by <a href="/contact">contacting Us</a>, or through your account settings page. Where we are using your information because of a legitimate interest to do so, you have the right to object to that use. However, if you do so it may mean that it is not possible for you to continue using the Services.</p>
+
+<h3 id="changes-to-our-privacy-policy">CHANGES TO OUR PRIVACY POLICY</h3>
+
+<p>Quirk Consulting may change this Policy from time to time in the future. Any such changes will be posted here and, where appropriate, notified to You in writing. We advise You to check back frequently to see any updates or changes.</p>
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-light mb-2">
+    Quirk Consulting
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:brad@quirkconsulting.com"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/bradquirk"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/quirkbrad"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div></footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Flexslider Scripts -->
+	<!-- Google CDN Hosted jQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!-- Flexslider Library  -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+	<!-- Initialisation Code  -->
+	<script src="/assets/js/app.js"></script>
 
 </body>
 

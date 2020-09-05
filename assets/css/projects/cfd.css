@@ -1,0 +1,101 @@
+.mouseLine {
+    stroke: black;
+    fill: none;
+}
+
+.toDoStart {
+    stop-color: #3498DB;
+}
+
+.toDoEnd {
+    stop-color: #2980B9;
+}
+
+.inProgressStart {
+    stop-color: #F1C40F;
+}
+
+.inProgressEnd {
+    stop-color: #FDBB32;
+}
+
+.doneStart {
+    stop-color: #2ECC71;
+}
+
+.doneEnd {
+    stop-color: #27AE60;
+}
+
+#toDoVolume {
+    fill: #2980B9;
+}
+
+#toDoPercentage {
+    fill: #2980B9;
+}
+
+#inProgressVolume {
+    fill: #FDBB32;
+}
+
+#inProgressPercentage {
+    fill: #FDBB32;
+}
+
+#doneVolume {
+    fill: #27AE60;
+}
+
+#donePercentage {
+    fill: #27AE60;
+}
+
+.mouse-line {
+    stroke: #2E2E2E;
+}
+
+.rectBackground {
+    fill: #2E2E2E;
+}
+
+circle {
+    stroke: #2E2E2E;
+}
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+/* Full Page Carousel itself*/
+
+.carousel {
+    height: 100%;
+}
+
+.carousel .carousel-inner {
+    height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+    height: 100%;
+}
+
+.axis line {
+    stroke: white;
+}
+
+.axis path {
+    stroke: white;
+}
+
+text {
+    fill: white;
+}
+
+rect#donePercentageRect {
+    border-radius: 5px;
+}

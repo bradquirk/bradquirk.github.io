@@ -1,0 +1,27 @@
+[
+  
+    {
+      "title"    : "3 tips to run a better Retro",
+      "category" : "",
+      "tags"     : "Agile, Continuous Improvement, Retrospectives",
+      "url"      : "/blog/3-tips-to-run-a-better-retro",
+      "date"     : "2020-08-12 00:00:00 +1000"
+    } ,
+  
+    {
+      "title"    : "Whose dependency is it anyway?",
+      "category" : "",
+      "tags"     : "Agile, Scaled, Org Design",
+      "url"      : "/blog/whose-dependency-is-it-anyway",
+      "date"     : "2020-07-07 00:00:00 +1000"
+    } ,
+  
+    {
+      "title"    : "How to actually get started with WIP limits",
+      "category" : "",
+      "tags"     : "Agile, Kanban, Flow",
+      "url"      : "/blog/how-to-actually-get-started-with-WIP-limits",
+      "date"     : "2020-06-30 00:00:00 +1000"
+    } 
+  
+]

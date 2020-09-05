@@ -1,0 +1,45 @@
+#tooltip {
+    background-color: rgba(0, 0, 0, .8);
+    border: none;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 400px;
+    text-align: left;
+    color: white;
+    pointer-events: none
+}
+
+html,
+body,
+.view {
+height: 100%;
+}
+
+/* Full Page Carousel itself*/
+
+.carousel {
+height: 100%;
+}
+
+.carousel .carousel-inner {
+height: 100%;
+}
+
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active {
+height: 100%;
+}
+
+.axis line {
+stroke: white;
+}
+
+.axis path {
+stroke: white;
+}
+
+text {
+fill: white;
+}

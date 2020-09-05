@@ -46,13 +46,13 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link active" href="/projects/">Projects</a>
 
       <a class="nav-item nav-link " href="/blog/">Blog</a>
 
       <a class="nav-item nav-link " href="/about/">About</a>
 
-      <a class="nav-item nav-link active" href="/contact/">Contact</a>
+      <a class="nav-item nav-link " href="/contact/">Contact</a>
 
       
 
@@ -61,13 +61,24 @@
 
 </nav>
   <div class="col-lg-10 mx-auto mt-5 post">
-  <div id="frameContainer">
-<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://brad647105.typeform.com/to/vaAjuc"></iframe>
-</div>
-<link rel="stylesheet" type="text/css" href="/assets/css/contact.css" />
+  <h1 id="cumulative-flow-diagram">Cumulative Flow Diagram</h1>
+<div id="volumeChart"></div>
+<div id="percentageChart"></div>
 
-<script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
+<p>The CFD, one of the most insightful, yet alienating agile charts out there. Many people find this chart to be fairly superficial, and to an extent you’d be correct.</p>
 
+<p>Flow-based conversations are often very factual and data-driven, and the key to yielding value from CFD analysis goes beyond crunching the numbers and observing the peaks and troughs of each status.</p>
+
+<p>Equally as, if not more important than the numbers are the stories behind them. What is the context that might have led to a blowout in the number of work items that were In Progress? Does it warrant a deep-dive discussion, similar to a retrospecitve? CFDs can be powerful tools for aligning conversations and identifying antipatterns,provided you use them correctly.</p>
+
+<p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact me!</a></p>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/projects/cfd.css" />
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script src="/assets/js/projects/cfd.min.js">
+</script>
 
 </div>
   </main>

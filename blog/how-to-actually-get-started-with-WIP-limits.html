@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Turning your data into insightful, consumable and engaging insights">
+
+  <title>Quirk Consulting</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/flexslider.css">
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/" style="width:20%;height:auto;"><img src="/assets/img/logo/xsmall_125x/logo_yellow_long_125px.png" style="width:100%;height:auto;"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/contact/">Contact</a>
+
+      
+
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 class="text-warning"><b>How to actually get started with WIP limits</b></h1>
+
+<p class="post-metadata text-muted">
+  30 June 2020 -  
+  <b>11 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#agile">
+      <span class="tag badge badge-pill text-warning border border-warning">Agile</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#kanban">
+      <span class="tag badge badge-pill text-warning border border-warning">Kanban</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#flow">
+      <span class="tag badge badge-pill text-warning border border-warning">Flow</span>
+    </a>
+    </p>
+
+<h2 id="aka-cracking-the-wip">Aka ‘Cracking the WIP’</h2>
+
+<p>It’s hard to talk about Kanban for more than 5 minutes without some mention of WIP limits. Short for Work-In-Progress,
+limiting WIP is an important mechanism in controlling the flow of work through a delivery pipeline.</p>
+
+<p>However, confusion often sets in early on the journey of flow management. How do you begin? What does good look like?
+When I give the official advice of ‘start with what you have, and go from there’, I’m often met with puzzle looks.</p>
+
+<p>The purpose of this article is to help people get a better understanding of WIP, and to provide a tangible method to get
+started with WIP limits.</p>
+
+<h2 id="what-is-wip">What is WIP?</h2>
+
+<p>One of the key principles of Kanban is the concept of flow management. Specifically, by implementing policies in our
+delivery workflow to control the volume of work at different gates we can significantly increase the predictability of
+work.</p>
+
+<p>Having a Work In Progress metric in place can provide immediate benefits on its own, especially when measured over time.
+Does your teams’ workload fluctuate significantly? Is it seasonal?</p>
+
+<p>If we think of the amount of work in the delivery pipeline as the overall customer demand at a point in time, then a WIP
+limit is the opposite; the capacity of the system (not necessarily the team itself!) to deliver at that same point.
+Knowing that demand often exceeds capacity in most delivery systems, we must introduce policies to ensure that excess
+demand is triaged and prioritised properly in order to not overwhelm the system.</p>
+
+<h2 id="what-does-a-wip-limit-achieve">What does a WIP limit achieve?</h2>
+
+<p>Often in the world of agile there is too much emphasis on cycle time, or speed-to-market, instead of emphasising other
+equally important factors such as predictability or quality. Ask yourself, would you rather place a $1000 bet with a 50%
+chance of turning it into $3000, or would you rather place the same bet if there was a 100% guarantee you’d make $2000?
+You can plan and forecast easily in the latter scenario, but there is a 50/50 chance you’d need to undertake replanning
+in the former example.</p>
+
+<p>Ultimately speed, productivity and predictability are all intertwined, and if you follow Little’s Law then you’ll know
+that you can’t effect one variable with affecting the others. Although the common consensus is that manufacturing
+principles don’t necessarily translate like-for-like in the complex knowledge-working industry of IT, we can safely say
+that the basic principles of Little’s Law still apply.</p>
+
+<div style="border: 1px solid #666666;border-radius:5px;padding:20px">
+    <h3 style="font-size:1.25em;text-align:center;"><span>Little's Law (for Kanban)</span></h3>
+    <hr />
+    <p style="font-size:1.25em;text-align:center;">WIP = Throughput * Lead Time</p>
+    <hr />
+    <p>Where:</p>
+    <ul>
+        <li>WIP = average number of work items in process</li>
+        <li>Throughput = average delivery rate</li>
+        <li>Lead Time = average time an item spends from the point of commitment to the point of delivery</li>
+    </ul>
+</div>
+<p><br /></p>
+
+<p>Therefore, by limiting the Work-In-Progress, we can directly increase the predictability of the system, and also
+indirectly improve the speed and throughput of the system also.</p>
+
+<p>Also, WIP limits serve a second purpose. Not only can they improve the performance of the system, as mentioned above,
+but it also intentionally ‘stresses’ the delivery workflow. For instance, if you set your WIP limit to be 80% of the
+average work-in-progress, then 20% of the time you are forcing your team to adopt certain policies that they might not
+follow otherwise. We can exploit this behaviour to make cultural improvements also.</p>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipstock.png" />
+    <figcaption><i>A basic view of a team's work-in-progress over time. Start small and build your view out
+            incrementally!</i></figcaption>
+</figure>
+<p><br /></p>
+
+<p>Again, it is up until this point where the theory usually ends in the Kanban world. Because WIP is contextual it is
+nigh-impossible to create an official ‘universal’ method of WIP limit calculation.</p>
+
+<p>However, I’ll try and provide the next best thing; an unofficial ‘starter guide’ to help you along your journey. Below
+is the typical 5-step approach I take to get from point A to point B.</p>
+
+<p>You’ll notice I talk about this method as an ‘experiment’ because it is just that; a scientific guess. In the same way
+that your typical chemistry experiment has a hypothesis, method, results and conclusion, so too must we start off with
+an educated guess and measure how close our assumptions are to get to the intended goal.</p>
+
+<h2 id="1-understand-and-define-your-goal">1. Understand and define your goal</h2>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipstory.png" />
+    <figcaption><i>This team sat down and reviewed their WIP, and overlaid major events and milestones to explain the
+            trends.</i></figcaption>
+</figure>
+<p><br /></p>
+
+<p>Don’t skip this first step, as there are a bunch of assumptions we need to clarify from the get-go!</p>
+
+<p>As mentioned before, we are using WIP limits to strike a balance between supply (system capacity) and demand (customer
+requests). However, there are multiple ways to define ‘capacity’, and therefore our WIP limit goal can vary accordingly.</p>
+
+<p>In my experience, there are three different types of capacity, and therefore three different potential goals to reach
+with a WIP limit.</p>
+
+<p>Select the goal (A,B or C) from the below list that resonates with you the most:</p>
+
+<div style="border: 1px solid #666666;border-radius:5px;padding:20px">
+    <h3 style="font-size:1.25em;text-align:center;"><span>Goal A: Limit the number of work items to increase
+            performance</span></h3>
+    <div style="font-size:5em;text-align:center;padding:20px;"><span><i class="fas fa-tachometer-alt icon" aria-hidden="true"></i></span></div>
+    <p style="text-align:center;"><i>"We want to organise the work, not the people."</i></p>
+    <p>This is the 'purist' Kanban definition of capacity. This scenario acknowledges that a high number of In Progress
+        items can place continual stress on your delivery pipeline, creating bottlenecks of work.</p>
+    <p>Performance-based WIP focuses on limiting In Progress items such that the system is stressed occasionally without
+        overwhelming the system.</p>
+</div>
+<p><br /></p>
+<div style="border: 1px solid #666666;border-radius:5px;padding:20px">
+    <h3 style="font-size:1.25em;text-align:center;"><span>Goal B: Limit the number of work items to increase
+            collaboration</span></h3>
+    <div style="font-size:5em;text-align:center;padding:20px;"><span><i class="fas fa-users icon" aria-hidden="true"></i></span></div>
+    <p style="text-align:center;"><i>"We want to organise the work, factoring in how many people we have rostered at the
+            time."</i></p>
+    <p>This is the more traditional view of capacity, but with a slight twist. A high number of In Progress items can
+        make it difficult for team members to find opportunities to cross skill together.</p>
+    <p>Collaboration-based WIP focuses on limiting In Progress items below the number of people in your team.</p>
+</div>
+<p><br /></p>
+<div style="border: 1px solid #666666;border-radius:5px;padding:20px">
+    <h3 style="font-size:1.25em;text-align:center;"><span>Goal C: Limit the number of work items to increase
+            mindfulness</span></h3>
+    <div style="font-size:5em;text-align:center;padding:20px;"><span><i class="fas fa-brain icon" aria-hidden="true"></i></span></div>
+    <p style="text-align:center;"><i>"We want to organise the work, such that each person is not individually
+            overwhelmed by their workload."</i></p>
+    <p>The final potential goal, with a big emphasis on mental workload and stress management. A high number of In
+        Progress items can be overwhelming to your team members.</p>
+    <p>Mindfulness-based WIP focuses on limiting In Progress items proportional to the number of people in your team.
+    </p>
+    <p></p>
+</div>
+
+<h2 id="2-gather-what-data-you-can">2. Gather what data you can</h2>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipstats.png" />
+    <figcaption><i>The WIP count was measured manually at COB every Wednesday for 10 weeks.</i></figcaption>
+</figure>
+<p><br /></p>
+
+<p>To be able to identify a suitable starting WIP limit, we need to take a look at the history of the team (or system) up to this point. Ideally this would involve quantifying the data in some way, which should be possible provided you use a digital board such as Jira or Trello. If not, then anecdotal evidence will suffice, but your main objective will quickly turn to gathering unbiased evidence.</p>
+
+<p>Once you have a dataset, whether it be real or estimated, we need to capture some quick stats. Good questions to ask here include:</p>
+
+<ul>
+  <li>What are the minimum and maximum WIP limits we’ve observed?</li>
+  <li>What trends can we identify? Is there a seasonal demand, or does the demand perhaps have a more unpredictable burst-like pattern?</li>
+  <li>What are the stories behind these significant events? Can we trace the demand back to a specific root cause or origin that can help us in the future?</li>
+</ul>
+
+<p>Once we’ve thoroughly reviewed our past, it’s time to make a call about the future.</p>
+
+<h2 id="3-make-some-big-choices">3. Make some big choices</h2>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipstart.png" />
+    <figcaption><i>After some team discussion, they felt a WIP limit of 21 would place the right amount of stress on the system.</i></figcaption>
+</figure>
+<p><br /></p>
+
+<p>As I mentioned before, the primary mechanism provided by a WIP limit is additional ‘stress’ on the system. In other words, we are trying to force a response or policy to be enacted when a certain threshold has been reached.</p>
+
+<p>So rather than trying to identify a WIP limit right off the bat, we can instead approach it from the other direction. How often do we want the WIP limit to be enforced? It could be a percentage of time, or a certain frequency per month, for example. Once you have that behaviour identified you can move on to the next step; finding that number.</p>
+
+<p>With your ratio of stress / normal system behaviour identified, now you can map that against your historical dataset. Is there a particular WIP threshold that will balance the stress ratio? Depending on the nature of your demand this may come easily, but in case the answer is not obvious you can apply best efforts now and tweak things later on (more on that in step 5.)</p>
+
+<p>Finally, once you’ve agreed upon your starting WIP limit your team will then need to agree on how long this experiment will last. Specifically, you want to validate that any changes being made with your WIP are heading in the right direction.</p>
+
+<p>My advice would be to have at least three review sessions in order to establish an early trend. Therefore, if you plan on reviewing your WIP experiment every month, then commit to a 3 month program at the very least before considering a pivot.</p>
+
+<h2 id="4-measure-the-results">4. Measure the results</h2>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-06-30-how-to-actually-get-started-with-WIP-limits/wipexperiment.png" />
+    <figcaption><i>After two months of measurement, at the second review forum (18th week) the WIP limit was adjusted.</i></figcaption>
+</figure>
+<p><br /></p>
+
+<p>Now for the fun part (at least in my book). If you have some kind of digital board set up (like Jira or Trello, for example) then you can start measuring your WIP immediately by using the out-of-the-box reporting tools, or by accessing the available APIs to create your own. I recommend using the Cumulative Flow Diagram as it provides a holistic view of your supply (work completed) and demand (work requested). If your ‘In Progress’ work smooths out and your ‘Completed’ work starts to increase over time you know you’ve hit the sweet spot from a performance perspective. Conversely, if you are more interested in the cultural wellbeing side of things then you can compliment your results with a simple health survey.</p>
+
+<p>If you don’t have the means to automate the capture of results, then you have two remaining options. First, you could manually record the results, plotting the final stats at the end of each working day. Alternatively, you could only focus on the extremes, and log a diary that records only the days where the WIP limit was hit.</p>
+
+<p>Again, regardless of how you capture your results, make sure you collect enough data points to establish a meaningful trend. Don’t just save it all for the end like a big bang release! Continual measurement leads to continual opportunities to improve.</p>
+
+<h2 id="5-dont-be-afraid-to-adjust">5. Don’t be afraid to adjust</h2>
+
+<p>After you’ve measured enough results to warrant a review session, it’s important to have an in-depth discussion about how the experiment is going. Similar to a retrospective, this is your chance to review the facts and decide whether to pause, pivot or persevere.</p>
+
+<p>It’s rare that a fixed WIP limit can remain relevant over a long time horizon, so don’t hesitate to change things if you’re not getting the right results (backed by your data of course!).</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>If you’ve read through this article fully, or even just skimmed the highlights, you should hopefully have picked up a few new tips and tricks to get over the fear of starting, and kick off a formal program to throttle the demand in your system of work.</p>
+
+<p>I’d love to hear how your WIP limit experiments are working out. What has your experience been? Have I missed something here that you’d like me to address? Let me know!</p>
+
+<h2 id="want-to-enhance-your-agile-reporting">Want to enhance your agile reporting?</h2>
+
+<p>Are you a Jira user? Check out <a href="https://marketplace.atlassian.com/vendors/1217451/quirk-consulting">these apps</a> that focus on themes like dependency management, scaled backlog views and WIP management to help your teams navigate and understand their complex environments!</p>
+
+
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-light mb-2">
+    Quirk Consulting
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:brad@quirkconsulting.com"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/bradquirk"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/quirkbrad"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div></footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Flexslider Scripts -->
+	<!-- Google CDN Hosted jQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!-- Flexslider Library  -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+	<!-- Initialisation Code  -->
+	<script src="/assets/js/app.js"></script>
+
+</body>
+
+</html>
