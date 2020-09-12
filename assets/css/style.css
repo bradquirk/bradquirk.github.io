@@ -3,7 +3,7 @@ body { background-color: #242424; }
 
 h1, h2, h3, i, a { color: #ffc107; }
 
-h2 { margin-bottom: 12px; }
+h3 { margin-top: 12px; margin-bottom: 12px; }
 
 p { color: white; }
 
@@ -23,7 +23,9 @@ figcaption { text-align: center; color: white; font-weight: 100; }
 
 .list-group-item { background-color: #CCCCCC; }
 
-.post { background-color: #2E2E2E; border-radius: 5px; padding-bottom: 10px; }
+#landingpage { margin-top: 0px; }
+
+.post { background-color: #2E2E2E; border-radius: 5px; padding: 1px 20px 10px 20px; }
 
 .flex-viewport { background-color: #2E2E2E; }
 
@@ -31,9 +33,9 @@ figcaption { text-align: center; color: white; font-weight: 100; }
 
 .cls-1 { fill: #ffc541; }
 
-.cls-2 { fill: #4e4066; }
+.cls-2 { fill: #806104; }
 
-.cls-3 { fill: #6f5b92; }
+.cls-3 { fill: #FEC007; }
 
 .cls-4 { fill: #f78d5e; }
 
