@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Turning your data into insightful, consumable and engaging insights">
+
+  <title>Quirk Consulting</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/flexslider.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50453785-4"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-50453785-4');
+  </script>
+
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/" style="width:20%;height:auto;"><img src="/assets/img/logo/xsmall_125x/logo_yellow_long_125px.png" style="width:100%;height:auto;"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="https://marketplace.atlassian.com/apps/1221796/dependency-mapper-for-jira">Apps</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/contact/">Contact</a>
+
+      
+
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 class="text-warning"><b>Getting 'sciencey' with your agile cadences</b></h1>
+
+<p class="post-metadata text-muted">
+  19 September 2020 -  
+  <b>4 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#agile">
+      <span class="tag badge badge-pill text-warning border border-warning">Agile</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#cadences">
+      <span class="tag badge badge-pill text-warning border border-warning">Cadences</span>
+    </a>
+    </p>
+
+<h3 id="when-fortnightly-forums-feel-like-a-fail">When fortnightly forums feel like a fail</h3>
+
+<p>When a squad looks to establish an iterative delivery pattern, regardless of whether they follow the Scrum framework or not, the typical ‘default’ cadence is to operate on a two-week cycle. For many teams, especially in the early phases, this feels like the right balance of ‘doing’ and ‘inspecting’ and forces a lot of positive conversations about how best to self-organise quickly.</p>
+
+<p>However, after a few cycles there is a chance that those forteen days feels ‘off’, somehow. It could be that your standups are not adding value when the work isn’t flowing on a daily basis. It could even be that your team has moved on from events that occurred even a week prior, listing that as ‘old news’. If you feel like your sprints are running too fast, or too slow, you want to change and adapt.</p>
+
+<p>But how do you go about the task of cadence adjustment without causing too much disruption throughout the experimentation process? Is there a guiding principle that can help us make informed choices early on? Thankfully, there is, and of all places we have electrical engineering to thank.</p>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-09-19-getting-sciencey-with-your-agile-cadences/traffic-jam.jpg" />
+    <figcaption><i>"No boss, no changes from yesterday. None today. Probably none tomorrow either."</i></figcaption>
+</figure>
+<p><br /></p>
+
+<h3 id="summon-science-to-secure-success-in-your-squad">Summon science to secure success in your squad</h3>
+
+<p>Switching gears for a second, imagine the sound made by a bird as it chirps out in the wild. If you wanted to represent that signal on paper you’d probably use a frequency chart, measuring the sound waves over time. Now imagine we want to convert that bird’s call into a sound we can store on our computer, digitally. To do so we would need to ‘sample’ the bird’s call a certain number of times per second to get a semi-realistic portrayal of the original sound.</p>
+
+<p>To know how many times we want to take said sample we want to follow <a href="https://www.youtube.com/watch?v=zZAk0sKI0VY">Nyquist’s Theorem</a>, which states that in order to reliably reconstruct an analog signal (i.e. the bird’s call) into a digital format we must sample at a rate greater than twice the highest frequency of that original signal.</p>
+
+<p>In other words, if the bird’s call had a frequency of 1 seconds (or it took 1 seconds for the bird to repeat itself), then we want to sample the signal every 0.499 seconds at least, if not faster to make a faithful representation of the original bird call. In a perfect system we would want to take samples as often as we can (think infinitely quickly), however this would be inefficient as we know the exercise of sample collection takes energy. Therefore we want to find an economical balance between speed and energy.</p>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-09-19-getting-sciencey-with-your-agile-cadences/cadence-theory.png" />
+    <figcaption><i>By sampling twice per cycle we can get a decent approximation of the original signal.</i></figcaption>
+</figure>
+<p><br /></p>
+
+<h3 id="the-practice-of-pivoting-to-a-positive-permutation">The practice of pivoting to a positive permutation</h3>
+
+<p>Taking us back to our real-world example of the squad, instead of audio signals from a bird we are instead focusing on the amount of change that occurs in our system of work. In other words, how frequently do we release new features, or provide services to our customers?</p>
+
+<p>If, on average, you expect to make a release every month then you want to have held <em>at least</em> two or three check-ins (or samples) to ensure we have a clear idea of our trajectory and ensure we’ve identified the amount of change that has occurred. This equates to our original fortnightly cadence, as we started with, and funnily enough aligns closely to the ideal scenario provided by many agile frameworks.</p>
+
+<p>However, if you find you release your work (or complete a cycle of change) over a longer time horizon then you suddenly have a basis upon which to adjust your cadences. Working with hardware and infrastructure, for example, might only see change occur every 3 months, in which case a cadence of 6 weeks might feel more appropriate. On the other side of the scale, a help desk that triages defects on a weekly cadence might shorten their cycle to a couple of days, providing that doesn’t cost too much effort on the team.</p>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-09-19-getting-sciencey-with-your-agile-cadences/cadence-practice.png" />
+    <figcaption><i>Frequent, but efficient, inspection allows us to capture the peaks and troughs of progress.</i></figcaption>
+</figure>
+<p><br /></p>
+
+<h3 id="in-closing">In closing</h3>
+
+<p>Although the default tempo for most agile squads is on a two-week cycle, the context and nature of your work might mean that this speed might not suit the needs of the team. By following Nyquist’s Theorem and identifying how often you expect change to occur in your system of work, you can safely calibrate your cycle to align to the needs of your customers and find harmony in your delivery patterns once more.</p>
+
+
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-light mb-2">
+    Quirk Consulting
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:brad@quirkconsulting.com"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/bradquirk"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/quirkbrad"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div></footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Flexslider Scripts -->
+	<!-- Google CDN Hosted jQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!-- Flexslider Library  -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+	<!-- Initialisation Code  -->
+	<script src="/assets/js/app.js"></script>
+
+</body>
+
+</html>
