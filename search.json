@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Are we done with Agile?",
+      "category" : "",
+      "tags"     : "Agile, Meta",
+      "url"      : "/blog/are-we-done-with-agile",
+      "date"     : "2020-09-27 00:00:00 +1000"
+    } ,
+  
+    {
       "title"    : "Getting &#39;sciencey&#39; with your agile cadences",
       "category" : "",
       "tags"     : "Agile, Cadences",
