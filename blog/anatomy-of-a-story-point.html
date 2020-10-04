@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Turning your data into insightful, consumable and engaging insights">
+
+  <title>Quirk Consulting</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css"/>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/flexslider.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50453785-4"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-50453785-4');
+  </script>
+
+
+</head>
+
+
+<body class="d-flex flex-column h-100">
+
+  <main class="flex-shrink-0 container mt-5">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/" style="width:20%;height:auto;"><img src="/assets/img/logo/xsmall_125x/logo_yellow_long_125px.png" style="width:100%;height:auto;"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
+
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+
+      <a class="nav-item nav-link " href="https://marketplace.atlassian.com/apps/1221796/dependency-mapper-for-jira">Apps</a>
+
+      <a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/contact/">Contact</a>
+
+      
+
+    </div>
+  </div>
+
+</nav>
+  <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 class="text-warning"><b>Anatomy of a Story Point</b></h1>
+
+<p class="post-metadata text-muted">
+  04 October 2020 -  
+  <b>7 mins read time</b>
+
+  <br>Tags: 
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#agile">
+      <span class="tag badge badge-pill text-warning border border-warning">Agile</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#estimation">
+      <span class="tag badge badge-pill text-warning border border-warning">Estimation</span>
+    </a>
+    
+    <a class="text-decoration-none no-underline" href="/blog/tags#jira">
+      <span class="tag badge badge-pill text-warning border border-warning">Jira</span>
+    </a>
+    </p>
+
+<a href="/subscribe" class="btn btn-outline-warning">Subscribe for blog updates!</a>
+
+<h2 id="the-black-sheep-of-scrum-and-xp">The black sheep of Scrum and XP</h2>
+
+<p>Since the dawn of Agile, squads and theorists alike have been constantly wrestling with the concept of estimation and forecasting in complex environments. One of the most common techniques is to assign a Story Point to each User Story, and use the summed number of completed Story Points, also called Velocity, to gain a measure of how much complexity the team has churned through. Seems a bit muddled, but innocent enough so far.</p>
+
+<p>The controversy in this space, however, is when these estimates are then used to track team performance and how they match up to the actual progress of delivery. Too often you’ll see Scrum Masters and Product Owners act as shephards to protect the team from the rest of the business, not allowing their estimates to be broadcasted externally for potential misuse. This in turn breeds a whole host of antipatterns around trust and transparency that neither side can claim innocence from. It’s now so bad that even <a href="https://ronjeffries.com/articles/019-01ff/story-points/Index.html">the inventor of Story Points</a> now expresses remorse for teams that misinterpreted his intent!</p>
+
+<p>Thus when Atlassian recently announced in the <a href="https://apps.apple.com/au/app/jira-cloud-by-atlassian/id1006972087">latest release</a> of their task-tracking tool, Jira, that they were enhancing the level of precision in the Story Points they capture, the Agile community sparked up once again to debate the merits of Story Points and their place in complex forecasting.</p>
+
+<p>So given we’ve come full circle on this topic once again, it’s worth asking the question; what are Story Points meant to achieve in the first place?</p>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-10-04-anatomy-of-a-story-point/story_points.png" />
+    <figcaption><i>"You've provided an estimate of '5.5' but the rest of the team says it's '5.6'. Let's book a 4 hour workshop follow-up to discuss this discrepancy."</i></figcaption>
+</figure>
+<p><br /></p>
+
+<h2 id="whats-the-point-of-points-anyway">What’s the point of Points anyway?</h2>
+
+<p>When you don’t know what tomorrow brings it helps to have a rough plan of attack. In Scrum and XP the notion of a ‘Story Point’ is often used to signify the amount of complexity a User Story will likely face into. It is a unitless, ordinal measure that combines effort, risk and uncertainty. That means the difference between a value of ‘1’ and ‘2’ isn’t the same as the difference between ‘2’ and ‘3’, i.e. the values are relative rather than absolute. This is why people tend to gravitate towards the use of the <a href="https://www.mathsisfun.com/numbers/fibonacci-sequence.html">Fibonacci sequence</a> to amplify this message.</p>
+
+<p>Let’s look at the weather as an analogy. As any Melbournian will tell you, you should take the weather forecast with a grain of salt as we usually experience <a href="https://en.wikipedia.org/wiki/Four_Seasons_in_One_Day">‘Four seasons in a day’</a>. However, you still want an idea of what to wear in the coming week so you can prepare for certain scenarios; hot, cold, wet, dry etc.. Most meteorologists will only provide a certain level of precision to their predictions (usually to the nearest round number) because anything beyond that will not only be inaccurate (statistically speaking) but will also not affect the outcome significantly. You’re still probably going to dress the same regardless if it’s going to be 25 degrees celcius or 25.1.</p>
+
+<p>The same principle applies in Agile delivery, and in the use of Story Points. The intent is to have an informed discussion with a squad around what hurdles we might face when implementing a User Story. Mature teams will implement certain policies when thresholds are reached; for example if the team agrees a Story has an estimate of 21 Story Points they will invest a few days in their sprint to spike out the Story and determine ways they can reduce the amount of complexity.</p>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-10-04-anatomy-of-a-story-point/story_points2.png" />
+    <figcaption><i>A story point doesn't translate to a single lead time value, but rather a range of possible lead times.</i></figcaption>
+</figure>
+<p><br /></p>
+
+<h2 id="does-velocity-speed-things-up-or-slow-us-down">Does Velocity speed things up, or slow us down?</h2>
+
+<p>In practical terms, it is impossible to translate a Story Point estimate to a time-based equivalent, which is what <a href="www.scruminc.com/velocity/">Velocity</a> tries to achieve. A Story with an estimate of 1 point can take a full sprint to achieve, and a 21 point estimate can take a single day. Such is the nature of complex work.</p>
+
+<p>And this is where we constantly get tripped up when we try to manage estimates versus actuals. A story point value doesn’t correlate to a certain number of days (or god forbid, hours or minutes) but rather <em>story points represent a possible range of dates</em>. You can’t simply sum all the story points a team has burned through to get an accurate representation of progress, and trying to calibrate a Story Point estimate down to the nearest decimal point is pointless (pardon the pun).</p>
+
+<p>Thus the notion of adding up these values to get view of complexity over time is a flawed proposition. The margin of error when measuring Velocity means it often never correlates to the actual progress a team has made, or even the actual complexity they’ve churned though. It is an approximation of an approximation. Even worse still, aggregating these values across teams are also rendered usesless as different work environments yield different Story Point scales. An estimate of ‘5’ for one team is often significantly different to a ‘5’ in another team, so the resulting combined Velocity of ‘10’ across both teams doesn’t mean anything.</p>
+
+<p>If we truly want to gain value from the process of measuring estimates vs. actuals, we shouldn’t be trying to guage the accuracy of our estimates but rather <em>the amount of redundancy</em> in the activity. It doesn’t matter how long a 5-point Story took, but what if we uncovered that historically our 5-point estimates and our 8-point estimates were practically identical? We could save ourselves the effort of trying to refine our understanding down to the n-th degree of detail, and instead calibrate our understanding based on the inevitable uncertainty that’s to come.</p>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-10-04-anatomy-of-a-story-point/story_points3.png" />
+    <figcaption><i>Rather than focusing on the accuracy, focus on the reduancy of your relative estimates. Should we simplify or adjust our method?</i></figcaption>
+</figure>
+<p><br /></p>
+
+<h2 id="looking-backwards-to-see-our-path-forward">Looking backwards to see our path forward</h2>
+
+<p>Everything that we’ve discussed up to this point is based on taking the collective understanding in a room and projecting it to predict the future. Depending on the amount of volatility in each working environment this may or may not add value to a team’s way of working.</p>
+
+<p>Another method of predicative forecasting is to look to our past in order to predict the future. In the world of Lean and Kanban the use of probabilistic forecasting maps the historical progress of work (using <a href="https://mauvisoft.com/2020/09/25/five-things-you-need-to-know-about-the-lead-time/">Lead Time</a> as a base) to create a distribution of the resulted outcomes. This in itself can be a handy tool to get a better understanding of the context behind delivery, and identify other means of improving the way a squad delivers work.</p>
+
+<p>Even better still, you can take these historical views and apply a <a href="https://getnave.com/blog/monte-carlo-simulation/">Monte Carlo simulation</a>, which extrapolates the distribution of lead times to create a high volume of predicted scenarios (sometimes tens of thousands!) and use that to gain view on the likelihood of delivery. This lends itself better to complex delivery as rather than tracking to a particular date and building towards a set of requirements, we are instead tracking risk and focusing on reducing the amount of uncertainty to achieve the right outcome.</p>
+
+<figure class="image">
+    <img src="/assets/img/blog/2020-10-04-anatomy-of-a-story-point/story_points4.png" />
+    <figcaption><i>"After 10,000 Monte Carlo simulations we predict a 75% chance of delivering this story within 8 days. Are we willing to take on 25% risk of not delivering?"</i></figcaption>
+</figure>
+<p><br /></p>
+
+<h2 id="in-closing">In closing</h2>
+
+<p>As I mentioned from the outset, estimation in complex environments is a tricky business. And as much as purists try to shy away from the concept of long-term planning, there are still many prominent enterprises in the market that want to see how teams intend to manage said complexity.</p>
+
+<p>If nothing else, I hope you can walk away from this blog with more knowledge about why precision isn’t necessarily the path to better planning, and that sometimes simplification can actually yield more benefits. And if you’re working in a Scrum or XP environment and find Story Points and Velocity tracking aren’t working for you, you can find alternatives in the Kanban and probabilistic forecasting space.</p>
+
+<div style="display:flex;justify-content:center;align-items:center;">
+  <div class="text-warning" style="display:inline-block;margin:30px 0px;text-align:center;padding:15px;border-radius:10px;border: 2px solid #FFC107;"><a href="https://marketplace.atlassian.com/apps/1221796/dependency-mapper-for-jira">
+    <img style="max-width: 300px;height:auto;" src="/assets/img/dependency-ring/hero_image.png">
+    Check out my Dependency Mapper app for Jira!
+  </a></div>
+</div>
+
+
+</div>
+  </main>
+
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-light mb-2">
+    Quirk Consulting
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:brad@quirkconsulting.com"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/bradquirk"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/quirkbrad"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div></footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Flexslider Scripts -->
+	<!-- Google CDN Hosted jQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!-- Flexslider Library  -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+	<!-- Initialisation Code  -->
+	<script src="/assets/js/app.js"></script>
+
+</body>
+
+</html>

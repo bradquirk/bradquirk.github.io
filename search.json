@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Anatomy of a Story Point",
+      "category" : "",
+      "tags"     : "Agile, Estimation, Jira",
+      "url"      : "/blog/anatomy-of-a-story-point",
+      "date"     : "2020-10-04 00:00:00 +1000"
+    } ,
+  
+    {
       "title"    : "Are we done with Agile?",
       "category" : "",
       "tags"     : "Agile, Meta",
