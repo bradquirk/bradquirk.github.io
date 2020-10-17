@@ -73,3 +73,7 @@ div.card {
 .axis text {
     fill: white;
 }
+
+i {
+    color:white!important;
+}

@@ -409,15 +409,15 @@
                     "Defect Rate: " + "<span style='color:" + defectColour + ";'>" + d3.format(".0%")(d.defectRate) + "</span><br>" +
                     "Discard Rate: " + "<span style='color:" + discardColour + ";'>" + d3.format(".0%")(d.discardRate) + "</span><br>");
                 if (m[0] > scr.x + scr.w / 2) {
-                    tooltip.style("right", (body.w - m[0] + dist.x) + margin.right + "px");
+                    tooltip.style("right", (body.w - m[0] + dist.x + $("#tooltip").width()) + margin.right + "px");
                 } else {
-                    tooltip.style("left", (m[0] + dist.x) + margin.left - chart.left + "px");
+                    tooltip.style("left", (m[0] + dist.x - $("#tooltip").width() + 100) + margin.left - chart.left + "px");
                 }
 
                 if (m[1] > scr.y + scr.h / 2) {
                     tooltip.style("bottom", (body.h - m[1] + dist.y) + "px");
                 } else {
-                    tooltip.style("top", (m[1] + dist.y) + "px");
+                    tooltip.style("top", (m[1] + dist.y  - $("#tooltip").height()) + "px");
                 }
                 tooltip.style("visibility", "visible");
             })
@@ -461,17 +461,17 @@
                     "Stream Inputs: <span style='color:" + inputColour + ";'>" + d.targetLinks.length + "</span><br>" +
                     "Stream Outputs: <span style='color:" + outputColour + ";'>" + d.sourceLinks.length + "</span><hr>" +
                     "<i>" + d.commentary + "</i>");
-                if (m[0] > scr.x + scr.w / 2) {
-                    tooltip.style("right", (body.w - m[0] + dist.x) + margin.right + "px");
-                } else {
-                    tooltip.style("left", (m[0] + dist.x) + margin.left - chart.left + "px");
-                }
-
-                if (m[1] > scr.y + scr.h / 2) {
-                    tooltip.style("bottom", (body.h - m[1] + dist.y) + "px");
-                } else {
-                    tooltip.style("top", (m[1] + dist.y) + "px");
-                }
+                    if (m[0] > scr.x + scr.w / 2) {
+                        tooltip.style("right", (body.w - m[0] + dist.x + $("#tooltip").width()) + margin.right + "px");
+                    } else {
+                        tooltip.style("left", (m[0] + dist.x - $("#tooltip").width() + 100) + margin.left - chart.left + "px");
+                    }
+    
+                    if (m[1] > scr.y + scr.h / 2) {
+                        tooltip.style("bottom", (body.h - m[1] + dist.y) + "px");
+                    } else {
+                        tooltip.style("top", (m[1] + dist.y  - $("#tooltip").height()) + "px");
+                    }
                 tooltip.style("visibility", "visible");
             })
             .on("mouseout", function() {
