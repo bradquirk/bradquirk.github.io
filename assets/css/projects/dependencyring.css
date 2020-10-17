@@ -119,16 +119,6 @@ body,
     height: 100%;
 }
 
-/* Navbar animation */
-
-.navbar {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.top-nav-collapse {
-    background-color: #000;
-}
-
 /* Adding color to the Navbar on mobile */
 
 @media only screen and (max-width: 768px) {
@@ -180,10 +170,6 @@ div.card {
 
 .heading {
     background-color: #2E2E2E;
-}
-
-.container {
-    background: #2E2E2E;
 }
 
 .axis line {
