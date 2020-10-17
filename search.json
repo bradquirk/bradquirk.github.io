@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Storytelling with data",
+      "category" : "",
+      "tags"     : "Data, Viz",
+      "url"      : "/blog/storytelling-with-data",
+      "date"     : "2020-10-17 00:00:00 +1100"
+    } ,
+  
+    {
       "title"    : "Anatomy of a Story Point",
       "category" : "",
       "tags"     : "Agile, Estimation, Jira",
