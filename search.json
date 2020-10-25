@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "Being uncertain about estimation is a good thing!",
+      "category" : "",
+      "tags"     : "Agile, Complexity, Estimation",
+      "url"      : "/blog/being-uncertain-about-estimation-is-a-good-thing",
+      "date"     : "2020-10-24 00:00:00 +1100"
+    } ,
+  
+    {
       "title"    : "Storytelling with data",
       "category" : "",
       "tags"     : "Data, Viz",

@@ -1,0 +1,63 @@
+.grid-container {
+    border: 2px solid #ffc107;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    width: 95%;
+    display: grid;
+    grid-template-columns: 2% 50% 15% 15% 15%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 5px;
+    grid-template-areas:
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . ."
+        ". . . . .";
+}
+
+input[type='number'] {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.answerDiv {
+    text-align: center;
+}
+
+.answer {
+    display: none;
+}
+
+.header {
+    color: #ffc107;
+    text-align: center;
+}
+
+.right {
+    color: #4CD964;
+}
+
+.wrong {
+    color: #FF2D55;
+}
+
+#totalAnswers {
+    padding-top: 10px;
+    text-align: center;
+    color: #ffc107;
+}
+
+#submit {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
