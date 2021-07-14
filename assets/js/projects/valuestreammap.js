@@ -588,6 +588,7 @@
                             //const offset = 1;
                             const defectToggle = (Math.random() <= d.defectRate ? 1 : 0);
                             const discardToggle = (Math.random() <= d.discardRate ? 1 : 0);
+                            
                             if (Math.random() < d.throughput) {
                                 particles.push({
                                     link: d,
@@ -624,6 +625,7 @@
                         //particle is a defect, flat red
                         context.fillStyle = 'red';
                         context.globalAlpha = 1;
+                        //reverse it
                         currentPos = particles[x].path.getPointAtLength(particles[x].path.getTotalLength() - particles[x].current);
                     } else {
                         //particle is not a defect, change the particle fill as it travels
