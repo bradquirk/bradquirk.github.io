@@ -2,145 +2,151 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://quirkconsulting.com.au/</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/contact/</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/agile-reports/</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/projects/</loc>
-    <lastmod>2021-09-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/blog/</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/dependency-mapper</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://quirkconsulting.com.au/blog/are-we-done-with-agile</loc>
-    <lastmod>2021-09-05</lastmod>
+    <loc>https://quirkconsulting.com.au/blog/</loc>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/blog/getting-sciencey-with-your-agile-cadences</loc>
-    <lastmod>2021-09-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/projects/magic-wheel</loc>
-    <lastmod>2021-09-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/blog/storytelling-with-data</loc>
-    <lastmod>2021-09-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/blog/3-tips-to-run-a-better-retro</loc>
-    <lastmod>2021-09-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/projects/value-stream-map</loc>
-    <lastmod>2021-09-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/projects/relationship-heatmap</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/projects/finding-correlation</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/projects/dependency-ring</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/blog/3-tips-to-run-a-better-retro</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/blog/are-we-done-with-agile</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/blog/getting-sciencey-with-your-agile-cadences</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/projects/magic-wheel</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/blog/storytelling-with-data</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/projects/value-stream-map</loc>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/projects/cycle-time-horizon</loc>
-    <lastmod>2021-09-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://quirkconsulting.com.au/projects/cfd</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/blog/the-agile-police-doesnt-exist</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/projects/cfd</loc>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/blog/being-uncertain-about-estimation-is-a-good-thing</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/blog/whose-dependency-is-it-anyway</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/blog/anatomy-of-a-story-point</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quirkconsulting.com.au/blog/quick-tips-to-run-a-better-daily-standup</loc>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/projects/feature-size</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/blog/how-to-actually-get-started-with-WIP-limits</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quirkconsulting.com.au/blog/tags</loc>
-    <lastmod>2021-09-05</lastmod>
+    <lastmod>2021-11-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
