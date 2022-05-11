@@ -32,7 +32,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="What elements of agile delivery share a close relationship?">
 
-  <meta name="keywords" content="Agile, Quirk Consulting, Jira, Scrum, Kanban"><title>Relationship Heatmap - Quirk Consulting</title>
+  <meta name="keywords" content="Agile, Quirk Consulting, Jira, Scrum, Kanban"><title> - Quirk Consulting</title>
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
 
   <!-- Font Awesome CDN -->
@@ -77,16 +77,16 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/blog/">Blog</a>
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/blog/">Blog</a><!-- 
           <span class="text-muted" style="display:block;padding:8px 0px;">/</span>
-        
-      <a class="nav-item nav-link active" href="/projects/">Portfolio</a>
+         -->
+      <a class="nav-item nav-link active" href="/projects/">Projects</a><!-- 
           <span class="text-muted" style="display:block;padding:8px 0px;">/</span>
-        
-      <a class="nav-item nav-link " href="/dependency-mapper">Dependency Mapper</a>
+         -->
+      <a class="nav-item nav-link " href="/dependency-mapper">Dependency Mapper</a><!-- 
           <span class="text-muted" style="display:block;padding:8px 0px;">/</span>
-        
-      <a class="nav-item nav-link " href="/contact/">Contact</a>
+         -->
+      <a class="nav-item nav-link " href="/contact/">Contact</a><!--  -->
       
 
     </div>
@@ -96,7 +96,7 @@
     <div class="col-lg-10 mx-auto mt-5 post">
   <h1 id="relationship-heatmap">Relationship Heatmap</h1>
 <div id="chart"></div>
-
+<h4>The Value</h4>
 <p>The practicality of Agile is embedded within the world of complexity (from a Cynefin standpoint). As such, we have to assume that everything is subject to change; what worked for us today might not be the case tomorrow. As such it’s incredibly important to understand the relationship between cause and effect with everything we do so that we can understand what continuous improvement looks like within our complex environments. Some examples include:</p>
 
 <ul>
@@ -107,7 +107,34 @@
 
 <p>When we understand the tradeoffs of our delivery and product approach we can start to tailor our frameworks, mindsets and even culture around something that doesn’t fit an off-the-shelf implementation strategy (e.g. SAFe), but rather build something that is fit for our own purpose and works for us.</p>
 
-<p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact me!</a></p>
+<h4>Hypothesis</h4>
+<p><i style="color:white;"><span style="color:#ffc107;">We believe</span><br />
+<span style="color:#ffc107;">that</span> building a matrix of relationships between different quantifiable data points (e.g. Epic Size, Cycle Time etc.)<br />
+<span style="color:#ffc107;">will</span> enable managers and leaders to understand where the greatest opportunities for optimisation are<br />
+<span style="color:#ffc107;">and</span> lead to an informed continuous improvement strategy that produces more value.<br />
+<span style="color:#ffc107;">We’ll know we’re right</span> when attempts to optimise one thing (e.g. Epic Size) can help improve something else in the system (e.g. Epic Cycle Time) that might otherwise be difficult to improve in isolation<br /></i></p>
+
+<h4>Method</h4>
+<ol> 
+    <li>For each user story in a Jira instance, collect every quantifiable data point that we can identify</li> 
+    <li>Once the data has been collected and 'n' amount of data points have been identified, create an 'n' x 'n' matrix plotting each point against each other</li> 
+    <li>Using basic machine learning, calculate the line of best fit using linear regression (least squares method)</li> 
+    <li>Calculate how 'good' the line is (or the 'strength') and represent that as a percentage (with 100% being perfect)</li> 
+    <li>For each cell in the matrix, use a colour-code based on the strength to be able to easily identify the strongest relationships</li> 
+</ol>
+
+<h4>Insights</h4>
+<p>After trialling the Relationship Heatmap in several environments and backgrounds, from large-scale SAFe PIs to individual flow-focussed Kanban teams, there have been several key themes identified once placed in front of the team:</p>
+<ul>
+  <li>Unfortunately, there is a high degree of Jira data hygiene required to ensure correlations can be drawn between two data points.</li>
+  <li>In some environments, where data quality was high, there was usually a strong correlation between Lead Time and ‘Time spent in backlog’.</li>
+  <li>Teams were able to utilise this data to isolate where the opportunities were to further optimise their delivery patterns.</li>
+</ul>
+
+<h4>Conclusion</h4>
+<p>Quite often in the data space, the need for an accurate data source is less important (but still a high priority) when the ability to draw insights with high confidence is available with a less accurate source. In this case, trying to compare and correlate data points does require a high level of hygeine and maintenance in order to draw meaningful conclusions. This exercise should only be performed when the data source can be trusted and verified.</p>
+
+<p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact us!</a></p>
 
 <link rel="stylesheet" type="text/css" href="/assets/css/projects/relationshipheatmap.css" />
 
