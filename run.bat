@@ -1,1 +1,2 @@
-bundle exec jekyll serve
+start startgulp.bat
+start startjekyll.bat

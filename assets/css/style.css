@@ -61,8 +61,7 @@ figcaption {
 .testimonial-slider {
   display: block;
   width: 100%;
-  height: auto;
-  margin-top: 100px; }
+  height: auto; }
 
 .testimonial-slider ul.slider {
   display: block;
@@ -101,15 +100,22 @@ figcaption {
 
 .testimonial-slider q {
   display: inline-block;
-  font: normal 700 50px / 1.25 "Raleway", Helvetica, Arial, Verdana, sans-serif;
-  letter-spacing: .5pt;
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  max-width: 35ch; }
+  font-size: 1.5rem; }
 
 .testimonial-slider .source {
-  margin-top: 25px;
-  color: #d9e0f9;
-  font: italic 400 30px / 1.35 "Raleway", Helvetica, Arial, Verdana, sans-serif; }
+  margin-top: 25px; }
+
+.testimonial-slider-content {
+  text-align: center; }
+
+.testimonial-stars {
+  margin-top: 18px; }
+
+.explanation {
+  margin-top: 50px;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffc107; }
 
 /* KEYFRAME DECLARATIONS */
 @keyframes fade-animation-1 {
