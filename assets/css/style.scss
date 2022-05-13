@@ -1,0 +1,275 @@
+--- --- // custom css
+
+body {
+    background-color: #242424;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+i,
+a {
+    color: #ffc107;
+}
+
+h3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+h6 {
+    text-transform: uppercase;
+}
+
+p {
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+figcaption {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+}
+
+.timeline-body {
+    background-color: #2E2E2E !important;
+}
+
+.card-body {
+    background-color: #2E2E2E;
+}
+
+.fa-search {
+    color: #2E2E2E;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-input {
+    background-color: #CCCCCC;
+}
+
+.list-group-item {
+    background-color: #CCCCCC;
+}
+
+#landingpage {
+    margin-top: 0px;
+}
+
+.post {
+    background-color: #2E2E2E;
+    border-radius: 5px;
+    padding: 1px 20px 10px 20px;
+}
+
+.flex-viewport {
+    background-color: #2E2E2E;
+}
+
+.timeline-body .timeline-item:after {
+    background-color: #2E2E2E !important;
+}
+
+// testemonial carousel code
+.testimonial-slider {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-slider ul.slider {
+    display: block;
+    list-style: none;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.testimonial-slider ul.slider li {
+    position: absolute;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+.testimonial-slider ul.slider li:nth-child(1) {
+    opacity: 1;
+
+    -webkit-animation: fade-animation-1 25s infinite;
+    animation: fade-animation-1 25s infinite;
+}
+
+.testimonial-slider ul.slider li:nth-child(2) {
+    -webkit-animation: fade-animation-2 25s infinite;
+    animation: fade-animation-2 25s infinite;
+}
+
+.testimonial-slider ul.slider li:nth-child(3) {
+    -webkit-animation: fade-animation-3 25s infinite;
+    animation: fade-animation-3 25s infinite;
+}
+
+.testimonial-slider ul.slider li:nth-child(4) {
+    -webkit-animation: fade-animation-4 25s infinite;
+    animation: fade-animation-4 25s infinite;
+}
+
+.testimonial-slider q {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.testimonial-slider .source {
+    margin-top: 25px;
+}
+
+.testimonial-slider-content {
+    text-align: center;
+}
+
+.testimonial-stars {
+    margin-top: 18px;
+}
+
+.explanation {
+    margin-top: 50px;
+    font-size: 2rem;
+    text-align: center;
+    color: #ffc107;
+}
+
+/* KEYFRAME DECLARATIONS */
+@keyframes fade-animation-1 {
+
+    0%,
+    25%,
+    100% {
+        opacity: 0
+    }
+
+    3%,
+    22% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-animation-2 {
+
+    0%,
+    25%,
+    50%,
+    100% {
+        opacity: 0
+    }
+
+    28%,
+    47% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-animation-3 {
+
+    0%,
+    50%,
+    75%,
+    100% {
+        opacity: 0
+    }
+
+    53%,
+    72% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-animation-4 {
+
+    0%,
+    75%,
+    100% {
+        opacity: 0
+    }
+
+    78%,
+    97% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-animation-1 {
+
+    0%,
+    25%,
+    100% {
+        opacity: 0
+    }
+
+    3%,
+    22% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-animation-2 {
+
+    0%,
+    25%,
+    50%,
+    100% {
+        opacity: 0
+    }
+
+    28%,
+    47% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-animation-3 {
+
+    0%,
+    50%,
+    75%,
+    100% {
+        opacity: 0
+    }
+
+    53%,
+    72% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-animation-4 {
+
+    0%,
+    75%,
+    100% {
+        opacity: 0
+    }
+
+    78%,
+    97% {
+        opacity: 1;
+    }
+}
+
+//end custom css
+
+@import "portfolYOU";
