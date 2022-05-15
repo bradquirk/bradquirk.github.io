@@ -1,10 +1,10 @@
 [
   
     {
-      "title"    : "What are story points in agile?",
+      "title"    : "How to become an effective Scrum Master",
       "category" : "",
-      "tags"     : "Agile, Scrum, Ceremonies",
-      "url"      : "/blog/what-are-story-points-in-agile",
+      "tags"     : "Agile, Scrum, Scrum Master",
+      "url"      : "/blog/what-does-a-scrum-master-do",
       "date"     : "2022-05-15 00:00:00 +1000"
     } ,
   
@@ -22,6 +22,14 @@
       "tags"     : "Agile, Scrum, Ceremonies",
       "url"      : "/blog/quick-tips-to-run-a-better-daily-standup",
       "date"     : "2021-10-30 00:00:00 +1100"
+    } ,
+  
+    {
+      "title"    : "What are story points in agile?",
+      "category" : "",
+      "tags"     : "Agile, Scrum, Ceremonies",
+      "url"      : "/blog/what-are-story-points-in-agile-copy",
+      "date"     : "2021-06-15 00:00:00 +1000"
     } ,
   
     {
