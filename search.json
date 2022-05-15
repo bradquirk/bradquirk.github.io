@@ -25,6 +25,14 @@
     } ,
   
     {
+      "title"    : "What is Jira?",
+      "category" : "",
+      "tags"     : "Jira, Software, Tasks",
+      "url"      : "/blog/11-ways-to-use-jira",
+      "date"     : "2021-05-22 00:00:00 +1000"
+    } ,
+  
+    {
       "title"    : "Being uncertain about estimation is great!",
       "category" : "",
       "tags"     : "Agile, Complexity, Estimation, Scrum",
