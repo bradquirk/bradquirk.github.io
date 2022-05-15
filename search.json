@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "What are story points in agile?",
+      "category" : "",
+      "tags"     : "Agile, Scrum, Ceremonies",
+      "url"      : "/blog/what-are-story-points-in-agile",
+      "date"     : "2022-05-15 00:00:00 +1000"
+    } ,
+  
+    {
       "title"    : "TheWebAppMarket applauds the Dependency Mapper for Jira",
       "category" : "",
       "tags"     : "Press Release, App, Dependency Mapper",
