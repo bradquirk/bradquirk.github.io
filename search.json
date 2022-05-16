@@ -25,6 +25,14 @@
     } ,
   
     {
+      "title"    : "What does an Agile Business Analyst do?",
+      "category" : "",
+      "tags"     : "Agile, Scrum, Business Analyst",
+      "url"      : "/blog/what-does-an-agile-business-analyst-do",
+      "date"     : "2021-12-15 00:00:00 +1100"
+    } ,
+  
+    {
       "title"    : "Quick tips to run a better daily standup",
       "category" : "",
       "tags"     : "Agile, Scrum, Ceremonies",
