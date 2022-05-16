@@ -9,6 +9,14 @@
     } ,
   
     {
+      "title"    : "What does a Product Owner do?",
+      "category" : "",
+      "tags"     : "Agile, Scrum, Product Owner",
+      "url"      : "/blog/what-does-a-product-owner-do",
+      "date"     : "2022-04-15 00:00:00 +1000"
+    } ,
+  
+    {
       "title"    : "TheWebAppMarket applauds the Dependency Mapper for Jira",
       "category" : "",
       "tags"     : "Press Release, App, Dependency Mapper",

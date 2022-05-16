@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NXR7JRK');
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The CFD, one of the most insightful, yet alienating agile charts out there. How do we unlock the secrets lying within to enact positive change on a squad?"><meta name="keywords" content="cumulative flow diagram,examples of flow diagrams,cumulative flow diagrams,a cumulative flow diagram focuses on which curves,cumulative flow diagram agile,cumulative flow diagram safe,cumulative flow diagram jira,cumulative flow diagram focuses on which curves,cumulative flow diagram kanban,cumulative flow diagram scrum"><title>Jira Cumulative Flow Diagram - Quirk Consulting</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/assets/css/flexslider.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-79GQ6LPVYH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-79GQ6LPVYH');
+  </script>
+</head>
+
+<body class="d-flex flex-column h-100">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXR7JRK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+  <a class="navbar-brand" href="/" style="width:20%;height:auto;"><img src="/assets/img/logo/xsmall_125x/logo_yellow_long_125px.png" style="width:100%;height:auto;"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/blog/">BLOG</a><!-- 
+          <span class="text-muted" style="display:block;padding:8px 0px;">/</span>
+         -->
+      <a class="nav-item nav-link active" href="/projects/">PROJECTS</a><!-- 
+          <span class="text-muted" style="display:block;padding:8px 0px;">/</span>
+         -->
+      <a class="nav-item nav-link " href="/dependency-mapper">DEPENDENCY MAPPER</a><!-- 
+          <span class="text-muted" style="display:block;padding:8px 0px;">/</span>
+         -->
+      <a class="nav-item nav-link " href="/contact/">CONTACT</a><!--  -->
+      
+
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 post">
+  <h1 id="cumulative-flow-diagram">Cumulative Flow Diagram</h1>
+<div id="volumeChart"></div>
+<div id="percentageChart"></div>
+<h4>The Value</h4>
+<p>The CFD, one of the most insightful, yet alienating agile charts out there. Many people find this chart to be fairly superficial, and to an extent you’d be correct.</p>
+
+<p>Flow-based conversations are often very factual and data-driven, and the key to yielding value from CFD analysis goes beyond crunching the numbers and observing the peaks and troughs of each status.</p>
+
+<p>Equally as, if not more important than the numbers are the stories behind them. What is the context that might have led to a blowout in the number of work items that were In Progress? Does it warrant a deep-dive discussion, similar to a retrospecitve? CFDs can be powerful tools for aligning conversations and identifying antipatterns,provided you use them correctly.</p>
+
+<h4>Hypothesis</h4>
+<p><i style="color:white;"><span style="color:#ffc107;">We believe</span><br />
+<span style="color:#ffc107;">that</span> visualising the history of work items<br />
+<span style="color:#ffc107;">and</span> how they progress through the delivery pipeline<br />
+<span style="color:#ffc107;">will</span> enable managers and leaders to understand where the bottlenecks (or constraints) are in their delivery flow<br />
+<span style="color:#ffc107;">We’ll know we’re right</span> when said leaders can use this historical view to see where the bottlenecks are<br />
+<span style="color:#ffc107;">and</span> can identify where the root cause of these bottlenecks originate from.<br /></i></p>
+
+<h4>Method</h4>
+<ol> 
+    <li>Identify scope of analysis using JQL query in Jira, or through collating a list of boards/projects on other platforms</li> 
+    <li>Extract a data set using the platform's API</li> 
+    <li>Cleanse the data using a <a href="//www.knime.com/knime-software/knime-analytics-platform" target="_blank" class="amber-text">KNIME</a> script</li> 
+    <li>Reorganise data to show each historical transition from one work status to another</li> 
+    <li>Visualise the results using the <a href="//https://d3js.org/" target="_blank" class="amber-text">d3.js</a> javascript library</li> 
+</ol>
+
+<h4>Insights</h4>
+<p>After trialling the Cumulative Flow Diagram in several environments and backgrounds, from large-scale SAFe PIs to individual flow-focussed Kanban teams, there have been several key themes identified once placed in front of the team:</p>
+<ul>
+  <li>Organisations that work in siloed functions tend to batch up work, and maintain large holding queues. Especially in complex environments this increases the probability of escaped defects and backward movement through a delivery pipeline</li>
+  <li>Conversely, teams that were cross-functional in nature tended to work in smaller increments with smaller queues. Those with a DevOps focus tended to be much further ahead in this regard as they had Continuous Integration / Continuous Delivery principles in mind when designing the delivery pipeline</li>
+  <li>The actual root cause for the bottleneck was, more often than not, found earlier in the workflow. For example, a testing / release bottleneck could be attributed to poor practices introduced in the analysis or development portions of the workflow</li>
+</ul>
+
+<h4>Conclusion</h4>
+<p>The Cumulative Flow Diagram is deceptively simple to digest at first glance. Teams should always be on the lookout for repeated bottlenecks in their delivery workflow, but should be mindful that the actual cause of those blockages may lie elsewhere. As always this sort of tool should be used to initiate meaningful conversations, rather than shutting them down.</p>
+
+<p>If you'd like to know how this visualisation could be implemented in your organisation, feel free to <a href="/contact/" class="amber-text">contact us!</a></p>
+
+<link rel="stylesheet" type="text/css" href="/assets/css/projects/cfd.css" />
+
+<script src="https://d3js.org/d3.v5.min.js"></script>
+
+<script src="/assets/js/projects/cfd.js">
+</script>
+
+</div>
+  </main>
+
+  <footer class="mt-auto container py-3">
+  <div class="row" style="padding-top: -10px;">
+    <div class="col-lg-3">
+      <h6>About Quirk Consulting</h6>
+      <p>We're a growing Atlassian Marketplace Vendor that utilises our collective experience in enterprise agile
+        transformation programs to help companies navigate complex environments. Agility without the obscurity. Our
+        premier app, Dependency Mapper for Jira, is quickly becoming the most popular dependency app in the Atlassian
+        Marketplace.</p>
+    </div>
+    <div class="col-lg-3">
+      <h6>Get in touch with us</h6>
+      <i style="padding-right:6px;" class="fas fa-envelope fa-1x"></i><a
+        style="color:white;" href="mailto:brad@quirkconsulting.com.au">brad@quirkconsulting.com.au</a>
+    </div>
+    <div class="col-lg-3">
+      <h6>Quick Links</h6><div style="padding-bottom:6px;">
+          <a style="text-decoration: none;" class="nav-item" href="/blog/">BLOG</a>
+        </div><!-- 
+          <span class="text-muted" style="display:block;padding:8px 0px;">/</span>
+         -->
+      <div style="padding-bottom:6px;">
+          <a style="text-decoration: none;" class="nav-item" href="/projects/">PROJECTS</a>
+        </div><!-- 
+          <span class="text-muted" style="display:block;padding:8px 0px;">/</span>
+         -->
+      <div style="padding-bottom:6px;">
+          <a style="text-decoration: none;" class="nav-item" href="/dependency-mapper">DEPENDENCY MAPPER</a>
+        </div><!-- 
+          <span class="text-muted" style="display:block;padding:8px 0px;">/</span>
+         -->
+      <div style="padding-bottom:6px;">
+          <a style="text-decoration: none;" class="nav-item" href="/contact/">CONTACT</a>
+        </div><!--  -->
+      
+    </div>
+    <div class="col-lg-3">
+      <h6>Important Links</h6>
+      <div style="padding-bottom:6px;">
+        <a style="text-decoration: none;" class="nav-item" href="/privacy-policy">Privacy Policy</a>
+      </div>
+      <div style="padding-bottom:6px;">
+        <a style="text-decoration: none;" class="nav-item" href="/eula">Terms of Service</a>
+      </div>
+      <div style="padding-bottom:6px;">
+        <a style="text-decoration: none;" class="nav-item" href="/sla">Support SLA</a>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center text-center" style="padding-top: -10px;">
+    <div>
+      <img class="img-responsive" width="200px"
+        src="/assets/img/atlassian/Marketplace Partner_Wht_nobg@2x_CMYK.png">
+    </div>
+    <div>
+      <small class="text-light mb-6">
+        © 2022 Quirk Consulting
+      </small>
+    </div>
+    <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:brad@quirkconsulting.com.au"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/company/quirkconsulting"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.twitter.com/quirkbrad"
+       style="color: #FFFFFF"
+       onMouseOver="this.style.color='#1da1f2'"
+       onMouseOut="this.style.color='#FFFFFF'">
+      <i class="fab fa-twitter fa-1x"></i>
+    </a>
+
+</div></div>
+</footer>
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Flexslider Scripts -->
+	<!-- Google CDN Hosted jQuery  -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+	<!-- Flexslider Library  -->
+	<script src="/assets/js/jquery.flexslider-min.js"></script>
+	<!-- Initialisation Code  -->
+	<script src="/assets/js/app.js"></script>
+
+</body>
+
+</html>
