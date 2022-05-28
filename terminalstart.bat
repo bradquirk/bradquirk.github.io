@@ -1,0 +1,1 @@
+wt -p quirk-light --title "Website" --tabColor #333333 "C:\Github Repositories\bradquirk.github.io_master\startjekyll.bat" ; split-pane -p quirk-dark --title "Website" --tabColor #333333 "C:\Github Repositories\bradquirk.github.io_master\startgulp.bat"
