@@ -626,12 +626,12 @@ body {
 .post.card {
   border-radius: 15px;
   text-decoration: none !important;
-  padding: 15px;
+  padding: 0px 0px;
   height: 100%; }
   .post.card .card-footer {
     font-size: 14px;
-    margin: 0 -15px -15px -15px;
-    padding: 15px 35px; }
+    margin: 0;
+    padding: 15px 35px 0px 35px; }
 
 .post .post-metadata {
   font-size: 14px;
@@ -721,6 +721,55 @@ body {
     color: white; }
   .post table tr:nth-child(even) {
     background-color: #f8f9fa; }
+
+/* Cool infinite background scrolling animation.
+ */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 100px 100px; } }
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 100px 100px; } }
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 100px 100px; } }
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 100px 100px; } }
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 100px 100px; } }
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 100px 100px; } }
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 100px 100px; } }
+@keyframes bg-scrolling {
+  0% {
+    background-position: 100px 100px; } }
+/* Main styles */
+.scrollingbackground {
+  height: 40px;
+  -webkit-animation: bg-scrolling-reverse 30s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 30s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 30s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 30s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear; }
+
+.scrollingtop {
+  border-radius: 15px 15px 0px 0px; }
+
+.scrollingbottom {
+  border-radius: 0px 0px 15px 15px; }
 
 .social {
   text-decoration: none !important; }
